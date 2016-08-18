@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922031D65652200D6BE94 /* AppDelegate.swift */; };
-		07F922061D65652200D6BE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922051D65652200D6BE94 /* ViewController.swift */; };
-		07F922091D65652200D6BE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F922071D65652200D6BE94 /* Main.storyboard */; };
 		07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */; };
 		07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220D1D65652200D6BE94 /* Assets.xcassets */; };
 		07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */; };
 		07F9221C1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9221B1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift */; };
 		07F922271D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922261D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift */; };
+		07F9223A1D656CAB00D6BE94 /* MyLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922381D656CAB00D6BE94 /* MyLibraryViewController.swift */; };
+		07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922391D656CAB00D6BE94 /* MyLibraryViewController.xib */; };
+		07F9223E1D656CCC00D6BE94 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9223C1D656CCC00D6BE94 /* ExploreViewController.swift */; };
+		07F9223F1D656CCC00D6BE94 /* ExploreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F9223D1D656CCC00D6BE94 /* ExploreViewController.xib */; };
+		07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922401D656CDD00D6BE94 /* FeedViewController.swift */; };
+		07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922411D656CDD00D6BE94 /* FeedViewController.xib */; };
+		07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922441D656CF200D6BE94 /* SearchViewController.swift */; };
+		07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922451D656CF200D6BE94 /* SearchViewController.xib */; };
+		07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922481D656D1C00D6BE94 /* ListenWithViewController.swift */; };
+		07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922491D656D1C00D6BE94 /* ListenWithViewController.xib */; };
+		07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */; };
+		07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F9224E1D65939900D6BE94 /* ProfileViewController.xib */; };
+		07F922531D65A77B00D6BE94 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922511D65A77B00D6BE94 /* Cell.swift */; };
+		07F922541D65A77B00D6BE94 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922521D65A77B00D6BE94 /* Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +49,6 @@
 /* Begin PBXFileReference section */
 		07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKBOX_Personal Porfile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F922031D65652200D6BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07F922051D65652200D6BE94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07F922081D65652200D6BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KKBOX_Personal_Porfile.xcdatamodel; sourceTree = "<group>"; };
 		07F9220D1D65652200D6BE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F922101D65652200D6BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,20 @@
 		07F922221D65652200D6BE94 /* KKBOX_Personal PorfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKBOX_Personal PorfileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F922261D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBOX_Personal_PorfileUITests.swift; sourceTree = "<group>"; };
 		07F922281D65652200D6BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F922381D656CAB00D6BE94 /* MyLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibraryViewController.swift; sourceTree = "<group>"; };
+		07F922391D656CAB00D6BE94 /* MyLibraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLibraryViewController.xib; sourceTree = "<group>"; };
+		07F9223C1D656CCC00D6BE94 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		07F9223D1D656CCC00D6BE94 /* ExploreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreViewController.xib; sourceTree = "<group>"; };
+		07F922401D656CDD00D6BE94 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		07F922411D656CDD00D6BE94 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		07F922441D656CF200D6BE94 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		07F922451D656CF200D6BE94 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		07F922481D656D1C00D6BE94 /* ListenWithViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListenWithViewController.swift; sourceTree = "<group>"; };
+		07F922491D656D1C00D6BE94 /* ListenWithViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListenWithViewController.xib; sourceTree = "<group>"; };
+		07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		07F9224E1D65939900D6BE94 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		07F922511D65A77B00D6BE94 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		07F922521D65A77B00D6BE94 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				07F922031D65652200D6BE94 /* AppDelegate.swift */,
-				07F922051D65652200D6BE94 /* ViewController.swift */,
-				07F922071D65652200D6BE94 /* Main.storyboard */,
+				07F922341D656C3D00D6BE94 /* Model */,
+				07F922361D656C4F00D6BE94 /* View */,
+				07F922371D656C5900D6BE94 /* Controller */,
 				07F9220D1D65652200D6BE94 /* Assets.xcassets */,
 				07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */,
 				07F922121D65652200D6BE94 /* Info.plist */,
@@ -126,6 +151,57 @@
 				07F922281D65652200D6BE94 /* Info.plist */,
 			);
 			path = "KKBOX_Personal PorfileUITests";
+			sourceTree = "<group>";
+		};
+		07F922341D656C3D00D6BE94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		07F922361D656C4F00D6BE94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F922551D65B3A200D6BE94 /* Cells */,
+				07F922501D659A5B00D6BE94 /* TabBarView */,
+				07F9224E1D65939900D6BE94 /* ProfileViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07F922371D656C5900D6BE94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07F922381D656CAB00D6BE94 /* MyLibraryViewController.swift */,
+				07F9223C1D656CCC00D6BE94 /* ExploreViewController.swift */,
+				07F922401D656CDD00D6BE94 /* FeedViewController.swift */,
+				07F922441D656CF200D6BE94 /* SearchViewController.swift */,
+				07F922481D656D1C00D6BE94 /* ListenWithViewController.swift */,
+				07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		07F922501D659A5B00D6BE94 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				07F922391D656CAB00D6BE94 /* MyLibraryViewController.xib */,
+				07F9223D1D656CCC00D6BE94 /* ExploreViewController.xib */,
+				07F922411D656CDD00D6BE94 /* FeedViewController.xib */,
+				07F922451D656CF200D6BE94 /* SearchViewController.xib */,
+				07F922491D656D1C00D6BE94 /* ListenWithViewController.xib */,
+			);
+			name = TabBarView;
+			sourceTree = "<group>";
+		};
+		07F922551D65B3A200D6BE94 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07F922511D65A77B00D6BE94 /* Cell.swift */,
+				07F922521D65A77B00D6BE94 /* Cell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +308,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F9223F1D656CCC00D6BE94 /* ExploreViewController.xib in Resources */,
+				07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */,
+				07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */,
+				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
+				07F922541D65A77B00D6BE94 /* Cell.xib in Resources */,
+				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
+				07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */,
 				07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */,
 				07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */,
-				07F922091D65652200D6BE94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F922061D65652200D6BE94 /* ViewController.swift in Sources */,
+				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
+				07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */,
+				07F9223E1D656CCC00D6BE94 /* ExploreViewController.swift in Sources */,
+				07F9223A1D656CAB00D6BE94 /* MyLibraryViewController.swift in Sources */,
+				07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */,
+				07F922531D65A77B00D6BE94 /* Cell.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
+				07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */,
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +385,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07F922071D65652200D6BE94 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07F922081D65652200D6BE94 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -16,7 +16,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.backgroundColor = UIColor.whiteColor()
+        
+        let navigationController1 = UINavigationController()
+        let navigationController2 = UINavigationController()
+        let navigationController3 = UINavigationController()
+        let navigationController4 = UINavigationController()
+        let navigationController5 = UINavigationController()
+        
+        let tabBarController = UITabBarController()
+        let myLibraryVC = MyLibraryViewController(nibName: "MyLibraryViewController", bundle: nil)
+        let exploreVC = ExploreViewController(nibName: "ExploreViewController", bundle: nil)
+        let feedVC = FeedViewController(nibName: "FeedViewController", bundle: nil)
+        let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
+        let listenWithVC = ListenWithViewController(nibName: "ListenWithViewController", bundle: nil)
+        
+        let myLibraryImage = UIImage(named: "icon_myLibrary")
+        let myLibrarySelectedImage = UIImage(named: "icon_myLibrary_actived")
+        let exploreImage = UIImage(named: "icon_new")
+        let exploreSelectedImage = UIImage(named: "icon_new_actived")
+        let feedImage = UIImage(named: "icon_story")
+        let feedSelectedImage = UIImage(named: "icon_story_actived")
+        let searchImage = UIImage(named: "icon_search")
+        let searchSelectedImage = UIImage(named: "icon_search_actived")
+        let listenWithImage = UIImage(named: "icon_listen")
+        let listenWithSelectedImage = UIImage(named: "icon_listen_actived")
+        
+        navigationController1.viewControllers = [myLibraryVC]
+        navigationController2.viewControllers = [exploreVC]
+        navigationController3.viewControllers = [feedVC]
+        navigationController4.viewControllers = [searchVC]
+        navigationController5.viewControllers = [listenWithVC]
+        
+        let controllers = [navigationController1, navigationController2, navigationController3, navigationController4, navigationController5]
+        tabBarController.viewControllers = controllers
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        myLibraryVC.tabBarItem = UITabBarItem(title: "我的音樂庫", image: myLibraryImage, selectedImage: myLibrarySelectedImage)
+        exploreVC.tabBarItem = UITabBarItem(title: "線上精選", image: exploreImage, selectedImage: exploreSelectedImage)
+        feedVC.tabBarItem = UITabBarItem(title: "動態", image: feedImage, selectedImage: feedSelectedImage)
+        searchVC.tabBarItem = UITabBarItem(title: "線上搜尋", image: searchImage, selectedImage: searchSelectedImage)
+        listenWithVC.tabBarItem = UITabBarItem(title: "一起聽", image: listenWithImage, selectedImage: listenWithSelectedImage)
+        
         return true
     }
 
