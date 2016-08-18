@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922031D65652200D6BE94 /* AppDelegate.swift */; };
+		07F922061D65652200D6BE94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922051D65652200D6BE94 /* ViewController.swift */; };
+		07F922091D65652200D6BE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F922071D65652200D6BE94 /* Main.storyboard */; };
+		07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */; };
+		07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220D1D65652200D6BE94 /* Assets.xcassets */; };
+		07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */; };
+		07F9221C1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9221B1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift */; };
+		07F922271D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922261D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07F922181D65652200D6BE94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F921F81D65652200D6BE94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F921FF1D65652200D6BE94;
+			remoteInfo = "KKBOX_Personal Porfile";
+		};
+		07F922231D65652200D6BE94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F921F81D65652200D6BE94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F921FF1D65652200D6BE94;
+			remoteInfo = "KKBOX_Personal Porfile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKBOX_Personal Porfile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F922031D65652200D6BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07F922051D65652200D6BE94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07F922081D65652200D6BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KKBOX_Personal_Porfile.xcdatamodel; sourceTree = "<group>"; };
+		07F9220D1D65652200D6BE94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F922101D65652200D6BE94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07F922121D65652200D6BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F922171D65652200D6BE94 /* KKBOX_Personal PorfileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKBOX_Personal PorfileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F9221B1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBOX_Personal_PorfileTests.swift; sourceTree = "<group>"; };
+		07F9221D1D65652200D6BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F922221D65652200D6BE94 /* KKBOX_Personal PorfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KKBOX_Personal PorfileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F922261D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBOX_Personal_PorfileUITests.swift; sourceTree = "<group>"; };
+		07F922281D65652200D6BE94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07F921FD1D65652200D6BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F922141D65652200D6BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F9221F1D65652200D6BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F921F71D65652200D6BE94 = {
+			isa = PBXGroup;
+			children = (
+				07F922021D65652200D6BE94 /* KKBOX_Personal Porfile */,
+				07F9221A1D65652200D6BE94 /* KKBOX_Personal PorfileTests */,
+				07F922251D65652200D6BE94 /* KKBOX_Personal PorfileUITests */,
+				07F922011D65652200D6BE94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07F922011D65652200D6BE94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */,
+				07F922171D65652200D6BE94 /* KKBOX_Personal PorfileTests.xctest */,
+				07F922221D65652200D6BE94 /* KKBOX_Personal PorfileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07F922021D65652200D6BE94 /* KKBOX_Personal Porfile */ = {
+			isa = PBXGroup;
+			children = (
+				07F922031D65652200D6BE94 /* AppDelegate.swift */,
+				07F922051D65652200D6BE94 /* ViewController.swift */,
+				07F922071D65652200D6BE94 /* Main.storyboard */,
+				07F9220D1D65652200D6BE94 /* Assets.xcassets */,
+				07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */,
+				07F922121D65652200D6BE94 /* Info.plist */,
+				07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */,
+			);
+			path = "KKBOX_Personal Porfile";
+			sourceTree = "<group>";
+		};
+		07F9221A1D65652200D6BE94 /* KKBOX_Personal PorfileTests */ = {
+			isa = PBXGroup;
+			children = (
+				07F9221B1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift */,
+				07F9221D1D65652200D6BE94 /* Info.plist */,
+			);
+			path = "KKBOX_Personal PorfileTests";
+			sourceTree = "<group>";
+		};
+		07F922251D65652200D6BE94 /* KKBOX_Personal PorfileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07F922261D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift */,
+				07F922281D65652200D6BE94 /* Info.plist */,
+			);
+			path = "KKBOX_Personal PorfileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07F921FF1D65652200D6BE94 /* KKBOX_Personal Porfile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F9222B1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal Porfile" */;
+			buildPhases = (
+				07F921FC1D65652200D6BE94 /* Sources */,
+				07F921FD1D65652200D6BE94 /* Frameworks */,
+				07F921FE1D65652200D6BE94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KKBOX_Personal Porfile";
+			productName = "KKBOX_Personal Porfile";
+			productReference = 07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07F922161D65652200D6BE94 /* KKBOX_Personal PorfileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F9222E1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileTests" */;
+			buildPhases = (
+				07F922131D65652200D6BE94 /* Sources */,
+				07F922141D65652200D6BE94 /* Frameworks */,
+				07F922151D65652200D6BE94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F922191D65652200D6BE94 /* PBXTargetDependency */,
+			);
+			name = "KKBOX_Personal PorfileTests";
+			productName = "KKBOX_Personal PorfileTests";
+			productReference = 07F922171D65652200D6BE94 /* KKBOX_Personal PorfileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07F922211D65652200D6BE94 /* KKBOX_Personal PorfileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F922311D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileUITests" */;
+			buildPhases = (
+				07F9221E1D65652200D6BE94 /* Sources */,
+				07F9221F1D65652200D6BE94 /* Frameworks */,
+				07F922201D65652200D6BE94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F922241D65652200D6BE94 /* PBXTargetDependency */,
+			);
+			name = "KKBOX_Personal PorfileUITests";
+			productName = "KKBOX_Personal PorfileUITests";
+			productReference = 07F922221D65652200D6BE94 /* KKBOX_Personal PorfileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07F921F81D65652200D6BE94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Chun Tai";
+				TargetAttributes = {
+					07F921FF1D65652200D6BE94 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					07F922161D65652200D6BE94 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 07F921FF1D65652200D6BE94;
+					};
+					07F922211D65652200D6BE94 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 07F921FF1D65652200D6BE94;
+					};
+				};
+			};
+			buildConfigurationList = 07F921FB1D65652200D6BE94 /* Build configuration list for PBXProject "KKBOX_Personal Porfile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07F921F71D65652200D6BE94;
+			productRefGroup = 07F922011D65652200D6BE94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07F921FF1D65652200D6BE94 /* KKBOX_Personal Porfile */,
+				07F922161D65652200D6BE94 /* KKBOX_Personal PorfileTests */,
+				07F922211D65652200D6BE94 /* KKBOX_Personal PorfileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07F921FE1D65652200D6BE94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */,
+				07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */,
+				07F922091D65652200D6BE94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F922151D65652200D6BE94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F922201D65652200D6BE94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07F921FC1D65652200D6BE94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F922061D65652200D6BE94 /* ViewController.swift in Sources */,
+				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
+				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F922131D65652200D6BE94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F9221C1D65652200D6BE94 /* KKBOX_Personal_PorfileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F9221E1D65652200D6BE94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F922271D65652200D6BE94 /* KKBOX_Personal_PorfileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07F922191D65652200D6BE94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F921FF1D65652200D6BE94 /* KKBOX_Personal Porfile */;
+			targetProxy = 07F922181D65652200D6BE94 /* PBXContainerItemProxy */;
+		};
+		07F922241D65652200D6BE94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F921FF1D65652200D6BE94 /* KKBOX_Personal Porfile */;
+			targetProxy = 07F922231D65652200D6BE94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07F922071D65652200D6BE94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F922081D65652200D6BE94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F922101D65652200D6BE94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07F922291D65652200D6BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F9222A1D65652200D6BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07F9222C1D65652200D6BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KKBOX_Personal Porfile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-Porfile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F9222D1D65652200D6BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KKBOX_Personal Porfile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-Porfile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F9222F1D65652200D6BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "KKBOX_Personal PorfileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-PorfileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KKBOX_Personal Porfile.app/KKBOX_Personal Porfile";
+			};
+			name = Debug;
+		};
+		07F922301D65652200D6BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "KKBOX_Personal PorfileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-PorfileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KKBOX_Personal Porfile.app/KKBOX_Personal Porfile";
+			};
+			name = Release;
+		};
+		07F922321D65652200D6BE94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KKBOX_Personal PorfileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-PorfileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "KKBOX_Personal Porfile";
+			};
+			name = Debug;
+		};
+		07F922331D65652200D6BE94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KKBOX_Personal PorfileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-PorfileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "KKBOX_Personal Porfile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07F921FB1D65652200D6BE94 /* Build configuration list for PBXProject "KKBOX_Personal Porfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F922291D65652200D6BE94 /* Debug */,
+				07F9222A1D65652200D6BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F9222B1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal Porfile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F9222C1D65652200D6BE94 /* Debug */,
+				07F9222D1D65652200D6BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07F9222E1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F9222F1D65652200D6BE94 /* Debug */,
+				07F922301D65652200D6BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07F922311D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F922321D65652200D6BE94 /* Debug */,
+				07F922331D65652200D6BE94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */,
+			);
+			currentVersion = 07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */;
+			path = KKBOX_Personal_Porfile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07F921F81D65652200D6BE94 /* Project object */;
+}
