@@ -10,10 +10,20 @@ import UIKit
 
 class MyLibraryViewController: UIViewController {
 
+    var profileVC: ProfileViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        ServerManager.login(userInfo: "kkbox:kkbox", completion: { 
+            ServerManager.getAlbumCollection(userName: "kkbox", completion: { (albums) in
+                print(albums[1].albumId)
+                }, failure: { (error) in
+                    
+            })
+            }) { (error) in
+                print("1223123213")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,19 +33,12 @@ class MyLibraryViewController: UIViewController {
     
     @IBAction func profileGestureTapped(sender: AnyObject) {
         
-        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+//        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle:
         
+        profileVC = ProfileViewController.init(nibName: "ProfileViewController", bundle: nil)
         self.showViewController(profileVC, sender: self)
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

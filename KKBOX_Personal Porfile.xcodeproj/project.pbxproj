@@ -27,6 +27,22 @@
 		07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F9224E1D65939900D6BE94 /* ProfileViewController.xib */; };
 		07F922531D65A77B00D6BE94 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922511D65A77B00D6BE94 /* Cell.swift */; };
 		07F922541D65A77B00D6BE94 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922521D65A77B00D6BE94 /* Cell.xib */; };
+		07F922581D6AA91300D6BE94 /* ProfileSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922571D6AA91300D6BE94 /* ProfileSegmentedControl.swift */; };
+		07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9225C1D6AB50300D6BE94 /* StoryViewController.swift */; };
+		07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F9225D1D6AB50300D6BE94 /* StoryViewController.xib */; };
+		07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922601D6AB51E00D6BE94 /* MusicViewController.swift */; };
+		07F922631D6AB51E00D6BE94 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F922611D6AB51E00D6BE94 /* MusicViewController.xib */; };
+		07F922651D6AB77200D6BE94 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922641D6AB77200D6BE94 /* Constant.swift */; };
+		07F922681D6AB93100D6BE94 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922671D6AB93100D6BE94 /* Router.swift */; };
+		07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922691D6AB94000D6BE94 /* ServerManager.swift */; };
+		07F9226C1D6AC75800D6BE94 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 07F9226B1D6AC75800D6BE94 /* Podfile */; };
+		07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9226D1D6ACF3600D6BE94 /* Playlist.swift */; };
+		07F922701D6ACF5600D6BE94 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F9226F1D6ACF5600D6BE94 /* Song.swift */; };
+		07F922721D6ACF6C00D6BE94 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922711D6ACF6C00D6BE94 /* Album.swift */; };
+		07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922731D6ACF7F00D6BE94 /* Artist.swift */; };
+		07F922761D6ACF9500D6BE94 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922751D6ACF9500D6BE94 /* Story.swift */; };
+		07F922781D6ACFE400D6BE94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922771D6ACFE400D6BE94 /* User.swift */; };
+		8707D1402E623627481ED8FE /* Pods_KKBOX_Personal_Porfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +89,24 @@
 		07F9224E1D65939900D6BE94 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		07F922511D65A77B00D6BE94 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		07F922521D65A77B00D6BE94 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		07F922571D6AA91300D6BE94 /* ProfileSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSegmentedControl.swift; sourceTree = "<group>"; };
+		07F9225C1D6AB50300D6BE94 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		07F9225D1D6AB50300D6BE94 /* StoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
+		07F922601D6AB51E00D6BE94 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		07F922611D6AB51E00D6BE94 /* MusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		07F922641D6AB77200D6BE94 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		07F922671D6AB93100D6BE94 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		07F922691D6AB94000D6BE94 /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		07F9226B1D6AC75800D6BE94 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07F9226D1D6ACF3600D6BE94 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		07F9226F1D6ACF5600D6BE94 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		07F922711D6ACF6C00D6BE94 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		07F922731D6ACF7F00D6BE94 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		07F922751D6ACF9500D6BE94 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		07F922771D6ACFE400D6BE94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKBOX_Personal_Porfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718C820CD7E3275C5B577981 /* Pods-KKBOX_Personal Porfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.release.xcconfig"; sourceTree = "<group>"; };
+		F9DF742A1673CC34503082DA /* Pods-KKBOX_Personal Porfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8707D1402E623627481ED8FE /* Pods_KKBOX_Personal_Porfile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,10 +138,13 @@
 		07F921F71D65652200D6BE94 = {
 			isa = PBXGroup;
 			children = (
+				07F9226B1D6AC75800D6BE94 /* Podfile */,
 				07F922021D65652200D6BE94 /* KKBOX_Personal Porfile */,
 				07F9221A1D65652200D6BE94 /* KKBOX_Personal PorfileTests */,
 				07F922251D65652200D6BE94 /* KKBOX_Personal PorfileUITests */,
 				07F922011D65652200D6BE94 /* Products */,
+				68717D444A3D6EFD8D23F58D /* Pods */,
+				19DCE1EF566E9D71D5683E25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				07F922031D65652200D6BE94 /* AppDelegate.swift */,
+				07F922661D6AB91800D6BE94 /* Server */,
 				07F922341D656C3D00D6BE94 /* Model */,
 				07F922361D656C4F00D6BE94 /* View */,
 				07F922371D656C5900D6BE94 /* Controller */,
@@ -156,6 +195,13 @@
 		07F922341D656C3D00D6BE94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07F922641D6AB77200D6BE94 /* Constant.swift */,
+				07F9226D1D6ACF3600D6BE94 /* Playlist.swift */,
+				07F9226F1D6ACF5600D6BE94 /* Song.swift */,
+				07F922711D6ACF6C00D6BE94 /* Album.swift */,
+				07F922731D6ACF7F00D6BE94 /* Artist.swift */,
+				07F922751D6ACF9500D6BE94 /* Story.swift */,
+				07F922771D6ACFE400D6BE94 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -163,9 +209,12 @@
 		07F922361D656C4F00D6BE94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07F9224E1D65939900D6BE94 /* ProfileViewController.xib */,
+				07F922611D6AB51E00D6BE94 /* MusicViewController.xib */,
+				07F9225D1D6AB50300D6BE94 /* StoryViewController.xib */,
+				07F922561D6AA8F100D6BE94 /* Material */,
 				07F922551D65B3A200D6BE94 /* Cells */,
 				07F922501D659A5B00D6BE94 /* TabBarView */,
-				07F9224E1D65939900D6BE94 /* ProfileViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -173,12 +222,10 @@
 		07F922371D656C5900D6BE94 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				07F922381D656CAB00D6BE94 /* MyLibraryViewController.swift */,
-				07F9223C1D656CCC00D6BE94 /* ExploreViewController.swift */,
-				07F922401D656CDD00D6BE94 /* FeedViewController.swift */,
-				07F922441D656CF200D6BE94 /* SearchViewController.swift */,
-				07F922481D656D1C00D6BE94 /* ListenWithViewController.swift */,
 				07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */,
+				07F922601D6AB51E00D6BE94 /* MusicViewController.swift */,
+				07F9225C1D6AB50300D6BE94 /* StoryViewController.swift */,
+				07F922591D6AAA0600D6BE94 /* TabBarController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,6 +251,52 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		07F922561D6AA8F100D6BE94 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				07F922571D6AA91300D6BE94 /* ProfileSegmentedControl.swift */,
+			);
+			name = Material;
+			sourceTree = "<group>";
+		};
+		07F922591D6AAA0600D6BE94 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				07F922381D656CAB00D6BE94 /* MyLibraryViewController.swift */,
+				07F9223C1D656CCC00D6BE94 /* ExploreViewController.swift */,
+				07F922401D656CDD00D6BE94 /* FeedViewController.swift */,
+				07F922441D656CF200D6BE94 /* SearchViewController.swift */,
+				07F922481D656D1C00D6BE94 /* ListenWithViewController.swift */,
+			);
+			name = TabBarController;
+			sourceTree = "<group>";
+		};
+		07F922661D6AB91800D6BE94 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				07F922671D6AB93100D6BE94 /* Router.swift */,
+				07F922691D6AB94000D6BE94 /* ServerManager.swift */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		19DCE1EF566E9D71D5683E25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68717D444A3D6EFD8D23F58D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9DF742A1673CC34503082DA /* Pods-KKBOX_Personal Porfile.debug.xcconfig */,
+				718C820CD7E3275C5B577981 /* Pods-KKBOX_Personal Porfile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,9 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07F9222B1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal Porfile" */;
 			buildPhases = (
+				C4A47E9546FFDA02280D2F0E /* [CP] Check Pods Manifest.lock */,
 				07F921FC1D65652200D6BE94 /* Sources */,
 				07F921FD1D65652200D6BE94 /* Frameworks */,
 				07F921FE1D65652200D6BE94 /* Resources */,
+				F5D1B7055468F51BC7A89054 /* [CP] Embed Pods Frameworks */,
+				9D79C43C00BCE0808F0BDBD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +368,7 @@
 				TargetAttributes = {
 					07F921FF1D65652200D6BE94 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X7SHVGB78M;
 					};
 					07F922161D65652200D6BE94 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -314,8 +411,11 @@
 				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
 				07F922541D65A77B00D6BE94 /* Cell.xib in Resources */,
 				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
+				07F9226C1D6AC75800D6BE94 /* Podfile in Resources */,
+				07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */,
 				07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */,
 				07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */,
+				07F922631D6AB51E00D6BE94 /* MusicViewController.xib in Resources */,
 				07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,20 +436,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D79C43C00BCE0808F0BDBD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A47E9546FFDA02280D2F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D1B7055468F51BC7A89054 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07F921FC1D65652200D6BE94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */,
+				07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */,
 				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
 				07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */,
 				07F9223E1D656CCC00D6BE94 /* ExploreViewController.swift in Sources */,
+				07F922721D6ACF6C00D6BE94 /* Album.swift in Sources */,
 				07F9223A1D656CAB00D6BE94 /* MyLibraryViewController.swift in Sources */,
 				07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */,
 				07F922531D65A77B00D6BE94 /* Cell.swift in Sources */,
+				07F922581D6AA91300D6BE94 /* ProfileSegmentedControl.swift in Sources */,
+				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
+				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
+				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
+				07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */,
+				07F922681D6AB93100D6BE94 /* Router.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
+				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
 				07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */,
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
+				07F922761D6ACF9500D6BE94 /* Story.swift in Sources */,
+				07F922781D6ACFE400D6BE94 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,23 +643,31 @@
 		};
 		07F9222C1D65652200D6BE94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DF742A1673CC34503082DA /* Pods-KKBOX_Personal Porfile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "KKBOX_Personal Porfile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-Porfile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		07F9222D1D65652200D6BE94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718C820CD7E3275C5B577981 /* Pods-KKBOX_Personal Porfile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "KKBOX_Personal Porfile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KKBOX.KKBOX-Personal-Porfile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -568,6 +736,7 @@
 				07F9222D1D65652200D6BE94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F9222E1D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +745,7 @@
 				07F922301D65652200D6BE94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07F922311D65652200D6BE94 /* Build configuration list for PBXNativeTarget "KKBOX_Personal PorfileUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +754,7 @@
 				07F922331D65652200D6BE94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
