@@ -377,8 +377,6 @@ enum Router: URLRequestConvertible {
                 let params = ["track_id":trackId, "playlist_id":playlistId]
                 let request = Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
                 return request
-            default:
-                return mutableURLRequest
             }
         case .Like(let lAPI):
             switch lAPI {

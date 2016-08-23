@@ -17,12 +17,12 @@ class MyLibraryViewController: UIViewController {
         
         ServerManager.login(userInfo: "kkbox:kkbox", completion: { 
             ServerManager.getAlbumCollection(userName: "kkbox", completion: { (albums) in
-                print(albums[1].albumId)
+                print(albums[2].songs?.count)
                 }, failure: { (error) in
                     
             })
             }) { (error) in
-                print("1223123213")
+                print(error)
         }
     }
 

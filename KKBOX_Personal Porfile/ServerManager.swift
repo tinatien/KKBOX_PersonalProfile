@@ -37,7 +37,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 failure(error: error)
@@ -50,7 +50,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 failure(error: error)
@@ -97,7 +97,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.updateInfo, error : \(error)")
@@ -173,7 +173,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.addFollowing, error : \(error)")
@@ -187,7 +187,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.dropFollowing, error : \(error)")
@@ -302,7 +302,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.addPlaylist, error : \(error)")
@@ -332,7 +332,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.addHistory, error : \(error)")
@@ -422,7 +422,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.collectAlbum, error : \(error)")
@@ -492,7 +492,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.collectStory, error : \(error)")
@@ -506,7 +506,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.addStory, error : \(error)")
@@ -520,7 +520,7 @@ class ServerManager: NSObject {
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {
-            case .Success(let value):
+            case .Success( _):
                 completion()
             case .Failure(let error):
                 print("Get error when call ServerManager.addComment, error : \(error)")
@@ -531,7 +531,7 @@ class ServerManager: NSObject {
     
     
     //MARK: - Artist
-    class func getArtistCollection(userName name: String, completion:(artists: [AnyObject]) -> Void, failure:(error: NSError?) -> Void) {
+    class func getArtistCollection(userName name: String, completion:(artists: [Artist]) -> Void, failure:(error: NSError?) -> Void) {
         let api = Router.Artist(ArtistAPI.GetArtistCollection(name))
         
         Alamofire.request(api).responseJSON { (response) in
@@ -546,95 +546,94 @@ class ServerManager: NSObject {
                 var artistArray = [Artist]()
                 
                 responseArray.forEach({ (obj) in
-                    <#code#>
+                    let artist = Artist(obj: obj)
+                    artistArray.append(artist)
                 })
                 
-                completion(artists: responseArray)
+                completion(artists: artistArray)
             case .Failure(let error):
+                print("Get error when call ServerManager.getArtistCollection, error : \(error)")
                 failure(error: error)
             }
         }
     }
-//
-//    class func collectArtist(artistId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
-//        let api = Router.Artist(ArtistAPI.CollectArtist(id))
-//        
-//        Alamofire.request(api).responseJSON { (response) in
-//            switch response.result {
-//            case .Success(let value):
-//                //                print("collectArtist response: \(value)")
-//                completion()
-//            case .Failure(let error):
-//                failure(error: error)
-//            }
-//        }
-//    }
-//    
-//    
-//    //MARK: - Song
-//    class func collectTrack(songId id: String, playlistId listId:String, completion:() -> Void, failure:(error: NSError?) -> Void) {
-//        let api = Router.Song(SongAPI.CollectTrack(id, listId))
-//        
-//        Alamofire.request(api).responseJSON { (response) in
-//            switch response.result {
-//            case .Success(let value):
-//                //                print("collectSong response: \(value)")
-//                completion()
-//            case .Failure(let error):
-//                failure(error: error)
-//            }
-//        }
-//    }
-//    
-//    
-//    //MARK: - Like
-//    class func likeStory(storyId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
-//        let api = Router.Like(LikeAPI.LikeStory(id))
-//        
-//        Alamofire.request(api).responseJSON { (response) in
-//            switch response.result {
-//            case .Success(let value):
-//                //                print("likeStory response: \(value)")
-//                completion()
-//            case .Failure(let error):
-//                failure(error: error)
-//            }
-//        }
-//    }
-//    
-//    
-//    //MARK: - Image
-//    class func getUserImage(userName name: String, completion:(imageData: NSData) -> Void, failure:(error: NSError?) -> Void) {
-//        let api = Router.Image(ImageAPI.GetUserImage(name))
-//        
-//        Alamofire.request(api).response { (request, response, data, error) in
-//            if let imageData = data {
-//                //                print("getUserImage response: \(response)")
-//                completion(imageData: imageData)
-//            } else {
-//                failure(error: error)
-//            }
-//        }
-//    }
-//    
-//    class func uploadImage(imageData data: NSData, completion:() -> Void, failure:(error: NSError?) -> Void) {
-//        Alamofire.upload(.POST, "http://140.122.185.184:8080/user/uploadImage", multipartFormData: { (MultipartFormData) in
-//            MultipartFormData.appendBodyPart(data: data, name: "img",fileName: "kk.jpg" ,mimeType: "multipart/form-data")
-//            }, encodingCompletion: { encodingResult in
-//                switch encodingResult {
-//                case .Success(let upload, _, _):
+
+    class func collectArtist(artistId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.Artist(ArtistAPI.CollectArtist(id))
+        
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result {
+            case .Success( _):
+                completion()
+            case .Failure(let error):
+                print("Get error when call ServerManager.collectArtist, error : \(error)")
+                failure(error: error)
+            }
+        }
+    }
+    
+    
+    //MARK: - Song
+    class func collectTrack(songId id: String, playlistId listId:String, completion:() -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.Song(SongAPI.CollectTrack(id, listId))
+        
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result {
+            case .Success( _):
+                completion()
+            case .Failure(let error):
+                print("Get error when call ServerManager.collectTrack, error : \(error)")
+                failure(error: error)
+            }
+        }
+    }
+    
+    
+    //MARK: - Like
+    class func likeStory(storyId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.Like(LikeAPI.LikeStory(id))
+        
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result {
+            case .Success( _):
+                completion()
+            case .Failure(let error):
+                print("Get error when call ServerManager.likeStory, error : \(error)")
+                failure(error: error)
+            }
+        }
+    }
+    
+    
+    //MARK: - Image
+    class func getUserImage(userName name: String, completion:(imageData: NSData) -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.Image(ImageAPI.GetUserImage(name))
+        
+        Alamofire.request(api).response { (request, response, data, error) in
+            if let imageData = data {
+                completion(imageData: imageData)
+            } else {
+                print("Get error when call ServerManager.getUserImage, error : \(error)")
+                failure(error: error)
+            }
+        }
+    }
+    
+    class func uploadImage(imageData data: NSData, completion:() -> Void, failure:(error: NSError?) -> Void) {
+        Alamofire.upload(.POST, "http://140.122.185.184:8080/user/uploadImage", multipartFormData: { (MultipartFormData) in
+            MultipartFormData.appendBodyPart(data: data, name: "img",fileName: "kk.jpg" ,mimeType: "multipart/form-data")
+            }, encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .Success(let upload, _, _):
 //                    upload.responseJSON(completionHandler: { (response) in
-//                        
-//                        print(response.description)
 //                        completion()
 //                    })
-//                    upload.responseString(completionHandler: { (response) in
-//                        print(response.description)
-//                        completion()
-//                    })
-//                case .Failure(let encodingError):
-//                    print(encodingError)
-//                }
-//        })
-//    }
+                    upload.responseString(completionHandler: { (response) in
+                        completion()
+                    })
+                case .Failure(let encodingError):
+                    print("Get error when call ServerManager.uploadImage, error : \(encodingError)")
+                }
+        })
+    }
 }
