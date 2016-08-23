@@ -9,6 +9,11 @@
 import UIKit
 
 class PlaylistCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var playlistLabel: UILabel!
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,5 +26,15 @@ class PlaylistCollectionViewCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func configCell(playlist: Playlist) {
+        let imageURLString = playlist.songs![0].album?.imageURL
+        let imageURL = NSURL(string: imageURLString!)
+        let imageData = NSData(contentsOfURL: imageURL!)
+        let image = UIImage(data: imageData!)
+        
+        self.imageView.image = image
+        self.playlistLabel.text = playlist.playlistName
     }
 }

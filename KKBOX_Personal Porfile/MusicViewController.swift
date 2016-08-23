@@ -37,6 +37,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
 
         self.musicRatingCollectionView.registerNib(UINib(nibName: "MusicRatingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MusicRatingCollectionViewCell")
         self.collectedAlbumCollectionView.registerNib(UINib(nibName: "CollectedAlbumCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectedAlbumCollectionViewCell")
+        self.playlistCollectionView.registerNib(UINib(nibName: "PlaylistCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PlaylistCollectionViewCell")
         // Do any additional setup after loading the view.
     }
 
@@ -60,14 +61,13 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
 //                }, failure: { (error) in
 //                    print("getArtistCollection error : \(error) ")
 //            })
-//            ServerManager.getPlaylist(userName: userName!, completion: { (playlists) in
-//                self.playlists = playlists
-//                self.playlistCollectionView.reloadData()
-//                }, failure: { (error) in
-//                    print("getPlaylists error : \(error)")
-//            })
+            ServerManager.getPlaylist(userName: userName!, completion: { (playlists) in
+                self.playlists = playlists
+                self.playlistCollectionView.reloadData()
+                }, failure: { (error) in
+                    print("getPlaylists error : \(error)")
+            })
             ServerManager.getAlbumCollection(userName: userName!, completion: { (albums) in
-                print(albums)
                 self.albums = albums
                 self.collectedAlbumCollectionView.reloadData()
                 }, failure: { (error) in
@@ -89,6 +89,9 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         if collectionView == collectedAlbumCollectionView {
             count = self.albums.count
         }
+        if collectionView == playlistCollectionView {
+            count = self.playlists.count
+        }
         return count!
     }
     
@@ -98,6 +101,9 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
             size = CGSizeMake(134, 174)
         }
         if collectionView == collectedAlbumCollectionView {
+            size = CGSizeMake(134, 174)
+        }
+        if collectionView == playlistCollectionView {
             size = CGSizeMake(134, 174)
         }
         return size!
@@ -117,7 +123,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
             albumCell.configCell(album)
             cell = albumCell
         }
-        
+        if collectionView == playlistCollectionView {
+            let playlist = self.playlists[indexPath.item]
+            let playlistCell = self.playlistCollectionView.dequeueReusableCellWithReuseIdentifier("PlaylistCollectionViewCell", forIndexPath: indexPath) as! PlaylistCollectionViewCell
+            playlistCell.configCell(playlist)
+            cell = playlistCell
+        }
         return cell!
     }
 }
