@@ -12,6 +12,7 @@ class User: NSObject {
     
     private var _user_id: String!
     private var _name: String!
+    private var _imageURL: String!
     private var _description: String!
     private var _tags: String!
     private var _followers: [[String:String]]!
@@ -28,6 +29,12 @@ class User: NSObject {
             _name = ""
         }
         return _name
+    }
+    var imageURL: String {
+        if _imageURL == nil {
+            _imageURL = ""
+        }
+        return _imageURL
     }
     var descrip: String {
         if _description == nil {
@@ -59,10 +66,35 @@ class User: NSObject {
         }
     }
     
-    init(response: [String:String]) {
-        self._user_id = response["user_id"]
-        self._name = response["name"]
-        self._description = response["description"]
+    init(response: [String:AnyObject]) {
+        self._user_id = response["user_id"] as! String
+        self._name = response["name"] as! String
+        self._description = response["description"] as! String
+        self._imageURL = response["image"] as! String
+        
+        if let followersResponseArray = response["followers"] as? [AnyObject] {
+            var followersArray = [[String:String]]()
+            
+            followersResponseArray.forEach({ (follower) in
+                let name = follower["name"] as! String
+                let imageURL = follower["image"] as! String
+                let followerDictionary = ["name":name, "imageURL":imageURL] 
+                followersArray.append(followerDictionary)
+            })
+            self._followers = followersArray
+        }
+        
+        if let followingsResponseArray = response["followings"] as? [AnyObject] {
+            var followingsArray = [[String:String]]()
+            
+            followingsResponseArray.forEach({ (following) in
+                let name = following["name"] as! String
+                let imageURL = following["image"] as! String
+                let followingDictionary = ["name":name, "imageURL":imageURL]
+                followingsArray.append(followingDictionary)
+            })
+            self._followings = followingsArray
+        }
     }
     
     func setUserProperty(userId: String, name: String, description: String, followers: [[String:String]], followings: [[String:String]]) {

@@ -33,21 +33,22 @@ class Song: NSObject {
         return _artist
     }
     
-    init(obj: AnyObject) {
-        self._track_id = obj["track_id"] as! String
-        self._song_name = obj["name"] as! String
-
-        if let albumDictionary = obj["album"] as? [String:AnyObject] {
+    init(obj: AnyObject?) {
+        self._track_id = obj!["track_id"] as! String
+        self._song_name = obj!["name"] as! String
+        
+        if let albumDictionary = obj!["album"] as? [String:AnyObject] {
+        
             let album = Album(obj: albumDictionary)
             self._album = album
         }
-
-        if let artistDictionary = obj["artist"] as? [String:AnyObject] {
+        
+        if let artistDictionary = obj!["artist"] as? [String:AnyObject] {
             let artist = Artist(obj: artistDictionary)
             self._artist = artist
         }
     }
-
+    
     func setSongProperty(trackId: String, songName: String, album: Album?, artist: Artist?) {
         self._track_id = trackId
         self._song_name = songName

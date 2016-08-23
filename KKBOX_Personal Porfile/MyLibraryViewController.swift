@@ -15,15 +15,6 @@ class MyLibraryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ServerManager.login(userInfo: "kkbox:kkbox", completion: { 
-            ServerManager.getAlbumCollection(userName: "kkbox", completion: { (albums) in
-                print(albums[2].songs?.count)
-                }, failure: { (error) in
-                    
-            })
-            }) { (error) in
-                print(error)
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,9 +23,6 @@ class MyLibraryViewController: UIViewController {
     }
     
     @IBAction func profileGestureTapped(sender: AnyObject) {
-        
-//        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle:
-        
         profileVC = ProfileViewController.init(nibName: "ProfileViewController", bundle: nil)
         self.showViewController(profileVC, sender: self)
     }
