@@ -43,7 +43,7 @@ class Artist: NSObject {
     init(obj: AnyObject) {
         self._artist_id = obj["artist_id"] as! String
         self._artist_name = obj["name"] as! String
-        if let artist_images = obj["artist"] as? [AnyObject] {
+        if let artist_images = obj["images"] as? [AnyObject] {
             if let images = artist_images[ARTIST_IMAGE_URL_INDEX] as? [String:AnyObject] {
                 self._image_url = images["url"] as! String
             }

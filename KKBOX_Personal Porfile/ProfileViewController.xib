@@ -25,14 +25,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="1702"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1730"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQR-CM-YuJ">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="1702"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1730"/>
                     <subviews>
                         <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-tm-fCP">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="1704"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1731"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cUw-Oh-pGG">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="267"/>
@@ -152,7 +152,7 @@
                                     </connections>
                                 </segmentedControl>
                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-X8-Rjq">
-                                    <rect key="frame" x="0.0" y="297" width="320" height="1407"/>
+                                    <rect key="frame" x="0.0" y="297" width="320" height="1434"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                             </subviews>
@@ -180,7 +180,7 @@
                 <constraint firstItem="WQR-CM-YuJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z6Y-Ig-vqe"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="566" y="15"/>
+            <point key="canvasLocation" x="566" y="29"/>
         </view>
     </objects>
     <resources>

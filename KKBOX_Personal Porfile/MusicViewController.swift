@@ -18,6 +18,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     var userName: String?
     var songs = [Song]()
+    var personalSongs = [Song]()
     var artists = [Artist]()
     var playlists = [Playlist]()
     var albums = [Album]()
@@ -38,7 +39,8 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.musicRatingCollectionView.registerNib(UINib(nibName: "MusicRatingCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MusicRatingCollectionViewCell")
         self.collectedAlbumCollectionView.registerNib(UINib(nibName: "CollectedAlbumCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectedAlbumCollectionViewCell")
         self.playlistCollectionView.registerNib(UINib(nibName: "PlaylistCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PlaylistCollectionViewCell")
-        // Do any additional setup after loading the view.
+        self.recentlyListenCollectionView.registerNib(UINib(nibName: "RecentlyListenCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RecentlyListenCollectionViewCell")
+        self.followingArtistCollectionView.registerNib(UINib(nibName: "FollowingArtistCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FollowingArtistCollectionViewCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,12 +57,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
                 }, failure: { (error) in
                     print("getTrackByTagName error : \(error)")
             })
-//            ServerManager.getArtistCollection(userName: userName!, completion: { (artists) in
-//                self.artists = artists
-//                self.followingArtistCollectionView.reloadData()
-//                }, failure: { (error) in
-//                    print("getArtistCollection error : \(error) ")
-//            })
+            ServerManager.getArtistCollection(userName: userName!, completion: { (artists) in
+                self.artists = artists
+                self.followingArtistCollectionView.reloadData()
+                }, failure: { (error) in
+                    print("getArtistCollection error : \(error) ")
+            })
             ServerManager.getPlaylist(userName: userName!, completion: { (playlists) in
                 self.playlists = playlists
                 self.playlistCollectionView.reloadData()
@@ -72,6 +74,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
                 self.collectedAlbumCollectionView.reloadData()
                 }, failure: { (error) in
                     print("getAlbumCollection error : \(error)")
+            })
+            ServerManager.getTrackByTagName(tagName: "個人排行榜", completion: { (songs) in
+                self.personalSongs = songs
+                self.recentlyListenCollectionView.reloadData()
+                }, failure: { (error) in
+                    print("getTrackByTagName error : \(error)")
             })
         }
     }
@@ -92,6 +100,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         if collectionView == playlistCollectionView {
             count = self.playlists.count
         }
+        if collectionView == recentlyListenCollectionView {
+            count = self.personalSongs.count
+        }
+        if collectionView == followingArtistCollectionView {
+            count = self.artists.count
+        }
         return count!
     }
     
@@ -105,6 +119,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
         if collectionView == playlistCollectionView {
             size = CGSizeMake(134, 174)
+        }
+        if collectionView == recentlyListenCollectionView {
+            size = CGSizeMake(134, 174)
+        }
+        if collectionView == followingArtistCollectionView {
+            size = CGSizeMake(86, 117)
         }
         return size!
     }
@@ -128,6 +148,18 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
             let playlistCell = self.playlistCollectionView.dequeueReusableCellWithReuseIdentifier("PlaylistCollectionViewCell", forIndexPath: indexPath) as! PlaylistCollectionViewCell
             playlistCell.configCell(playlist)
             cell = playlistCell
+        }
+        if collectionView == recentlyListenCollectionView {
+            let song = self.personalSongs[indexPath.item]
+            let songCell = self.recentlyListenCollectionView.dequeueReusableCellWithReuseIdentifier("RecentlyListenCollectionViewCell", forIndexPath: indexPath) as! RecentlyListenCollectionViewCell
+            songCell.configCell(song)
+            cell = songCell
+        }
+        if collectionView == followingArtistCollectionView {
+            let artist = self.artists[indexPath.item]
+            let artistCell = self.followingArtistCollectionView.dequeueReusableCellWithReuseIdentifier("FollowingArtistCollectionViewCell", forIndexPath: indexPath) as! FollowingArtistCollectionViewCell
+            artistCell.configCell(artist)
+            cell = artistCell
         }
         return cell!
     }
