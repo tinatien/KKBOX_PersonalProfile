@@ -19,6 +19,16 @@
 		0743BC501D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC4E1D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib */; };
 		0743BC531D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC511D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift */; };
 		0743BC541D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC521D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.xib */; };
+		0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC551D6D6C8D00936FF9 /* FollowerViewController.swift */; };
+		0743BC581D6D6C8D00936FF9 /* FollowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC561D6D6C8D00936FF9 /* FollowerViewController.xib */; };
+		0743BC5B1D6D715200936FF9 /* FollowingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC591D6D715200936FF9 /* FollowingViewController.swift */; };
+		0743BC5C1D6D715200936FF9 /* FollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC5A1D6D715200936FF9 /* FollowingViewController.xib */; };
+		0743BC5F1D6D847C00936FF9 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC5D1D6D847C00936FF9 /* FollowerTableViewCell.swift */; };
+		0743BC601D6D847C00936FF9 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC5E1D6D847C00936FF9 /* FollowerTableViewCell.xib */; };
+		0743BC631D6D928300936FF9 /* FollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC611D6D928300936FF9 /* FollowingTableViewCell.swift */; };
+		0743BC641D6D928300936FF9 /* FollowingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC621D6D928300936FF9 /* FollowingTableViewCell.xib */; };
+		0743BC671D6DA28D00936FF9 /* MusicRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC651D6DA28D00936FF9 /* MusicRatingViewController.swift */; };
+		0743BC681D6DA28D00936FF9 /* MusicRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC661D6DA28D00936FF9 /* MusicRatingViewController.xib */; };
 		07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922031D65652200D6BE94 /* AppDelegate.swift */; };
 		07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */; };
 		07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220D1D65652200D6BE94 /* Assets.xcassets */; };
@@ -85,6 +95,16 @@
 		0743BC4E1D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentlyListenCollectionViewCell.xib; sourceTree = "<group>"; };
 		0743BC511D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectedAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		0743BC521D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectedAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		0743BC551D6D6C8D00936FF9 /* FollowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerViewController.swift; sourceTree = "<group>"; };
+		0743BC561D6D6C8D00936FF9 /* FollowerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowerViewController.xib; sourceTree = "<group>"; };
+		0743BC591D6D715200936FF9 /* FollowingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingViewController.swift; sourceTree = "<group>"; };
+		0743BC5A1D6D715200936FF9 /* FollowingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingViewController.xib; sourceTree = "<group>"; };
+		0743BC5D1D6D847C00936FF9 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		0743BC5E1D6D847C00936FF9 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
+		0743BC611D6D928300936FF9 /* FollowingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingTableViewCell.swift; sourceTree = "<group>"; };
+		0743BC621D6D928300936FF9 /* FollowingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingTableViewCell.xib; sourceTree = "<group>"; };
+		0743BC651D6DA28D00936FF9 /* MusicRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRatingViewController.swift; sourceTree = "<group>"; };
+		0743BC661D6DA28D00936FF9 /* MusicRatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicRatingViewController.xib; sourceTree = "<group>"; };
 		07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKBOX_Personal Porfile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F922031D65652200D6BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KKBOX_Personal_Porfile.xcdatamodel; sourceTree = "<group>"; };
@@ -232,7 +252,9 @@
 				07F9224E1D65939900D6BE94 /* ProfileViewController.xib */,
 				07F922611D6AB51E00D6BE94 /* MusicViewController.xib */,
 				07F9225D1D6AB50300D6BE94 /* StoryViewController.xib */,
-				07F922561D6AA8F100D6BE94 /* Material */,
+				0743BC561D6D6C8D00936FF9 /* FollowerViewController.xib */,
+				0743BC5A1D6D715200936FF9 /* FollowingViewController.xib */,
+				0743BC661D6DA28D00936FF9 /* MusicRatingViewController.xib */,
 				07F922551D65B3A200D6BE94 /* Cells */,
 				07F922501D659A5B00D6BE94 /* TabBarView */,
 			);
@@ -245,6 +267,10 @@
 				07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */,
 				07F922601D6AB51E00D6BE94 /* MusicViewController.swift */,
 				07F9225C1D6AB50300D6BE94 /* StoryViewController.swift */,
+				0743BC551D6D6C8D00936FF9 /* FollowerViewController.swift */,
+				0743BC591D6D715200936FF9 /* FollowingViewController.swift */,
+				0743BC651D6DA28D00936FF9 /* MusicRatingViewController.swift */,
+				07F922561D6AA8F100D6BE94 /* Material */,
 				07F922591D6AAA0600D6BE94 /* TabBarController */,
 			);
 			name = Controller;
@@ -275,6 +301,10 @@
 				0743BC4A1D6C397B00936FF9 /* PlaylistCollectionViewCell.xib */,
 				0743BC4D1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift */,
 				0743BC4E1D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib */,
+				0743BC5D1D6D847C00936FF9 /* FollowerTableViewCell.swift */,
+				0743BC5E1D6D847C00936FF9 /* FollowerTableViewCell.xib */,
+				0743BC611D6D928300936FF9 /* FollowingTableViewCell.swift */,
+				0743BC621D6D928300936FF9 /* FollowingTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -435,14 +465,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0743BC601D6D847C00936FF9 /* FollowerTableViewCell.xib in Resources */,
 				07F9223F1D656CCC00D6BE94 /* ExploreViewController.xib in Resources */,
 				0743BC501D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib in Resources */,
+				0743BC641D6D928300936FF9 /* FollowingTableViewCell.xib in Resources */,
+				0743BC5C1D6D715200936FF9 /* FollowingViewController.xib in Resources */,
 				07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */,
+				0743BC681D6DA28D00936FF9 /* MusicRatingViewController.xib in Resources */,
 				07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */,
 				0743BC481D6C396700936FF9 /* FollowingArtistCollectionViewCell.xib in Resources */,
 				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
 				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
 				07F9226C1D6AC75800D6BE94 /* Podfile in Resources */,
+				0743BC581D6D6C8D00936FF9 /* FollowerViewController.xib in Resources */,
 				0743BC4C1D6C397B00936FF9 /* PlaylistCollectionViewCell.xib in Resources */,
 				07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */,
 				07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */,
@@ -523,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0743BC631D6D928300936FF9 /* FollowingTableViewCell.swift in Sources */,
 				07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */,
 				07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */,
 				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
@@ -533,6 +569,8 @@
 				0743BC471D6C396700936FF9 /* FollowingArtistCollectionViewCell.swift in Sources */,
 				07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */,
 				07F922581D6AA91300D6BE94 /* ProfileSegmentedControl.swift in Sources */,
+				0743BC5B1D6D715200936FF9 /* FollowingViewController.swift in Sources */,
+				0743BC5F1D6D847C00936FF9 /* FollowerTableViewCell.swift in Sources */,
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				0743BC4F1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift in Sources */,
 				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
@@ -543,6 +581,7 @@
 				07F922681D6AB93100D6BE94 /* Router.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
 				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
+				0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */,
 				0743BC3C1D6C16C600936FF9 /* MusicStyleButton.swift in Sources */,
 				0743BC3E1D6C24F200936FF9 /* BackButton.swift in Sources */,
 				0743BC431D6C393200936FF9 /* MusicRatingCollectionViewCell.swift in Sources */,
@@ -550,6 +589,7 @@
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
 				07F922761D6ACF9500D6BE94 /* Story.swift in Sources */,
 				07F922781D6ACFE400D6BE94 /* User.swift in Sources */,
+				0743BC671D6DA28D00936FF9 /* MusicRatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

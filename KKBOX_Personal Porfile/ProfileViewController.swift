@@ -26,11 +26,14 @@ class ProfileViewController: UIViewController {
     
     var profileUserName: String?
     var followed: Bool!
+    var followersArray = [[String:String]]()
+    var followingsArray = [[String:String]]()
     
     var currentViewController: UIViewController?
     lazy var musicVC: MusicViewController = MusicViewController(nibName: "MusicViewController", bundle: nil)
     lazy var storyVC: StoryViewController = StoryViewController(nibName: "StoryViewController", bundle: nil)
-    
+    lazy var followerVC: FollowerViewController = FollowerViewController(nibName: "FollowerViewController", bundle: nil)
+    lazy var followingVC: FollowingViewController = FollowingViewController(nibName: "FollowingViewController", bundle: nil)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -100,12 +103,14 @@ class ProfileViewController: UIViewController {
                 if user.followings.count == 0 {
                     self.followingsNumberLabel.text = "0"
                 } else {
+                    self.followingsArray = user.followings
                     self.followingsNumberLabel.text = "\(user.followings.count)"
                 }
                 
                 if user.followers.count == 0 {
                     self.followingsNumberLabel.text = "0"
                 } else {
+                    self.followersArray = user.followers
                     self.fansNumberLabel.text = "\(user.followers.count)"
                 }
                 
@@ -146,6 +151,16 @@ class ProfileViewController: UIViewController {
     @IBAction func personalMusicRatingButtonTapped(sender: AnyObject) {
         
         
+    }
+    
+    @IBAction func followerGestureTapped(sender: AnyObject) {
+        followerVC = FollowerViewController.init(followersArray: self.followersArray)
+        self.navigationController?.pushViewController(followerVC, animated: true)
+    }
+    
+    @IBAction func followingGestureTapped(sender: AnyObject) {
+        followingVC = FollowingViewController.init(followingsArray: self.followingsArray)
+        self.navigationController?.pushViewController(followingVC, animated: true)
     }
     
     @IBAction func followingButtonTapped(sender: AnyObject) {

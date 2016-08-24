@@ -104,6 +104,9 @@
                                                 <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="16"/>
                                                 <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="4e4-1r-tAa" appends="YES" id="O28-94-8f2"/>
+                                                </connections>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="粉絲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-OM-TNE">
                                                 <rect key="frame" x="117" y="189" width="24" height="15"/>
@@ -123,6 +126,9 @@
                                                 <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="16"/>
                                                 <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="n8E-gF-zMN" appends="YES" id="H14-3v-cmT"/>
+                                                </connections>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P5-MM-97M">
                                                 <rect key="frame" x="147" y="95" width="88" height="22"/>
@@ -182,6 +188,16 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="566" y="29"/>
         </view>
+        <tapGestureRecognizer id="4e4-1r-tAa" userLabel="FollowerGesture">
+            <connections>
+                <action selector="followerGestureTapped:" destination="-1" id="iDx-cy-iXu"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="n8E-gF-zMN" userLabel="FollowingGesture">
+            <connections>
+                <action selector="followingGestureTapped:" destination="-1" id="JDc-nE-pud"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="btn_play_topsong" width="86" height="14"/>

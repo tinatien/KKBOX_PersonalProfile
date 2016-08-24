@@ -85,9 +85,6 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     
-
-    //MARK: - Action
-    
     //MARK: - CollectionView
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var count: Int?
