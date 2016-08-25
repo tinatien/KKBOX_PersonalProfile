@@ -73,6 +73,8 @@
 		07F922761D6ACF9500D6BE94 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922751D6ACF9500D6BE94 /* Story.swift */; };
 		07F922781D6ACFE400D6BE94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922771D6ACFE400D6BE94 /* User.swift */; };
 		8707D1402E623627481ED8FE /* Pods_KKBOX_Personal_Porfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */; };
+		E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E622A1D6F337600DECAE2 /* OriginalPlayHeaderView.swift */; };
+		E51E622D1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51E622C1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,8 @@
 		07F922771D6ACFE400D6BE94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKBOX_Personal_Porfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		718C820CD7E3275C5B577981 /* Pods-KKBOX_Personal Porfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.release.xcconfig"; sourceTree = "<group>"; };
+		E51E622A1D6F337600DECAE2 /* OriginalPlayHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalPlayHeaderView.swift; sourceTree = "<group>"; };
+		E51E622C1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OriginalPlayHeaderView.xib; sourceTree = "<group>"; };
 		F9DF742A1673CC34503082DA /* Pods-KKBOX_Personal Porfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +220,8 @@
 				0743BCB11D6EE18E00936FF9 /* PlayHeaderView.xib */,
 				0743BCB41D6EE40300936FF9 /* PlayHeaderView.swift */,
 				0743BCBA1D6EE60800936FF9 /* BackgroundImageView.swift */,
+				E51E622A1D6F337600DECAE2 /* OriginalPlayHeaderView.swift */,
+				E51E622C1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib */,
 			);
 			name = Material;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				07F921FE1D65652200D6BE94 /* Resources */,
 				F5D1B7055468F51BC7A89054 /* [CP] Embed Pods Frameworks */,
 				9D79C43C00BCE0808F0BDBD7 /* [CP] Copy Pods Resources */,
+				B66656424D656863E2E9251F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,6 +534,7 @@
 				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
 				07F9226C1D6AC75800D6BE94 /* Podfile in Resources */,
 				0743BC581D6D6C8D00936FF9 /* FollowerViewController.xib in Resources */,
+				E51E622D1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib in Resources */,
 				0743BC711D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib in Resources */,
 				0743BC4C1D6C397B00936FF9 /* PlaylistCollectionViewCell.xib in Resources */,
 				07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */,
@@ -569,6 +577,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66656424D656863E2E9251F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4A47E9546FFDA02280D2F0E /* [CP] Check Pods Manifest.lock */ = {
@@ -626,6 +649,7 @@
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				0743BC4F1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift in Sources */,
 				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
+				E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */,
 				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
 				0743BC4B1D6C397B00936FF9 /* PlaylistCollectionViewCell.swift in Sources */,
 				0743BC531D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift in Sources */,

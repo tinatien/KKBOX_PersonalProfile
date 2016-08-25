@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -13,33 +13,39 @@
             <subviews>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcC-rj-d2U">
                     <rect key="frame" x="0.0" y="0.0" width="153" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_play" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-yK-AF2">
+                            <rect key="frame" x="64" y="13" width="52" height="18"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_play" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-yK-AF2">
-                    <rect key="frame" x="65" y="13" width="52" height="18"/>
-                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0X-a2-MjK">
                     <rect key="frame" x="154" y="0.0" width="1" height="44"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1BK-6k-VZq">
                     <rect key="frame" x="154" y="0.0" width="60" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_add" translatesAutoresizingMaskIntoConstraints="NO" id="ou1-FE-0eJ">
+                            <rect key="frame" x="21" y="13" width="18" height="18"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_add" translatesAutoresizingMaskIntoConstraints="NO" id="ou1-FE-0eJ">
-                    <rect key="frame" x="175" y="13" width="18" height="18"/>
-                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YUS-8x-Jlo">
                     <rect key="frame" x="215" y="0.0" width="1" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ff-lc-pVe">
                     <rect key="frame" x="215" y="0.0" width="105" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_share" translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-Wd-hlT">
+                            <rect key="frame" x="29" y="13" width="18" height="18"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_share" translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-Wd-hlT">
-                    <rect key="frame" x="238" y="13" width="18" height="18"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -47,7 +53,7 @@
                 <constraint firstItem="kcC-rj-d2U" firstAttribute="centerY" secondItem="1BK-6k-VZq" secondAttribute="centerY" id="xIW-lv-0Zf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="488" y="337"/>
+            <point key="canvasLocation" x="310" y="284"/>
         </view>
     </objects>
     <resources>

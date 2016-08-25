@@ -14,6 +14,8 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var totalSongsLabel: UILabel!
     
     var songsArray: [Song]!
+    let originalHeaderView = OriginalPlayHeaderView.instanceFromNib()
+    let headerView = PlayHeaderView.instanceFromNib()
     
     convenience init(songsArray: [Song]) {
         self.init(nibName: "MusicRatingV2ViewController", bundle: nil)
@@ -84,8 +86,8 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = PlayHeaderView.instanceFromNib()
-        return headerView
+
+        return originalHeaderView
         
     }
     
@@ -114,6 +116,16 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         cell = songCell
         
         return cell!
+    }
+    
+    
+    //MARK: - ScrollView
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let view = tableView.headerViewForSection(0)
+        
+        if view?.frame.origin.y == 0 {
+            UIView.transitionFromView(originalHeaderView, toView: headerView, duration: 0.5, options: .CurveEaseIn, completion: nil)
+        }
     }
     
 }
