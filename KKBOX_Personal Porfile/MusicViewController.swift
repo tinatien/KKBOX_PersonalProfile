@@ -23,6 +23,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     var playlists = [Playlist]()
     var albums = [Album]()
     
+    lazy var musicRatingVC: MusicRatingViewController = MusicRatingViewController(nibName: "MusicRatingViewController", bundle: nil)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -83,6 +84,14 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
             })
         }
     }
+    
+    
+    //MARK: - Action
+    @IBAction func musicRatingMoreButtonTapped(sender: AnyObject) {
+        let musicRatingChildVC = MusicRatingViewController.init(songsArray: self.songs)
+        self.navigationController?.pushViewController(musicRatingChildVC, animated: true)
+    }
+    
     
     
     //MARK: - CollectionView

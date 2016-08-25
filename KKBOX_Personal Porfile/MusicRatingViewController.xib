@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicRatingViewController" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="TRl-Yi-rS1" id="b0w-Ow-JAJ"/>
+                <outlet property="totalSongsLabel" destination="DI0-ET-Wrh" id="1vG-Q2-lls"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,45 +17,72 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPP-w2-muy">
-                    <rect key="frame" x="0.0" y="0.0" width="153" height="44"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLy-42-8tI">
-                            <rect key="frame" x="41" y="8" width="83" height="28"/>
-                        </imageView>
-                    </subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPP-w2-muy">
+                    <rect key="frame" x="0.0" y="64" width="153" height="44"/>
                     <color key="backgroundColor" red="0.0039215686274509803" green="0.68235294117647061" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="153" id="5Vq-g7-ZPF"/>
+                        <constraint firstAttribute="height" constant="44" id="xvh-iC-sjT"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOI-KY-7Ld">
-                    <rect key="frame" x="154" y="0.0" width="60" height="44"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-5D-AMd">
-                            <rect key="frame" x="16" y="8" width="28" height="28"/>
-                        </imageView>
-                    </subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOI-KY-7Ld">
+                    <rect key="frame" x="154" y="64" width="60" height="44"/>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNc-uS-r4F">
                     <rect key="frame" x="215" y="0.0" width="1" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-Ar-rHd">
-                    <rect key="frame" x="215" y="0.0" width="105" height="44"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6PI-ql-Rku">
-                            <rect key="frame" x="16" y="8" width="28" height="28"/>
-                        </imageView>
-                    </subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rj9-Ar-rHd">
+                    <rect key="frame" x="215" y="64" width="105" height="44"/>
                     <color key="backgroundColor" red="0.0039215686269999999" green="0.68235294120000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0N2-5j-zhQ">
                     <rect key="frame" x="154" y="0.0" width="1" height="44"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-Yi-rS1">
+                    <rect key="frame" x="0.0" y="108" width="320" height="411"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DI0-ET-Wrh">
+                        <rect key="frame" x="0.0" y="367" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8zD-oG-DJS"/>
+                        <outlet property="delegate" destination="-1" id="9uh-hz-uWa"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_play" translatesAutoresizingMaskIntoConstraints="NO" id="tLy-42-8tI">
+                    <rect key="frame" x="65" y="77" width="52" height="18"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_share" translatesAutoresizingMaskIntoConstraints="NO" id="6PI-ql-Rku">
+                    <rect key="frame" x="238" y="77" width="18" height="18"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicrating_add" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-5D-AMd">
+                    <rect key="frame" x="175" y="77" width="18" height="18"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.8862745098" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="RPP-w2-muy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="5qR-g0-jEz"/>
+                <constraint firstItem="TRl-Yi-rS1" firstAttribute="top" secondItem="RPP-w2-muy" secondAttribute="bottom" id="FJU-Fz-fSX"/>
+                <constraint firstItem="RPP-w2-muy" firstAttribute="centerY" secondItem="rj9-Ar-rHd" secondAttribute="centerY" id="JGG-OI-Fbt"/>
+                <constraint firstItem="RPP-w2-muy" firstAttribute="centerY" secondItem="KOI-KY-7Ld" secondAttribute="centerY" id="e37-Z9-Fp6"/>
+                <constraint firstItem="RPP-w2-muy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jWF-ss-kFd"/>
+                <constraint firstAttribute="bottom" secondItem="TRl-Yi-rS1" secondAttribute="bottom" constant="49" id="xPo-5g-dGh"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="489" y="430"/>
         </view>
     </objects>
+    <resources>
+        <image name="musicrating_add" width="18" height="18"/>
+        <image name="musicrating_play" width="53" height="18"/>
+        <image name="musicrating_share" width="18" height="18"/>
+    </resources>
 </document>
