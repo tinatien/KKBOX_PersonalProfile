@@ -18,6 +18,7 @@ class MyView : UIView {
         UIBezierPath(rect: self.bounds).fill()
         let image = [#Image(imageLiteral: "joe.jpg")#]
         image.drawInRect(self.bounds)
+        
     }
 }
 

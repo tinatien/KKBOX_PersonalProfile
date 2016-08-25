@@ -24,6 +24,8 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     var albums = [Album]()
     
     lazy var musicRatingVC: MusicRatingViewController = MusicRatingViewController(nibName: "MusicRatingViewController", bundle: nil)
+    lazy var musicRatingV2VC: MusicRatingV2ViewController = MusicRatingV2ViewController(nibName: "MusicRatingV2ViewController", bundle: nil)
+
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -88,8 +90,10 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     //MARK: - Action
     @IBAction func musicRatingMoreButtonTapped(sender: AnyObject) {
-        let musicRatingChildVC = MusicRatingViewController.init(songsArray: self.songs)
-        self.navigationController?.pushViewController(musicRatingChildVC, animated: true)
+//        let musicRatingChildVC = MusicRatingViewController.init(songsArray: self.songs)
+//        self.navigationController?.pushViewController(musicRatingChildVC, animated: true)
+        let musicRatingV2ChildVC = MusicRatingV2ViewController.init(songsArray: self.songs)
+        self.navigationController?.pushViewController(musicRatingV2ChildVC, animated: true)
     }
     
     
