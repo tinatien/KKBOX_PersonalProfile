@@ -13,15 +13,26 @@ class BackgroundImageView: UIView {
     override func drawRect(rect: CGRect) {
         super.drawRect(rect)
         
-        let image = UIImage(named: "Profile")
-        let imageView = UIImageView(image: image)
-        imageView.frame = CGRectMake(0, 0, 320, 400)
+//        let image = UIImage(named: "Profile")
+//        let imageView = UIImageView(image: image)
+//        imageView.frame = CGRectMake(0, 0, 320, 400)
+//        
+//        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
+//        visualEffectView.frame = imageView.bounds
+//        
+//        imageView.addSubview(visualEffectView)
+//        self.addSubview(imageView)
+    }
+    
+    func addImageView(image: UIImage) {
+        let backgroundImageView = UIImageView(image: image)
+        backgroundImageView.frame = CGRectMake(0, 0, 320, 400)
         
         let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
-        visualEffectView.frame = imageView.bounds
+        visualEffectView.frame = backgroundImageView.bounds
         
-        imageView.addSubview(visualEffectView)
-        self.addSubview(imageView)
+        backgroundImageView.addSubview(visualEffectView)
+        self.addSubview(backgroundImageView)
     }
 }
 

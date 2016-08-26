@@ -34,22 +34,37 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        
+        addTableheaderViewAndBackgroundView()
         tableView.registerNib(UINib(nibName: "MusicRatingTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicRatingTableViewCell")
     }
     
-    func initUI() {
-        self.title = "聽歌排行榜"
-        self.totalSongsLabel.text = "\(songsArray.count) Songs"
-        
+    func addTableheaderViewAndBackgroundView() {
         let headerView = UIView(frame: CGRectMake(0, 0, 320,160))
         headerView.backgroundColor = UIColor.clearColor()
+        let iconImage = UIImage(named: "style_icon_topsong")
+        let iconImageView = UIImageView(image: iconImage!)
+        iconImageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 80, 86)
+        headerView.addSubview(iconImageView)
+        
+        let song = songsArray[0]
+        let imageURLString = song.album?.imageURL
+        let imageURL = NSURL(string: imageURLString!)
+        let imageData = NSData(contentsOfURL: imageURL!)
+        let image = UIImage(data: imageData!)
         
         let backgroundImageView = BackgroundImageView(frame: headerView.bounds)
+        backgroundImageView.addImageView(image!)
+        
         self.tableView.backgroundView = UIView(frame: CGRectMake(0, 0, 320, 160))
         self.tableView.backgroundView?.backgroundColor = UIColor(red: 224/255, green: 226/255, blue: 230/255, alpha: 1)
         self.tableView.backgroundView?.addSubview(backgroundImageView)
         self.tableView.tableHeaderView = headerView
+    }
+    
+    
+    func initUI() {
+        self.title = "聽歌排行榜"
+        self.totalSongsLabel.text = "\(songsArray.count) Songs"
         
         let backButton = BackButton()
         backButton.InitUI()
@@ -58,7 +73,6 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         let leftBarButtonItem = UIBarButtonItem()
         leftBarButtonItem.customView = backButton
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
-        
     }
     
     func backButtonTapped(sender: UIButton) {
@@ -104,5 +118,5 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         cell = songCell
         
         return cell!
-    }    
+    }
 }

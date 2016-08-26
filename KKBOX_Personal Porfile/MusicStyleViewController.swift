@@ -34,20 +34,48 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
-        
+        addTableheaderViewAndBackgroundView(0)
         tableView.registerNib(UINib(nibName: "MusicRatingTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicRatingTableViewCell")
     }
     
-    func initUI() {
+    func addTableheaderViewAndBackgroundView(numberOfIndex: Int) {
         let headerView = UIView(frame: CGRectMake(0, 0, 320,160))
         headerView.backgroundColor = UIColor.clearColor()
+        if numberOfIndex == 0 {
+            let image = UIImage(named: "style_icon_jazz")
+            let imageView = UIImageView(image: image!)
+            imageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 60, 60)
+            headerView.addSubview(imageView)
+        } else if numberOfIndex == 1 {
+                let image = UIImage(named: "style_icon_country")
+                let imageView = UIImageView(image: image!)
+                imageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 60, 60)
+                headerView.addSubview(imageView)
+        } else if numberOfIndex == 2 {
+                let image = UIImage(named: "style_icon_rock")
+                let imageView = UIImageView(image: image!)
+                imageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 60, 60)
+                headerView.addSubview(imageView)
+        }
+        
+        
+        let song = songsArray[0]
+        let imageURLString = song.album?.imageURL
+        let imageURL = NSURL(string: imageURLString!)
+        let imageData = NSData(contentsOfURL: imageURL!)
+        let image = UIImage(data: imageData!)
         
         let backgroundImageView = BackgroundImageView(frame: headerView.bounds)
+        backgroundImageView.addImageView(image!)
+        
+        
         self.tableView.backgroundView = UIView(frame: CGRectMake(0, 0, 320, 160))
         self.tableView.backgroundView?.backgroundColor = UIColor(red: 224/255, green: 226/255, blue: 230/255, alpha: 1)
         self.tableView.backgroundView?.addSubview(backgroundImageView)
         self.tableView.tableHeaderView = headerView
-        
+    }
+    
+    func initUI() {
         let backButton = BackButton()
         backButton.InitUI()
         backButton.addTarget(self, action: #selector(backButtonTapped), forControlEvents: .TouchUpInside)
@@ -105,6 +133,7 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         case 0:
             ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
                 self.songsArray = songs
+                self.addTableheaderViewAndBackgroundView(0)
                 self.tableView.reloadData()
                 }, failure: { (error) in
                     print("Tab0 getTrackByTagName error : \(error)")
@@ -112,6 +141,7 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         case 1:
             ServerManager.getTrackByTagName(tagName: "鄉村", completion: { (songs) in
                 self.songsArray = songs
+                self.addTableheaderViewAndBackgroundView(1)
                 self.tableView.reloadData()
                 }, failure: { (error) in
                     print("Tab1 getTrackByTagName error: \(error)")
@@ -119,6 +149,7 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         case 2:
             ServerManager.getTrackByTagName(tagName: "流行", completion: { (songs) in
                 self.songsArray = songs
+                self.addTableheaderViewAndBackgroundView(2)
                 self.tableView.reloadData()
                 }, failure: { (error) in
                     print("Tab2 getTrackByTagName error :\(error)")
