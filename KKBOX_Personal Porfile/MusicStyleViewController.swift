@@ -1,0 +1,166 @@
+//
+//  MusicStyleViewController.swift
+//  KKBOX_Personal Porfile
+//
+//  Created by Chun Tai on 2016/8/26.
+//  Copyright © 2016年 Chun Tai. All rights reserved.
+//
+
+import UIKit
+
+class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var musicStyleSegmentedControl: ProfileSegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var totalSongsLabel: UILabel!
+    
+    let headerView = PlayHeaderView.instanceFromNib()
+    var songsArray: [Song]!
+    
+    
+    convenience init(songsArray: [Song]) {
+        self.init(nibName: "MusicStyleViewController", bundle: nil)
+        self.songsArray = songsArray
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initUI()
+        
+        tableView.registerNib(UINib(nibName: "MusicRatingTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicRatingTableViewCell")
+    }
+    
+    func initUI() {
+        let headerView = UIView(frame: CGRectMake(0, 0, 320,160))
+        headerView.backgroundColor = UIColor.clearColor()
+        
+        let backgroundImageView = BackgroundImageView(frame: headerView.bounds)
+        self.tableView.backgroundView = UIView(frame: CGRectMake(0, 0, 320, 160))
+        self.tableView.backgroundView?.backgroundColor = UIColor(red: 224/255, green: 226/255, blue: 230/255, alpha: 1)
+        self.tableView.backgroundView?.addSubview(backgroundImageView)
+        self.tableView.tableHeaderView = headerView
+        
+        let backButton = BackButton()
+        backButton.InitUI()
+        backButton.addTarget(self, action: #selector(backButtonTapped), forControlEvents: .TouchUpInside)
+        
+        let leftBarButtonItem = UIBarButtonItem()
+        leftBarButtonItem.customView = backButton
+        self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        
+        self.title = "喜愛曲風"
+        self.totalSongsLabel.text = "\(songsArray.count) Songs"
+        musicStyleSegmentedControl.initUI()
+    }
+    
+    func backButtonTapped(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
+    
+    
+    //MARK: - HTTP Request
+    func getMusicStyleSongs(numberOfTab: Int) {
+        switch numberOfTab {
+        case 0:
+            ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab0 getTrackByTagName error : \(error)")
+            })
+        case 1:
+            ServerManager.getTrackByTagName(tagName: "鄉村", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab1 getTrackByTagName error: \(error)")
+            })
+        case 2:
+            ServerManager.getTrackByTagName(tagName: "搖滾", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab2 getTrackByTagName error :\(error)")
+            })
+        default:
+            break
+        }
+    }
+    
+    
+    
+    //MARK: - Action
+    @IBAction func segmentedControlTapped(sender: AnyObject) {
+        print(sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex {
+        case 0:
+            ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab0 getTrackByTagName error : \(error)")
+            })
+        case 1:
+            ServerManager.getTrackByTagName(tagName: "鄉村", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab1 getTrackByTagName error: \(error)")
+            })
+        case 2:
+            ServerManager.getTrackByTagName(tagName: "流行", completion: { (songs) in
+                self.songsArray = songs
+                self.tableView.reloadData()
+                }, failure: { (error) in
+                    print("Tab2 getTrackByTagName error :\(error)")
+            })
+        default:
+            break
+        }
+    }
+    
+    
+    
+    //MARK: - TableView
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count: Int?
+        if songsArray.count != 0 {
+            count = songsArray.count
+        }
+        return count!
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return headerView
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell?
+        
+        if songsArray.count != 0 {
+            let song = songsArray[indexPath.row]
+            let songCell = self.tableView.dequeueReusableCellWithIdentifier("MusicRatingTableViewCell", forIndexPath: indexPath) as! MusicRatingTableViewCell
+            songCell.configCell(song)
+            songCell.ratingNumberLabel.text = "\(indexPath.row+1)"
+            cell = songCell
+        }
+        return cell!
+    }
+}

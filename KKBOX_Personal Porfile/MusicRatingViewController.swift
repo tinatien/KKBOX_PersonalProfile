@@ -15,6 +15,7 @@ class MusicRatingViewController: UIViewController, UITableViewDataSource, UITabl
     
     var songsArray: [Song]!
     
+    
     convenience init(songsArray: [Song]) {
         self.init(nibName: "MusicRatingViewController", bundle: nil)
         self.songsArray = songsArray
@@ -36,7 +37,6 @@ class MusicRatingViewController: UIViewController, UITableViewDataSource, UITabl
         tableView.registerNib(UINib(nibName: "MusicRatingTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicRatingTableViewCell")
     }
     
-    
     func initUI() {
         self.title = "聽歌排行榜"
         self.totalSongsLabel.text = "\(songsArray.count) Songs"
@@ -53,6 +53,7 @@ class MusicRatingViewController: UIViewController, UITableViewDataSource, UITabl
     func backButtonTapped(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
     
     
     //MARK: - TableView
@@ -111,6 +112,4 @@ class MusicRatingViewController: UIViewController, UITableViewDataSource, UITabl
         }
         return cell!
     }
-    
-    
 }

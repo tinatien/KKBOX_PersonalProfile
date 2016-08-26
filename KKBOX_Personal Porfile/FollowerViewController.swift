@@ -14,6 +14,7 @@ class FollowerViewController: UIViewController, UITableViewDelegate, UITableView
     
     var followersArray: [[String:String]]!
     
+    
     convenience init(followersArray: [[String:String]]) {
         self.init(nibName: "FollowerViewController", bundle: nil)
         self.followersArray = followersArray
@@ -46,14 +47,9 @@ class FollowerViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.popViewControllerAnimated(true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 
    //MARK: - TableView
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return followersArray.count
     }

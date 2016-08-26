@@ -14,6 +14,7 @@ class FollowingViewController: UIViewController, UITableViewDataSource, UITableV
 
     var followingsArray: [[String:String]]!
     
+    
     convenience init(followingsArray: [[String:String]]) {
         self.init(nibName: "FollowingViewController", bundle: nil)
         self.followingsArray = followingsArray
@@ -46,15 +47,9 @@ class FollowingViewController: UIViewController, UITableViewDataSource, UITableV
         self.navigationController?.popViewControllerAnimated(true)
     }
 
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
 
     //MARK: - TableView
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return followingsArray.count
     }
@@ -65,5 +60,4 @@ class FollowingViewController: UIViewController, UITableViewDataSource, UITableV
         cell.configCell(following)
         return cell
     }
-
 }

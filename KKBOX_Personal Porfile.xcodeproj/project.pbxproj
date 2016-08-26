@@ -33,12 +33,13 @@
 		0743BC6C1D6E88C100936FF9 /* MusicRatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC6A1D6E88C100936FF9 /* MusicRatingTableViewCell.xib */; };
 		0743BC701D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC6E1D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift */; };
 		0743BC711D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BC6F1D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib */; };
-		0743BC731D6EC89F00936FF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BC721D6EC89F00936FF9 /* ViewController.swift */; };
 		0743BCB21D6EE18E00936FF9 /* PlayHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BCB11D6EE18E00936FF9 /* PlayHeaderView.xib */; };
 		0743BCB51D6EE40300936FF9 /* PlayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BCB41D6EE40300936FF9 /* PlayHeaderView.swift */; };
 		0743BCB81D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BCB61D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift */; };
 		0743BCB91D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BCB71D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib */; };
 		0743BCBB1D6EE60800936FF9 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BCBA1D6EE60800936FF9 /* BackgroundImageView.swift */; };
+		0743BCBE1D70064C00936FF9 /* MusicStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743BCBC1D70064B00936FF9 /* MusicStyleViewController.swift */; };
+		0743BCBF1D70064C00936FF9 /* MusicStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0743BCBD1D70064C00936FF9 /* MusicStyleViewController.xib */; };
 		07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922031D65652200D6BE94 /* AppDelegate.swift */; };
 		07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */; };
 		07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F9220D1D65652200D6BE94 /* Assets.xcassets */; };
@@ -121,12 +122,13 @@
 		0743BC6A1D6E88C100936FF9 /* MusicRatingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicRatingTableViewCell.xib; sourceTree = "<group>"; };
 		0743BC6E1D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMusicRatingTableViewCell.swift; sourceTree = "<group>"; };
 		0743BC6F1D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstMusicRatingTableViewCell.xib; sourceTree = "<group>"; };
-		0743BC721D6EC89F00936FF9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0743BCB11D6EE18E00936FF9 /* PlayHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayHeaderView.xib; sourceTree = "<group>"; };
 		0743BCB41D6EE40300936FF9 /* PlayHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayHeaderView.swift; sourceTree = "<group>"; };
 		0743BCB61D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicRatingV2ViewController.swift; sourceTree = "<group>"; };
 		0743BCB71D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicRatingV2ViewController.xib; sourceTree = "<group>"; };
 		0743BCBA1D6EE60800936FF9 /* BackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		0743BCBC1D70064B00936FF9 /* MusicStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStyleViewController.swift; sourceTree = "<group>"; };
+		0743BCBD1D70064C00936FF9 /* MusicStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicStyleViewController.xib; sourceTree = "<group>"; };
 		07F922001D65652200D6BE94 /* KKBOX_Personal Porfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KKBOX_Personal Porfile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F922031D65652200D6BE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F9220B1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KKBOX_Personal_Porfile.xcdatamodel; sourceTree = "<group>"; };
@@ -261,7 +263,6 @@
 				07F9220F1D65652200D6BE94 /* LaunchScreen.storyboard */,
 				07F922121D65652200D6BE94 /* Info.plist */,
 				07F9220A1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld */,
-				0743BC721D6EC89F00936FF9 /* ViewController.swift */,
 			);
 			path = "KKBOX_Personal Porfile";
 			sourceTree = "<group>";
@@ -308,6 +309,7 @@
 				0743BC5A1D6D715200936FF9 /* FollowingViewController.xib */,
 				0743BC661D6DA28D00936FF9 /* MusicRatingViewController.xib */,
 				0743BCB71D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib */,
+				0743BCBD1D70064C00936FF9 /* MusicStyleViewController.xib */,
 				0743BC6D1D6E88D300936FF9 /* TableViewCells */,
 				07F922551D65B3A200D6BE94 /* CollectionViewCells */,
 				07F922501D659A5B00D6BE94 /* TabBarView */,
@@ -326,6 +328,7 @@
 				0743BC591D6D715200936FF9 /* FollowingViewController.swift */,
 				0743BC651D6DA28D00936FF9 /* MusicRatingViewController.swift */,
 				0743BCB61D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift */,
+				0743BCBC1D70064B00936FF9 /* MusicStyleViewController.swift */,
 				07F922561D6AA8F100D6BE94 /* Material */,
 				07F922591D6AAA0600D6BE94 /* TabBarController */,
 			);
@@ -528,6 +531,7 @@
 				0743BC5C1D6D715200936FF9 /* FollowingViewController.xib in Resources */,
 				07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */,
 				0743BC681D6DA28D00936FF9 /* MusicRatingViewController.xib in Resources */,
+				0743BCBF1D70064C00936FF9 /* MusicStyleViewController.xib in Resources */,
 				07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */,
 				0743BC481D6C396700936FF9 /* FollowingArtistCollectionViewCell.xib in Resources */,
 				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
@@ -649,6 +653,7 @@
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				0743BC4F1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift in Sources */,
 				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
+				0743BCBE1D70064C00936FF9 /* MusicStyleViewController.swift in Sources */,
 				E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */,
 				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
 				0743BC4B1D6C397B00936FF9 /* PlaylistCollectionViewCell.swift in Sources */,
@@ -660,7 +665,6 @@
 				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
 				0743BC6B1D6E88C100936FF9 /* MusicRatingTableViewCell.swift in Sources */,
 				0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */,
-				0743BC731D6EC89F00936FF9 /* ViewController.swift in Sources */,
 				0743BC701D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift in Sources */,
 				0743BC3C1D6C16C600936FF9 /* MusicStyleButton.swift in Sources */,
 				0743BC3E1D6C24F200936FF9 /* BackButton.swift in Sources */,

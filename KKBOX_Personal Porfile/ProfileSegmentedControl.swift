@@ -12,7 +12,6 @@ class ProfileSegmentedControl: UISegmentedControl {
 
     func initUI(){
         setupBackground()
-        
         setupFonts()
     }
     
@@ -20,6 +19,7 @@ class ProfileSegmentedControl: UISegmentedControl {
         let backgroundImage = UIImage(named: "segment_bg_half")
         let backgroundImageSelected = UIImage(named: "segment_bg_actived")
         
+        self.frame = CGRectMake(0, 0, 320, 44)
         self.setBackgroundImage(backgroundImage, forState: .Normal, barMetrics: .Default)
         self.setBackgroundImage(backgroundImageSelected, forState: .Highlighted, barMetrics: .Default)
         self.setBackgroundImage(backgroundImageSelected, forState: .Selected, barMetrics: .Default)

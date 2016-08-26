@@ -10,16 +10,16 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var backgroundProfileImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var musicTagLabel1: UILabel!
-    @IBOutlet weak var musicTagLabel2: UILabel!
-    @IBOutlet weak var musicTagLabel3: UILabel!
-    @IBOutlet weak var personalMusicRatingButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var fansNumberLabel: UILabel!
     @IBOutlet weak var followingsNumberLabel: UILabel!
+    @IBOutlet weak var musicStyleLabel1: UILabel!
+    @IBOutlet weak var musicStyleLabel2: UILabel!
+    @IBOutlet weak var musicStyleLabel3: UILabel!
     @IBOutlet weak var followingButton: UIButton!
     @IBOutlet weak var profileSegmentedControl: ProfileSegmentedControl!
     @IBOutlet weak var contentView: UIView!
@@ -34,6 +34,8 @@ class ProfileViewController: UIViewController {
     lazy var storyVC: StoryViewController = StoryViewController(nibName: "StoryViewController", bundle: nil)
     lazy var followerVC: FollowerViewController = FollowerViewController(nibName: "FollowerViewController", bundle: nil)
     lazy var followingVC: FollowingViewController = FollowingViewController(nibName: "FollowingViewController", bundle: nil)
+    lazy var musicStyleVC: MusicStyleViewController = MusicStyleViewController(nibName: "MusicStyleViewController", bundle: nil)
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -44,18 +46,16 @@ class ProfileViewController: UIViewController {
     }
     
     
+    
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initUI()
         displayCurrentTab(TabIndex.MusicTab.rawValue)
-
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        
         if profileUserName == nil {
             profileUserName = "Jay"
         }
@@ -63,8 +63,12 @@ class ProfileViewController: UIViewController {
     }
     
     
+    
     //MARK: - InitUI
     func initUI() {
+        
+        self.scrollView.showsVerticalScrollIndicator = false
+        self.scrollView.alwaysBounceVertical = true
         
         profileImageView.layer.cornerRadius = profileImageView.bounds.width/2
         profileImageView.clipsToBounds = true
@@ -83,6 +87,7 @@ class ProfileViewController: UIViewController {
     func backButtonTapped(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
     
     
     //MARK: - HTTP Request
@@ -120,7 +125,6 @@ class ProfileViewController: UIViewController {
                 }, failure: { (error) in
                     print("getSimpleInfo error : \(error)")
             })
-            
             ServerManager.isFollowing(userName: name, completion: { (result) in
                 self.followed = result as! Bool
                 
@@ -146,11 +150,16 @@ class ProfileViewController: UIViewController {
         completion()
     }
     
-    //MARK: - Action
     
-    @IBAction func personalMusicRatingButtonTapped(sender: AnyObject) {
-        
-        
+    
+    //MARK: - Action
+    @IBAction func musicStyleGestureTapped(sender: AnyObject) {
+        ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
+            self.musicStyleVC = MusicStyleViewController.init(songsArray: songs)
+            self.navigationController?.pushViewController(self.musicStyleVC, animated: true)
+            }) { (error) in
+                
+        }
     }
     
     @IBAction func followerGestureTapped(sender: AnyObject) {
@@ -185,8 +194,9 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    //MARK: - SegmentedControl
     
+    
+    //MARK: - SegmentedControl
     func displayCurrentTab(tabIndex: Int) {
         if let vc = viewControllerForSelectedTab(tabIndex) {
             self.addChildViewController(vc)
@@ -219,7 +229,4 @@ class ProfileViewController: UIViewController {
         
         displayCurrentTab(sender.selectedSegmentIndex)
     }
-    
-    
-    
 }
