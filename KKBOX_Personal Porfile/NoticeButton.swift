@@ -15,6 +15,4 @@ class NoticeButton: UIButton {
         self.setImage(backImg, forState: .Normal)
         self.frame = CGRectMake(0, 0, 30, 30)
     }
-
-
 }

@@ -56,6 +56,4 @@ class ProfileSegmentedControl: UISegmentedControl {
         self.setTitleTextAttributes(selectedTextAttributes, forState: .Highlighted)
         self.setTitleTextAttributes(selectedTextAttributes, forState: .Selected)
     }
-
-
 }

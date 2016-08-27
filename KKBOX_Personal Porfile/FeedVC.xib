@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedVC">
+            <connections>
+                <outlet property="segmentedControlOutlet" destination="zlf-nh-2hm" id="IQY-Uc-2OO"/>
+                <outlet property="tableView" destination="tra-BG-QNU" id="zCF-SN-ylW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="IdT-bC-7Gj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-ZY-nLz" customClass="MaterialButton" customModule="KKBox_People_Project" customModuleProvider="target">
+                    <rect key="frame" x="145" y="472" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NK8-ad-Lb3"/>
+                        <constraint firstAttribute="height" constant="30" id="pkt-wt-TcC"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="btn_totop"/>
+                    <connections>
+                        <action selector="toTopBtn:" destination="-1" eventType="touchUpInside" id="aGM-al-Zqb"/>
+                    </connections>
+                </button>
+                <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYb-vW-XDx">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DwN-d9-pg8"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem systemItem="favorites" id="e39-jk-pK4"/>
+                        <tabBarItem systemItem="more" id="e1X-Oy-5dq"/>
+                    </items>
+                </tabBar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-nh-2hm" customClass="CustomSegmentedControl" customModule="KKBox_People_Project" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="320" height="45"/>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YFG-rk-SGh"/>
+                    </constraints>
+                    <segments>
+                        <segment title="動態"/>
+                        <segment title="探索"/>
+                    </segments>
+                    <color key="tintColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                    <connections>
+                        <action selector="segmentedControlIndexChanged:" destination="-1" eventType="valueChanged" id="KKD-T1-izT"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" style="plain" separatorStyle="none" rowHeight="211" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tra-BG-QNU">
+                    <rect key="frame" x="10" y="122" width="300" height="296"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="296" id="wJc-d2-Vq7"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-k6-YUU" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                    <rect key="frame" x="15" y="429" width="285" height="34"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Woohoo! You've read all feeds. We are working on something new, come back later" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4fh-Ir-iLN">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="34"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="cgn-bZ-HEm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4fh-Ir-iLN" firstAttribute="leading" secondItem="Ag6-k6-YUU" secondAttribute="leading" id="1og-zA-U1U"/>
+                        <constraint firstItem="4fh-Ir-iLN" firstAttribute="top" secondItem="Ag6-k6-YUU" secondAttribute="top" id="PyO-hF-PUV"/>
+                        <constraint firstAttribute="height" constant="34" id="sfH-Um-I5G"/>
+                        <constraint firstAttribute="trailing" secondItem="4fh-Ir-iLN" secondAttribute="trailing" id="vS7-Ih-2P5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tra-BG-QNU" firstAttribute="top" secondItem="zlf-nh-2hm" secondAttribute="bottom" constant="14" id="0MD-e7-pcZ"/>
+                <constraint firstItem="xXf-ZY-nLz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="145" id="4h3-zX-3Sq"/>
+                <constraint firstAttribute="bottom" secondItem="TYb-vW-XDx" secondAttribute="bottom" id="4j3-bu-Gqo"/>
+                <constraint firstItem="Ag6-k6-YUU" firstAttribute="top" secondItem="tra-BG-QNU" secondAttribute="bottom" constant="11" id="7Ip-ZU-nhe"/>
+                <constraint firstItem="Ag6-k6-YUU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="EKB-KZ-LoK"/>
+                <constraint firstAttribute="trailing" secondItem="TYb-vW-XDx" secondAttribute="trailing" id="EzG-aO-U8Z"/>
+                <constraint firstAttribute="trailing" secondItem="zlf-nh-2hm" secondAttribute="trailing" id="Hkq-GU-CNg"/>
+                <constraint firstItem="tra-BG-QNU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VAA-4k-lL3"/>
+                <constraint firstItem="TYb-vW-XDx" firstAttribute="top" secondItem="xXf-ZY-nLz" secondAttribute="bottom" constant="16" id="W5k-Fl-iPK"/>
+                <constraint firstItem="TYb-vW-XDx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bK9-Id-jEF"/>
+                <constraint firstItem="zlf-nh-2hm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kI2-zT-Pen"/>
+                <constraint firstAttribute="trailing" secondItem="tra-BG-QNU" secondAttribute="trailing" constant="10" id="rmd-aO-l8X"/>
+                <constraint firstAttribute="trailing" secondItem="Ag6-k6-YUU" secondAttribute="trailing" constant="20" id="uxE-Ez-zkB"/>
+                <constraint firstItem="zlf-nh-2hm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="vLz-vx-xua"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="259" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_totop" width="32" height="32"/>
+    </resources>
+</document>

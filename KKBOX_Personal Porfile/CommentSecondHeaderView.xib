@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommentSecondHeaderView" customModule="KKBox_People_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Nm-05-CVF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="熱門回應" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mte-LV-Ihe">
+                            <rect key="frame" x="18" y="-1" width="302" height="31"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mte-LV-Ihe" secondAttribute="bottom" id="2LL-gr-8O8"/>
+                        <constraint firstAttribute="trailing" secondItem="mte-LV-Ihe" secondAttribute="trailing" id="TC6-XK-fi0"/>
+                        <constraint firstItem="mte-LV-Ihe" firstAttribute="top" secondItem="8Nm-05-CVF" secondAttribute="top" id="X72-pt-elN"/>
+                        <constraint firstItem="mte-LV-Ihe" firstAttribute="leading" secondItem="8Nm-05-CVF" secondAttribute="leading" constant="18" id="iuG-3b-TKD"/>
+                        <constraint firstItem="mte-LV-Ihe" firstAttribute="centerY" secondItem="8Nm-05-CVF" secondAttribute="centerY" id="tsH-gL-FM7"/>
+                        <constraint firstItem="mte-LV-Ihe" firstAttribute="leading" secondItem="8Nm-05-CVF" secondAttribute="leading" constant="18" id="zXy-3T-qXR"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="X72-pt-elN"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Nm-05-CVF" secondAttribute="bottom" id="7iX-DT-YwU"/>
+                <constraint firstItem="8Nm-05-CVF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JkF-lj-Sl3"/>
+                <constraint firstItem="8Nm-05-CVF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yio-9g-bRL"/>
+                <constraint firstAttribute="trailing" secondItem="8Nm-05-CVF" secondAttribute="trailing" id="cSd-ZY-iRl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

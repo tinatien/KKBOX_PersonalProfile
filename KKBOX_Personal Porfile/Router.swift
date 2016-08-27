@@ -51,6 +51,8 @@ enum Router: URLRequestConvertible {
                 return .POST
             case .GetTrackByTagName(_):
                 return .POST
+            case .GetFullInfo(_):
+                return .POST
             }
             
         case .Follow(let fAPI):
@@ -102,6 +104,12 @@ enum Router: URLRequestConvertible {
             case .AddStory(_, _, _, _):
                 return .POST
             case .AddComment(_, _):
+                return .POST
+            case .GetStoriesTopTwo:
+                return .POST
+            case .GetStoriesByComments:
+                return .POST
+            case .GetStoriesByFollowings:
                 return .POST
             }
             
@@ -154,6 +162,8 @@ enum Router: URLRequestConvertible {
                 return "/user/updateInfo"
             case .GetTrackByTagName(_):
                 return "/user/getTrackByTagName"
+            case .GetFullInfo(_):
+                return "user/getFullInfo"
             }
             
         case .Follow(let fAPI):
@@ -206,6 +216,12 @@ enum Router: URLRequestConvertible {
                 return "/user/addStory"
             case .AddComment(_, _):
                 return "/user/addComment"
+            case .GetStoriesTopTwo:
+                return URL_STORY_GETSTORIESTOPTWO
+            case .GetStoriesByComments:
+                return URL_STORY_GETSTORIESBYCOMMENTS
+            case .GetStoriesByFollowings:
+                return URL_STORY_GETSTORIESBYFOLLOWINGS
             }
             
         case .Artist(let aAPI):
@@ -269,6 +285,10 @@ enum Router: URLRequestConvertible {
                 return request
             case .UpdateInfo(let description, let tags):
                 let params = ["description":description, "tags":tags]
+                let request = Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
+                return request
+            case .GetFullInfo(let name):
+                let params = ["name": name]
                 let request = Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
                 return request
             case .GetTrackByTagName(let tag):
@@ -410,6 +430,8 @@ enum AuthAPI {
 enum UserAPI {
     //拿到使用者資料
     case GetSimpleInfo(String)
+    
+    case GetFullInfo(String)
     //更改使用者資料
     case UpdateInfo(String,String)
     //拿到使用者風格的歌曲
@@ -461,6 +483,11 @@ enum StoryAPI {
     case CollectStory(String)
     //在故事底下新增留言
     case AddComment(String, String)
+    
+    //探索頁面會用到的3種情況
+    case GetStoriesByFollowings
+    case GetStoriesByComments
+    case GetStoriesTopTwo
 }
 
 enum ArtistAPI {

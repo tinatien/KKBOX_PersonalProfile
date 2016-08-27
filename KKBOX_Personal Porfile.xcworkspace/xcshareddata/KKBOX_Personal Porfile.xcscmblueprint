@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C82D97FA94C872DE8D407BE0429819DCA6ADFB8F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C82D97FA94C872DE8D407BE0429819DCA6ADFB8F" : 0,
+    "A6DA30E1BBEF2EF35DED6FCDBFF7AC89626C254C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C58A751-67B3-4268-BBFD-BE1E0AF28FC8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C82D97FA94C872DE8D407BE0429819DCA6ADFB8F" : "KKBOX_Personal-Profile\/",
+    "A6DA30E1BBEF2EF35DED6FCDBFF7AC89626C254C" : "KKBox_People_Project\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KKBOX_Personal Porfile",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KKBOX_Personal Porfile.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/henryhsin\/KKBox_People_Project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A6DA30E1BBEF2EF35DED6FCDBFF7AC89626C254C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chuntielin\/KKBOX_Personal-Profile.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C82D97FA94C872DE8D407BE0429819DCA6ADFB8F"
+    }
+  ]
+}

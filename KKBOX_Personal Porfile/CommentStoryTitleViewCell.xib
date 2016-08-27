@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentVC" customModule="KKBox_People_Project" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentStoryTitleViewCell" id="HEC-ju-Bla" customClass="CommentStoryTitleViewCell" customModule="KKBox_People_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HEC-ju-Bla" id="I3S-uh-yx7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="419.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cr-0p-mqp" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="4Rs-aa-LkT" customClass="MaterialProfileImgView" customModule="KKBox_People_Project" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JZT-ma-T7T"/>
+                                    <constraint firstAttribute="width" constant="32" id="xHd-bk-Cti"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用者名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-Wx-ioQ">
+                                <rect key="frame" x="48" y="14" width="264" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="COP-n0-Pbb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="COP-n0-Pbb"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="故事標題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCA-ma-fo4">
+                                <rect key="frame" x="8" y="56" width="304" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="Ajn-Bo-MX2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ajn-Bo-MX2"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mxu-lN-Znn">
+                                <rect key="frame" x="226" y="84" width="86" height="14"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_clock" translatesAutoresizingMaskIntoConstraints="NO" id="zyy-9C-MVc">
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="GAB-am-Ple"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="2016年8月4日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lai-YN-deA">
+                                        <rect key="frame" x="13" y="0.0" width="73" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="73" id="BdK-Eh-V3h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Light" family="PingFang TC" pointSize="10"/>
+                                        <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="k3p-x9-FMy"/>
+                                    <constraint firstAttribute="height" constant="14" id="uNY-xX-tqw"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-hv-bc6" customClass="MaterialTextView" customModule="KKBox_People_Project" customModuleProvider="target">
+                                <rect key="frame" x="8" y="106" width="304" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vy8-ZN-0Gd">
+                                <rect key="frame" x="300" y="342" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.41960784309999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2Xw-jS-Hva"/>
+                                    <constraint firstAttribute="width" constant="20" id="o05-Cs-YgQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="postBtn:" destination="-1" eventType="touchUpInside" id="bwR-vf-MSS"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQX-WD-XFT" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                                <rect key="frame" x="8" y="380" width="304" height="32"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="qQC-tN-FA1">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="32"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="jnP-eJ-7ym" customClass="MaterialProfileImgView" customModule="KKBox_People_Project" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="PdX-Cr-OMz"/>
+                                                    <constraint firstAttribute="width" constant="32" id="sjg-Gp-bwA"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="想說什麼..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOq-pt-h9s" customClass="MaterialTextField" customModule="KKBox_People_Project" customModuleProvider="target">
+                                                <rect key="frame" x="41" y="0.0" width="263" height="32"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qQC-tN-FA1" firstAttribute="top" secondItem="QQX-WD-XFT" secondAttribute="top" id="0lF-pS-neV"/>
+                                    <constraint firstItem="qQC-tN-FA1" firstAttribute="leading" secondItem="QQX-WD-XFT" secondAttribute="leading" id="Krm-nQ-czV"/>
+                                    <constraint firstAttribute="trailing" secondItem="qQC-tN-FA1" secondAttribute="trailing" id="dp9-kB-dl6"/>
+                                    <constraint firstAttribute="bottom" secondItem="qQC-tN-FA1" secondAttribute="bottom" id="fjp-Gs-Dgv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="kvg-Wx-ioQ" firstAttribute="centerY" secondItem="4Rs-aa-LkT" secondAttribute="centerY" id="5OP-Ww-zLH"/>
+                            <constraint firstItem="wCA-ma-fo4" firstAttribute="leading" secondItem="0Cr-0p-mqp" secondAttribute="leading" constant="8" id="6bL-iU-mc2"/>
+                            <constraint firstAttribute="trailing" secondItem="oZZ-hv-bc6" secondAttribute="trailing" constant="8" id="9Ta-TA-vQD"/>
+                            <constraint firstAttribute="trailing" secondItem="QQX-WD-XFT" secondAttribute="trailing" constant="8" id="Del-n0-p6s"/>
+                            <constraint firstItem="QQX-WD-XFT" firstAttribute="leading" secondItem="0Cr-0p-mqp" secondAttribute="leading" constant="8" id="EU3-9d-Ah3"/>
+                            <constraint firstItem="Mxu-lN-Znn" firstAttribute="top" secondItem="wCA-ma-fo4" secondAttribute="bottom" constant="8" id="I4e-fl-9JE"/>
+                            <constraint firstItem="kvg-Wx-ioQ" firstAttribute="leading" secondItem="4Rs-aa-LkT" secondAttribute="trailing" constant="8" id="Kxc-Qa-Ulr"/>
+                            <constraint firstAttribute="trailing" secondItem="wCA-ma-fo4" secondAttribute="trailing" constant="8" id="PdJ-vl-IGK"/>
+                            <constraint firstAttribute="trailing" secondItem="kvg-Wx-ioQ" secondAttribute="trailing" constant="8" id="QjM-TF-9H2"/>
+                            <constraint firstItem="QQX-WD-XFT" firstAttribute="top" secondItem="oZZ-hv-bc6" secondAttribute="bottom" constant="16" id="bBx-bK-dmU"/>
+                            <constraint firstAttribute="trailing" secondItem="vy8-ZN-0Gd" secondAttribute="trailing" id="dDu-Qg-kpe"/>
+                            <constraint firstItem="wCA-ma-fo4" firstAttribute="top" secondItem="4Rs-aa-LkT" secondAttribute="bottom" constant="16" id="eUz-YQ-3pa"/>
+                            <constraint firstItem="QQX-WD-XFT" firstAttribute="top" secondItem="vy8-ZN-0Gd" secondAttribute="bottom" constant="18" id="fkd-6K-a5E"/>
+                            <constraint firstAttribute="trailing" secondItem="Mxu-lN-Znn" secondAttribute="trailing" constant="8" id="k2K-Mr-wgK"/>
+                            <constraint firstItem="oZZ-hv-bc6" firstAttribute="leading" secondItem="0Cr-0p-mqp" secondAttribute="leading" constant="8" id="nqH-U8-kFX"/>
+                            <constraint firstItem="oZZ-hv-bc6" firstAttribute="top" secondItem="Mxu-lN-Znn" secondAttribute="bottom" constant="8" id="rdQ-rC-1sP"/>
+                            <constraint firstItem="4Rs-aa-LkT" firstAttribute="leading" secondItem="0Cr-0p-mqp" secondAttribute="leading" constant="8" id="svJ-dl-pBe"/>
+                            <constraint firstAttribute="bottom" secondItem="QQX-WD-XFT" secondAttribute="bottom" constant="8" id="u4X-KV-hFi"/>
+                            <constraint firstItem="4Rs-aa-LkT" firstAttribute="top" secondItem="0Cr-0p-mqp" secondAttribute="top" constant="8" id="zv2-Go-bVa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Cr-0p-mqp" firstAttribute="top" secondItem="I3S-uh-yx7" secondAttribute="top" id="CKG-zB-wHO"/>
+                    <constraint firstAttribute="bottom" secondItem="0Cr-0p-mqp" secondAttribute="bottom" id="MJr-LG-4Uu"/>
+                    <constraint firstItem="0Cr-0p-mqp" firstAttribute="top" secondItem="I3S-uh-yx7" secondAttribute="top" id="Qx2-oQ-2t9"/>
+                    <constraint firstItem="0Cr-0p-mqp" firstAttribute="leading" secondItem="I3S-uh-yx7" secondAttribute="leading" id="UJf-q6-mdf"/>
+                    <constraint firstAttribute="trailing" secondItem="0Cr-0p-mqp" secondAttribute="trailing" id="cUX-1I-AxX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="postCommentTextField" destination="sOq-pt-h9s" id="rsj-v2-0Pn"/>
+                <outlet property="storyContentTextView" destination="oZZ-hv-bc6" id="gOu-Hz-in4"/>
+                <outlet property="storyPostTime" destination="lai-YN-deA" id="KKV-3Y-ATk"/>
+                <outlet property="storyTitle" destination="wCA-ma-fo4" id="d6Z-3w-fxC"/>
+                <outlet property="userProfileImg" destination="jnP-eJ-7ym" id="Vmh-DX-F7f"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="618"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_clock" width="10" height="10"/>
+        <image name="myPhoto" width="448" height="359"/>
+    </resources>
+</document>

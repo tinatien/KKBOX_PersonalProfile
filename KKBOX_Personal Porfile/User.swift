@@ -10,31 +10,34 @@ import Foundation
 
 class User: NSObject {
     
-    private var _user_id: String!
-    private var _name: String!
-    private var _imageURL: String!
+    private var _userId: String!
+    private var _userName: String!
+    private var _userProfileImageUrl: String!
     private var _description: String!
     private var _tags: String!
     private var _followers: [[String:String]]!
     private var _followings: [[String:String]]!
+    private var _userPostedStrory = [Story]()
+    private var _userLikedStory = [Story]()
+    private var _userPostedComment: [Comment]!
     
     var userId: String {
-        if _user_id == nil {
-            _user_id = ""
+        if _userId == nil {
+            _userId = ""
         }
-        return _user_id
+        return _userId
     }
-    var name: String {
-        if _name == nil {
-            _name = ""
+    var userName: String {
+        if _userName == nil {
+            _userName = ""
         }
-        return _name
+        return _userName
     }
-    var imageURL: String {
-        if _imageURL == nil {
-            _imageURL = ""
+    var userProfileImageUrl: String {
+        if _userProfileImageUrl == nil {
+            _userProfileImageUrl = ""
         }
-        return _imageURL
+        return _userProfileImageUrl
     }
     var descrip: String {
         if _description == nil {
@@ -65,12 +68,20 @@ class User: NSObject {
             return _followings
         }
     }
+    var userPostedStrory: [Story]! {
+        return _userPostedStrory
+    }
+    
+    var userLikedStory: [Story]! {
+        return _userLikedStory
+    }
+    
     
     init(response: [String:AnyObject]) {
-        self._user_id = response["user_id"] as! String
-        self._name = response["name"] as! String
+        self._userId = response["user_id"] as! String
+        self._userName = response["name"] as! String
         self._description = response["description"] as! String
-        self._imageURL = response["image"] as! String
+        self._userProfileImageUrl = response["image"] as! String
         
         if let followersResponseArray = response["followers"] as? [AnyObject] {
             var followersArray = [[String:String]]()
@@ -95,11 +106,27 @@ class User: NSObject {
             })
             self._followings = followingsArray
         }
+        
+        if let userPostedStrory = response["MyStory"] as? [Dictionary<String, AnyObject>]{
+            for postedStory in userPostedStrory{
+                let story = Story(story: postedStory)
+                self._userPostedStrory.append(story)
+            }
+            
+        }
+        
+        if let userCollectedStory = response["StoryCollection"] as? [Dictionary<String, AnyObject>]{
+            for collectedStory in userCollectedStory{
+                let story = Story(story: collectedStory)
+                self._userLikedStory.append(story)
+            }
+        }
+
     }
     
     func setUserProperty(userId: String, name: String, description: String, followers: [[String:String]], followings: [[String:String]]) {
-        self._user_id = userId
-        self._name = name
+        self._userId = userId
+        self._userName = name
         self._description = description
         self._followers = followers
         self._followings = followings

@@ -57,9 +57,9 @@ class ProfileViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         if profileUserName == nil {
-            profileUserName = "Jay"
+            profileUserName = "kkbox"
         }
-        getUserInfo(jay_login, name: profileUserName!) {}
+        getUserInfo(kkbox_login, name: profileUserName!) {}
     }
     
     
@@ -107,15 +107,15 @@ class ProfileViewController: UIViewController {
     func getUserInfo(loginInfo: String, name: String, completion:() -> Void) {
         ServerManager.login(userInfo: loginInfo, completion: {
             ServerManager.getSimpleInfo(username: name, completion: { (user) in
-                let imageURLString = user.imageURL
+                let imageURLString = user.userProfileImageUrl
                 let imageURL = NSURL(string: imageURLString)
                 let imageData = NSData(contentsOfURL: imageURL!)
                 let image = UIImage(data: imageData!)
                 
-                self.title = user.name
+                self.title = user.userName
                 self.backgroundProfileImageView.image = image
                 self.profileImageView.image = image
-                self.userNameLabel.text = user.name
+                self.userNameLabel.text = user.userName
                 self.descriptionLabel.text = user.descrip
                 
                 if user.followings.count == 0 {
@@ -163,6 +163,12 @@ class ProfileViewController: UIViewController {
         completion()
     }
     
+    func passValueToStoryWall(name: String, completion:() -> Void) {
+        let storyChildVC = self.storyVC
+        storyChildVC.userName = name
+        storyChildVC.getMyPostInfo()
+        completion()
+    }
     
     
     //MARK: - Action
@@ -230,6 +236,15 @@ class ProfileViewController: UIViewController {
         self.currentViewController?.view.removeFromSuperview()
         self.currentViewController?.removeFromParentViewController()
         
-        displayCurrentTab(sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex {
+        case TabIndex.MusicTab.rawValue:
+            self.passValueToMusicWall(profileUserName!, completion: { })
+            displayCurrentTab(TabIndex.MusicTab.rawValue)
+        case TabIndex.StoryTab.rawValue:
+            self.passValueToStoryWall(profileUserName!, completion: { })
+            displayCurrentTab(TabIndex.StoryTab.rawValue)
+        default:
+            break
+        }
     }
 }

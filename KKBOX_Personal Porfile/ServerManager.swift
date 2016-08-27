@@ -12,23 +12,24 @@ import Alamofire
 class ServerManager: NSObject {
     
     //MARK: - FUll
-    //    class func getFullInfo(userName name: String, completion:(user:[String:AnyObject]) -> Void, failure:(error: NSError?) -> Void) {
-    //        let api = Router.Full(FullAPI.GetFullInfo(name))
-    //
-    //        Alamofire.request(api).responseJSON { (response) in
-    //            switch response.result {
-    //            case .Success(let value):
-    //                guard let responseDictionary = value as? [String:AnyObject] else {
-    //                    print("ServerManager cannot cast getFullInfo response value to dictionary type")
-    //                    failure(error: nil)
-    //                    return
-    //                }
-    //                completion(user: responseDictionary)
-    //            case .Failure(let error):
-    //                failure(error: error)
-    //            }
-    //        }
-    //    }
+    class func getFullInfo(username name: String, completion:(user: User) -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.User(UserAPI.GetFullInfo(name))
+        
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result {
+            case .Success(let value):
+                guard let responseDictionary = value as? Dictionary<String, AnyObject> else {
+                    print("ServerManager cannot cast getFullInfo response value to dictionary type")
+                    failure(error: nil)
+                    return
+                }
+                let user = User(response: responseDictionary)
+                completion(user: user)
+            case .Failure(let error):
+                failure(error: error)
+            }
+        }
+    }
     
     
     // MARK: - Auth
@@ -467,7 +468,7 @@ class ServerManager: NSObject {
                 var storyArray = [Story]()
                 
                 responseArray.forEach({ (obj) in
-                    let story = Story(obj: obj)
+                    let story = Story(story: obj as! Dictionary<String, AnyObject>)
                     storyArray.append(story)
                 })
                 
@@ -494,7 +495,7 @@ class ServerManager: NSObject {
                 var storyArray = [Story]()
                 
                 responseArray.forEach({ (obj) in
-                    let story = Story(obj: obj)
+                    let story = Story(story: obj as! Dictionary<String, AnyObject>)
                     storyArray.append(story)
                 })
                 
@@ -504,6 +505,88 @@ class ServerManager: NSObject {
                 failure(error: error)
             }
         }
+    }
+    
+    class func getStoriesTopTwo(completion: (stories: [StrangerStories]) -> Void, failure: (error: NSError?) -> Void){
+        let api = Router.Story(StoryAPI.GetStoriesTopTwo)
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result{
+            case .Success(let value):
+                guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
+                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    failure(error: nil)
+                    return
+                    
+                }
+                var stories = [StrangerStories]()
+                for respond in responseArray{
+                    let story = StrangerStories(story: respond)
+                    stories.append(story)
+                    
+                }
+                
+                completion(stories: stories)
+            case .Failure(let error):
+                failure(error: error)
+            }
+            
+        }
+        
+    }
+    
+    class func getStoriesByComments(completion: (stories: [StrangerStories]) -> Void, failure: (error: NSError?) -> Void){
+        let api = Router.Story(StoryAPI.GetStoriesByComments)
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result{
+            case .Success(let value):
+                guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
+                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    failure(error: nil)
+                    return
+                    
+                }
+                var stories = [StrangerStories]()
+                for respond in responseArray{
+                    let story = StrangerStories(story: (respond["story"] as? Dictionary<String, AnyObject>)!)
+                    
+                    stories.append(story)
+                    
+                }
+                
+                completion(stories: stories)
+            case .Failure(let error):
+                failure(error: error)
+            }
+            
+        }
+        
+    }
+    
+    class func getStoriesByFollowings(completion: (stories: [Story]) -> Void, failure: (error: NSError?) -> Void){
+        let api = Router.Story(StoryAPI.GetStoriesByFollowings)
+        Alamofire.request(api).responseJSON { (response) in
+            switch response.result{
+            case .Success(let value):
+                guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
+                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    failure(error: nil)
+                    return
+                    
+                }
+                var stories = [Story]()
+                for respond in responseArray{
+                    let story = Story(story: respond)
+                    stories.append(story)
+                    
+                }
+                
+                completion(stories: stories)
+            case .Failure(let error):
+                failure(error: error)
+            }
+            
+        }
+        
     }
     
     class func collectStory(storyId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {

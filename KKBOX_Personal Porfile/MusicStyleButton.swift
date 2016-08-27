@@ -21,5 +21,4 @@ class MusicStyleButton: UIButton {
         self.backgroundColor = UIColor(red: 232/255, green: 232/255, blue: 232/255, alpha: 1)
         self.setTitleColor(UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1), forState: .Normal)
     }
-
 }

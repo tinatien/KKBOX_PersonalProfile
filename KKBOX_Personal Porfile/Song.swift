@@ -13,6 +13,9 @@ class Song: NSObject {
     private var _song_name: String!
     private var _album: Album?
     private var _artist: Artist?
+    private var _songArtistName: String!
+    private var _songAlbumName: String!
+    private var _songAlbumImgUrl: String!
     
     var trackId: String {
         if _track_id == nil {
@@ -32,18 +35,61 @@ class Song: NSObject {
     var artist: Artist? {
         return _artist
     }
+    var songAlbumName: String {
+        get{
+            if _songAlbumName == nil {
+                _songAlbumName = ""
+            }
+            return _songAlbumName
+        }
+    }
+    var songAlbumImgUrl: String {
+        get{
+            if _songAlbumImgUrl == nil {
+                _songAlbumImgUrl = ""
+            }
+            return _songAlbumImgUrl
+        }
+    }
+    var songArtistName: String {
+        get{
+            if _songArtistName == nil {
+                _songArtistName = ""
+            }
+            return _songArtistName
+        }
+    }
+
+    
     
     init(obj: AnyObject?) {
         self._track_id = obj!["track_id"] as! String
         self._song_name = obj!["name"] as! String
         
         if let albumDictionary = obj!["album"] as? [String:AnyObject] {
-        
+            if let albumName = obj!["name"] as? String {
+                self._songAlbumName = albumName
+            }
+            
+            if let image = obj!["images"] as? [Dictionary<String, AnyObject>]{
+                self._songAlbumImgUrl = image[0]["url"] as? String
+                
+            }
+            if let artist = obj!["artist"] as? Dictionary<String, AnyObject> {
+                if let artistName = artist["name"] as? String{
+                    self._songArtistName = artistName
+                }
+            }
             let album = Album(obj: albumDictionary)
             self._album = album
         }
         
         if let artistDictionary = obj!["artist"] as? [String:AnyObject] {
+            if let artist = obj!["artist"] as? Dictionary<String, AnyObject> {
+                if let artistName = artist["name"] as? String{
+                    self._songArtistName = artistName
+                }
+            }
             let artist = Artist(obj: artistDictionary)
             self._artist = artist
         }

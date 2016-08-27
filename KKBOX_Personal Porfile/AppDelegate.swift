@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = UITabBarController()
         let myLibraryVC = MyLibraryViewController(nibName: "MyLibraryViewController", bundle: nil)
         let exploreVC = ExploreViewController(nibName: "ExploreViewController", bundle: nil)
-        let feedVC = FeedViewController(nibName: "FeedViewController", bundle: nil)
+//        let feedVC = FeedViewController(nibName: "FeedViewController", bundle: nil)
+        let feedVC = FeedVC(nibName: "FeedVC", bundle: nil)
         let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
         let listenWithVC = ListenWithViewController(nibName: "ListenWithViewController", bundle: nil)
         
