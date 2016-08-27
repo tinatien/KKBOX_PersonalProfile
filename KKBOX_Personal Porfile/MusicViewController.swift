@@ -24,7 +24,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     lazy var musicRatingVC: MusicRatingViewController = MusicRatingViewController(nibName: "MusicRatingViewController", bundle: nil)
     lazy var musicRatingV2VC: MusicRatingV2ViewController = MusicRatingV2ViewController(nibName: "MusicRatingV2ViewController", bundle: nil)
-
+    lazy var playlistVC: PlaylistViewController = PlaylistViewController(nibName: "PlaylistViewController", bundle: nil)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -87,6 +87,10 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.navigationController?.pushViewController(musicRatingV2ChildVC, animated: true)
     }
     
+    @IBAction func playlistMoreButtonTapped(sender: AnyObject) {
+        let playlistChildVC = PlaylistViewController.init(playlistsArray: self.playlists)
+        self.navigationController?.pushViewController(playlistChildVC, animated: true)
+    }
     
     
     //MARK: - CollectionView

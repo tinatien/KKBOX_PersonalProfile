@@ -72,6 +72,18 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         let leftBarButtonItem = UIBarButtonItem()
         leftBarButtonItem.customView = backButton
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        
+        let noticeButton = NoticeButton()
+        noticeButton.InitUI()
+        noticeButton.addTarget(self, action: #selector(noticeButtonTapped), forControlEvents: .TouchUpInside)
+        
+        let rightBarButtonItem = UIBarButtonItem()
+        rightBarButtonItem.customView = noticeButton
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+    }
+    
+    func noticeButtonTapped(sender: UIButton) {
+        
     }
     
     func backButtonTapped(sender: UIButton) {

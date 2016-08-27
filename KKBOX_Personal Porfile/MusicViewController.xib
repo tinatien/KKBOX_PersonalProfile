@@ -122,6 +122,9 @@
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi4-Rv-3VR">
                     <rect key="frame" x="288" y="854" width="22" height="22"/>
                     <state key="normal" image="btn_more-1"/>
+                    <connections>
+                        <action selector="playlistMoreButtonTapped:" destination="-1" eventType="touchUpInside" id="eRe-iA-92s"/>
+                    </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-4B-fwS">
                     <rect key="frame" x="1" y="884" width="320" height="160"/>

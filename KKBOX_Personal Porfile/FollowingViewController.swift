@@ -32,9 +32,13 @@ class FollowingViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initUI()
         
-        self.title = "關注人數"
         tableView.registerNib(UINib(nibName: "FollowingTableViewCell", bundle: nil), forCellReuseIdentifier: "FollowingTableViewCell")
+    }
+    
+    func initUI() {
+        self.title = "關注人數"
         
         let backButton = BackButton()
         backButton.InitUI()
@@ -43,12 +47,25 @@ class FollowingViewController: UIViewController, UITableViewDataSource, UITableV
         let leftBarButtonItem = UIBarButtonItem()
         leftBarButtonItem.customView = backButton
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        
+        let noticeButton = NoticeButton()
+        noticeButton.InitUI()
+        noticeButton.addTarget(self, action: #selector(noticeButtonTapped), forControlEvents: .TouchUpInside)
+        
+        let rightBarButtonItem = UIBarButtonItem()
+        rightBarButtonItem.customView = noticeButton
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
     }
     
     func backButtonTapped(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(true)
     }
 
+    func noticeButtonTapped(sender: UIButton) {
+    
+    }
+    
     
 
     //MARK: - TableView

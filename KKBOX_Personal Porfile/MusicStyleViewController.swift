@@ -84,8 +84,20 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         leftBarButtonItem.customView = backButton
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
         
+        let noticeButton = NoticeButton()
+        noticeButton.InitUI()
+        noticeButton.addTarget(self, action: #selector(noticeButtonTapped), forControlEvents: .TouchUpInside)
+        
+        let rightBarButtonItem = UIBarButtonItem()
+        rightBarButtonItem.customView = noticeButton
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        
         self.title = "喜愛曲風"
         musicStyleSegmentedControl.initUI()
+    }
+    
+    func noticeButtonTapped(sender: UIButton) {
+        
     }
     
     func backButtonTapped(sender: UIButton) {

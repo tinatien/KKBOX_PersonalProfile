@@ -33,9 +33,13 @@ class FollowerViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initUI()
         
-        self.title = "粉絲人數"
         tableView.registerNib(UINib(nibName: "FollowerTableViewCell", bundle: nil), forCellReuseIdentifier: "FollowerTableViewCell")
+    }
+    
+    func initUI() {
+        self.title = "粉絲人數"
         
         let backButton = BackButton()
         backButton.InitUI()
@@ -44,12 +48,24 @@ class FollowerViewController: UIViewController, UITableViewDelegate, UITableView
         let leftBarButtonItem = UIBarButtonItem()
         leftBarButtonItem.customView = backButton
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
+        
+        let noticeButton = NoticeButton()
+        noticeButton.InitUI()
+        noticeButton.addTarget(self, action: #selector(noticeButtonTapped), forControlEvents: .TouchUpInside)
+        
+        let rightBarButtonItem = UIBarButtonItem()
+        rightBarButtonItem.customView = noticeButton
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
+
     }
     
     func backButtonTapped(sender: UIButton) {
         self.navigationController?.popViewControllerAnimated(true)
     }
 
+    func noticeButtonTapped(sender: UIButton) {
+    
+    }
 
 
    //MARK: - TableView
