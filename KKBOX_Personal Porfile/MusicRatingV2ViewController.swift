@@ -43,7 +43,7 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         headerView.backgroundColor = UIColor.clearColor()
         let iconImage = UIImage(named: "style_icon_topsong")
         let iconImageView = UIImageView(image: iconImage!)
-        iconImageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 80, 86)
+        iconImageView.frame = CGRectMake((headerView.bounds.size.width - 148)/2, (headerView.bounds.size.height - 64)/2, 148, 64)
         headerView.addSubview(iconImageView)
         
         let song = songsArray[0]
@@ -64,7 +64,6 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
     
     func initUI() {
         self.title = "聽歌排行榜"
-        self.totalSongsLabel.text = "\(songsArray.count) Songs"
         
         let backButton = BackButton()
         backButton.InitUI()
@@ -110,9 +109,10 @@ class MusicRatingV2ViewController: UIViewController, UITableViewDelegate, UITabl
         var cell: UITableViewCell?
         //dropFirst會讓第0個index為nil，不會往前遞補
         //            let dropSongs = songsArray.dropFirst()
+        self.totalSongsLabel.text = "\(songsArray.count) Songs"
+        
         let song = songsArray[indexPath.row]
         let songCell = tableView.dequeueReusableCellWithIdentifier("MusicRatingTableViewCell", forIndexPath: indexPath) as! MusicRatingTableViewCell
-        
         songCell.ratingNumberLabel.text = "\(indexPath.row+1)"
         songCell.configCell(song)
         cell = songCell

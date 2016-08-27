@@ -49,7 +49,7 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         } else if numberOfIndex == 1 {
                 let image = UIImage(named: "style_icon_country")
                 let imageView = UIImageView(image: image!)
-                imageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 60)/2, 60, 60)
+                imageView.frame = CGRectMake((headerView.bounds.size.width - 60)/2, (headerView.bounds.size.height - 80)/2, 60, 80)
                 headerView.addSubview(imageView)
         } else if numberOfIndex == 2 {
                 let image = UIImage(named: "style_icon_rock")
@@ -85,7 +85,6 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         self.navigationItem.leftBarButtonItem = leftBarButtonItem
         
         self.title = "喜愛曲風"
-        self.totalSongsLabel.text = "\(songsArray.count) Songs"
         musicStyleSegmentedControl.initUI()
     }
     
@@ -128,7 +127,6 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //MARK: - Action
     @IBAction func segmentedControlTapped(sender: AnyObject) {
-        print(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
         case 0:
             ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
@@ -182,10 +180,19 @@ class MusicStyleViewController: UIViewController, UITableViewDelegate, UITableVi
         return 44
     }
     
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            songsArray.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            tableView.reloadData()
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
         
         if songsArray.count != 0 {
+            self.totalSongsLabel.text = "\(songsArray.count) Songs"
             let song = songsArray[indexPath.row]
             let songCell = self.tableView.dequeueReusableCellWithIdentifier("MusicRatingTableViewCell", forIndexPath: indexPath) as! MusicRatingTableViewCell
             songCell.configCell(song)

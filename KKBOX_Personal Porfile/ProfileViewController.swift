@@ -119,7 +119,7 @@ class ProfileViewController: UIViewController {
                     self.fansNumberLabel.text = "\(user.followers.count)"
                 }
                 
-                self.passValueToMusicWall(name, completion: { 
+                self.passValueToMusicWall(name, completion: {
                     self.displayCurrentTab(TabIndex.MusicTab.rawValue)
                 })
                 }, failure: { (error) in
@@ -157,8 +157,8 @@ class ProfileViewController: UIViewController {
         ServerManager.getTrackByTagName(tagName: "爵士", completion: { (songs) in
             self.musicStyleVC = MusicStyleViewController.init(songsArray: songs)
             self.navigationController?.pushViewController(self.musicStyleVC, animated: true)
-            }) { (error) in
-                
+        }) { (error) in
+            
         }
     }
     
@@ -174,23 +174,13 @@ class ProfileViewController: UIViewController {
     
     @IBAction func followingButtonTapped(sender: AnyObject) {
         if followed != true {
-            let image = UIImage(named: "btn_follow_actived")
-            self.followingButton.setImage(image, forState: .Normal)
             ServerManager.addFollowing(userName: profileUserName!, completion: {
-                ServerManager.isFollowing(userName: self.profileUserName!, completion: { (result) in}, failure: { (error) in print("isFollowing error : \(error)")})
-                ServerManager.getSimpleInfo(username: self.profileUserName!, completion: { (user) in}, failure: { (error) in print("getSimpleInfo error : \(error)")})
-            }, failure: { (error) in print("addFollowing error : \(error)")})
-//            ServerManager.isFollowing(userName: profileUserName!, completion: { (result) in}, failure: { (error) in print("isFollowing error : \(error)")})
-//            ServerManager.getSimpleInfo(username: profileUserName!, completion: { (user) in}, failure: { (error) in print("getSimpleInfo error : \(error)")})
+                self.getUserInfo(jay_login, name: self.profileUserName!, completion: {})
+                }, failure: { (error) in})
         } else {
-            let image = UIImage(named: "btn_follow")
-            self.followingButton.setImage(image, forState: .Normal)
-            ServerManager.dropFollowing(userName: profileUserName!, completion: {
-                ServerManager.isFollowing(userName: self.profileUserName!, completion: { (result) in}, failure: { (error) in print("isFollowing error : \(error)")})
-                ServerManager.getSimpleInfo(username: self.profileUserName!, completion: { (user) in}, failure: { (error) in print("getSimpleInfo error : \(error)")})
-            }, failure: { (error) in print("dropFollowing error : \(error)")})
-//            ServerManager.isFollowing(userName: profileUserName!, completion: { (result) in}, failure: { (error) in print("isFollowing error : \(error)")})
-//            ServerManager.getSimpleInfo(username: profileUserName!, completion: { (user) in}, failure: { (error) in print("getSimpleInfo error : \(error)")})
+            ServerManager.dropFollowing(userName: self.profileUserName!, completion: {
+                self.getUserInfo(jay_login, name: self.profileUserName!, completion: {})
+                }, failure: { (error) in})
         }
     }
     

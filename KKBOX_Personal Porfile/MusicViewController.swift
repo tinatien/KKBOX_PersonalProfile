@@ -108,13 +108,13 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         var size: CGSize?
         if collectionView == collectedAlbumCollectionView {
-            size = CGSizeMake(134, 174)
+            size = CGSizeMake(100, 147)
         }
         if collectionView == playlistCollectionView {
-            size = CGSizeMake(134, 174)
+            size = CGSizeMake(100, 147)
         }
         if collectionView == followingArtistCollectionView {
-            size = CGSizeMake(86, 117)
+            size = CGSizeMake(74, 109)
         }
         return size!
     }

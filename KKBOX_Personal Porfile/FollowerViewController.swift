@@ -11,9 +11,12 @@ import UIKit
 class FollowerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var totalPeopleLabel: UILabel!
     
     var followersArray: [[String:String]]!
     
+    
+    lazy var profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
     
     convenience init(followersArray: [[String:String]]) {
         self.init(nibName: "FollowerViewController", bundle: nil)
@@ -53,8 +56,23 @@ class FollowerViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return followersArray.count
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectedIndexPath = tableView.indexPathForSelectedRow
+        let cell = tableView.cellForRowAtIndexPath(selectedIndexPath!) as! FollowerTableViewCell
+        let followerName = cell.nameLabel.text
+        
+        profileVC.profileUserName = followerName
+        self.showViewController(profileVC, sender: self)
+    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        self.totalPeopleLabel.text = "\(followersArray.count)位使用者"
+        
         let follower = followersArray[indexPath.row]
         let cell = self.tableView.dequeueReusableCellWithIdentifier("FollowerTableViewCell", forIndexPath: indexPath) as! FollowerTableViewCell
         cell.configCell(follower)
