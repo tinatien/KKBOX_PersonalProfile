@@ -513,7 +513,7 @@ class ServerManager: NSObject {
             switch response.result{
             case .Success(let value):
                 guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
-                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    print("ServerManager cannot case getStoriesTopTwo response value to array type")
                     failure(error: nil)
                     return
                     
@@ -540,7 +540,7 @@ class ServerManager: NSObject {
             switch response.result{
             case .Success(let value):
                 guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
-                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    print("ServerManager cannot case getStoriesByComments response value to array type")
                     failure(error: nil)
                     return
                     
@@ -568,7 +568,7 @@ class ServerManager: NSObject {
             switch response.result{
             case .Success(let value):
                 guard let responseArray = value as? [Dictionary<String, AnyObject>] else{
-                    print("ServerManager cannot case getStoryCollection response value to array type")
+                    print("ServerManager cannot case getStoriesByFollowings response value to array type")
                     failure(error: nil)
                     return
                     
