@@ -80,58 +80,56 @@
 		E51E62341D7174A300DECAE2 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E62321D7174A300DECAE2 /* PlaylistTableViewCell.swift */; };
 		E51E62351D7174A300DECAE2 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51E62331D7174A300DECAE2 /* PlaylistTableViewCell.xib */; };
 		E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E62361D71829000DECAE2 /* NoticeButton.swift */; };
+		E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D61D72A8FA00BB1D94 /* Story.swift */; };
+		E5D6B8DA1D72A8FA00BB1D94 /* StrangerStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */; };
+		E5D6B8DD1D72A9A000BB1D94 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8DB1D72A9A000BB1D94 /* Post.swift */; };
+		E5D6B8E61D72AA1900BB1D94 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */; };
+		E5D6B8E71D72AA1900BB1D94 /* CommentScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */; };
+		E5D6B8E81D72AA1900BB1D94 /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */; };
+		E5D6B8E91D72AA1900BB1D94 /* CommentSecondHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */; };
+		E5D6B8EA1D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */; };
+		E5D6B8EB1D72AA1900BB1D94 /* CommentRespondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */; };
+		E5D6B8F31D72AA3300BB1D94 /* AddStoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */; };
+		E5D6B8F41D72AA3300BB1D94 /* AddPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */; };
+		E5D6B8F51D72AA3300BB1D94 /* AfterAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */; };
+		E5D6B8F61D72AA3300BB1D94 /* BeforeAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */; };
+		E5D6B8F71D72AA3300BB1D94 /* AddStoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */; };
+		E5D6B8F81D72AA3300BB1D94 /* AddStoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */; };
+		E5D6B9001D72AA4500BB1D94 /* FeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */; };
+		E5D6B9011D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */; };
+		E5D6B9021D72AA4500BB1D94 /* DynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */; };
+		E5D6B9031D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */; };
+		E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */; };
+		E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */; };
+		E5D6B91D1D72AB8400BB1D94 /* DynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */; };
+		E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */; };
+		E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */; };
+		E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */; };
+		E5D6B9281D72AB9500BB1D94 /* CommentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */; };
+		E5D6B9291D72AB9500BB1D94 /* CommentSecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */; };
+		E5D6B92A1D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */; };
+		E5D6B9351D72ABB000BB1D94 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */; };
+		E5D6B9361D72ABB000BB1D94 /* AddStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */; };
+		E5D6B9371D72ABB000BB1D94 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */; };
+		E5D6B9381D72ABB000BB1D94 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */; };
+		E5D6B9391D72ABB000BB1D94 /* AddStoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */; };
+		E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */; };
+		E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */; };
+		E5D6B93C1D72ABB000BB1D94 /* BeforeAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */; };
+		E5D6B9871D72AC6C00BB1D94 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */; };
+		E5D6B9881D72AC6C00BB1D94 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */; };
+		E5D6B9891D72AC6C00BB1D94 /* MaterialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */; };
+		E5D6B98A1D72AC6C00BB1D94 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */; };
+		E5D6B98B1D72AC6C00BB1D94 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */; };
+		E5D6B98C1D72AC6C00BB1D94 /* MaterialTrackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */; };
+		E5D6B98D1D72AC6C00BB1D94 /* MaterialBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */; };
+		E5D6B98E1D72AC6C00BB1D94 /* MaterialProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */; };
+		E5D6B98F1D72AC6C00BB1D94 /* MaterialSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */; };
+		E5D6B9901D72AC6C00BB1D94 /* MaterialSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */; };
+		E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */; };
 		E5FE8F571D71AAE400C6CCE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F561D71AAE400C6CCE2 /* Comment.swift */; };
 		E5FE8F5A1D71ACE300C6CCE2 /* DynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F581D71ACE300C6CCE2 /* DynamicPostWallCell.swift */; };
 		E5FE8F5B1D71ACE300C6CCE2 /* DynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F591D71ACE300C6CCE2 /* DynamicPostWallCell.xib */; };
-		E5FE8F611D71C52900C6CCE2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F5F1D71C52900C6CCE2 /* Post.swift */; };
-		E5FE8F641D71C56200C6CCE2 /* Following.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F621D71C56200C6CCE2 /* Following.swift */; };
-		E5FE8F6C1D71C59500C6CCE2 /* FeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F651D71C59500C6CCE2 /* FeedVC.xib */; };
-		E5FE8F6D1D71C59500C6CCE2 /* StrangerDynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F661D71C59500C6CCE2 /* StrangerDynamicPostWallCell.xib */; };
-		E5FE8F6E1D71C59500C6CCE2 /* DynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F681D71C59500C6CCE2 /* DynamicPostWallCell.xib */; };
-		E5FE8F6F1D71C59500C6CCE2 /* DynamicPostWallSaySomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F691D71C59500C6CCE2 /* DynamicPostWallSaySomethingCell.xib */; };
-		E5FE8F7A1D71C59E00C6CCE2 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F701D71C59E00C6CCE2 /* CommentVC.xib */; };
-		E5FE8F7B1D71C59E00C6CCE2 /* CommentScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F711D71C59E00C6CCE2 /* CommentScrollView.xib */; };
-		E5FE8F7C1D71C59E00C6CCE2 /* MusicPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F721D71C59E00C6CCE2 /* MusicPostTableViewCell.xib */; };
-		E5FE8F7D1D71C59E00C6CCE2 /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F741D71C59E00C6CCE2 /* CommentHeaderView.xib */; };
-		E5FE8F7E1D71C59E00C6CCE2 /* CommentSecondHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F751D71C59E00C6CCE2 /* CommentSecondHeaderView.xib */; };
-		E5FE8F7F1D71C59E00C6CCE2 /* CommentStoryTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F761D71C59E00C6CCE2 /* CommentStoryTitleViewCell.xib */; };
-		E5FE8F801D71C59E00C6CCE2 /* CommentRespondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F771D71C59E00C6CCE2 /* CommentRespondCell.xib */; };
-		E5FE8F881D71C5AB00C6CCE2 /* AddStoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F811D71C5AB00C6CCE2 /* AddStoryVC.xib */; };
-		E5FE8F891D71C5AB00C6CCE2 /* AddPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F821D71C5AB00C6CCE2 /* AddPostVC.xib */; };
-		E5FE8F8A1D71C5AB00C6CCE2 /* AfterAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F831D71C5AB00C6CCE2 /* AfterAddPostTrackView.xib */; };
-		E5FE8F8B1D71C5AB00C6CCE2 /* BeforeAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F841D71C5AB00C6CCE2 /* BeforeAddPostTrackView.xib */; };
-		E5FE8F8C1D71C5AB00C6CCE2 /* AddStoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F851D71C5AB00C6CCE2 /* AddStoryCell.xib */; };
-		E5FE8F8D1D71C5AB00C6CCE2 /* AddStoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F861D71C5AB00C6CCE2 /* AddStoryHeaderView.xib */; };
-		E5FE8F931D71C5ED00C6CCE2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F8E1D71C5ED00C6CCE2 /* FeedVC.swift */; };
-		E5FE8F941D71C5ED00C6CCE2 /* StrangerDynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F8F1D71C5ED00C6CCE2 /* StrangerDynamicPostWallCell.swift */; };
-		E5FE8F961D71C5ED00C6CCE2 /* DynamicPostWallSaySomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F911D71C5ED00C6CCE2 /* DynamicPostWallSaySomethingCell.swift */; };
-		E5FE8F9F1D71C60100C6CCE2 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F971D71C60100C6CCE2 /* CommentVC.swift */; };
-		E5FE8FA01D71C60100C6CCE2 /* CommentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F981D71C60100C6CCE2 /* CommentScrollView.swift */; };
-		E5FE8FA11D71C60100C6CCE2 /* CommentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F991D71C60100C6CCE2 /* CommentHeaderView.swift */; };
-		E5FE8FA21D71C60100C6CCE2 /* CommentSecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F9A1D71C60100C6CCE2 /* CommentSecondHeaderView.swift */; };
-		E5FE8FA31D71C60100C6CCE2 /* CommentStoryTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F9B1D71C60100C6CCE2 /* CommentStoryTitleViewCell.swift */; };
-		E5FE8FA41D71C60100C6CCE2 /* MusicPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F9C1D71C60100C6CCE2 /* MusicPostTableViewCell.swift */; };
-		E5FE8FA51D71C60100C6CCE2 /* CommentRespondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F9D1D71C60100C6CCE2 /* CommentRespondCell.swift */; };
-		E5FE8FAF1D71C60900C6CCE2 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FA61D71C60900C6CCE2 /* AddPostVC.swift */; };
-		E5FE8FB01D71C60900C6CCE2 /* AddStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FA71D71C60900C6CCE2 /* AddStoryVC.swift */; };
-		E5FE8FB11D71C60900C6CCE2 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FA81D71C60900C6CCE2 /* CustomSearchBar.swift */; };
-		E5FE8FB21D71C60900C6CCE2 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FA91D71C60900C6CCE2 /* CustomSearchController.swift */; };
-		E5FE8FB31D71C60900C6CCE2 /* AddStoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FAA1D71C60900C6CCE2 /* AddStoryHeaderView.swift */; };
-		E5FE8FB41D71C60900C6CCE2 /* AddStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FAB1D71C60900C6CCE2 /* AddStoryCell.swift */; };
-		E5FE8FB51D71C60900C6CCE2 /* AfterAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FAC1D71C60900C6CCE2 /* AfterAddPostTrackView.swift */; };
-		E5FE8FB61D71C60900C6CCE2 /* BeforeAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FAD1D71C60900C6CCE2 /* BeforeAddPostTrackView.swift */; };
-		E5FE8FC31D71C72200C6CCE2 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FB71D71C72200C6CCE2 /* MaterialButton.swift */; };
-		E5FE8FC41D71C72200C6CCE2 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FB81D71C72200C6CCE2 /* MaterialTextField.swift */; };
-		E5FE8FC51D71C72200C6CCE2 /* MaterialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FB91D71C72200C6CCE2 /* MaterialTextView.swift */; };
-		E5FE8FC61D71C72200C6CCE2 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBA1D71C72200C6CCE2 /* MaterialLabel.swift */; };
-		E5FE8FC71D71C72200C6CCE2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBB1D71C72200C6CCE2 /* MaterialView.swift */; };
-		E5FE8FC81D71C72200C6CCE2 /* MaterialTrackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBC1D71C72200C6CCE2 /* MaterialTrackContainerView.swift */; };
-		E5FE8FC91D71C72200C6CCE2 /* MaterialBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBD1D71C72200C6CCE2 /* MaterialBackgroundView.swift */; };
-		E5FE8FCA1D71C72200C6CCE2 /* MaterialProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBE1D71C72200C6CCE2 /* MaterialProfileImgView.swift */; };
-		E5FE8FCB1D71C72200C6CCE2 /* MaterialSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FBF1D71C72200C6CCE2 /* MaterialSegmentedControl.swift */; };
-		E5FE8FCC1D71C72200C6CCE2 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FC01D71C72200C6CCE2 /* CustomSegmentedControl.swift */; };
-		E5FE8FD01D71C89C00C6CCE2 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FCD1D71C89C00C6CCE2 /* Story.swift */; };
-		E5FE8FD11D71C89C00C6CCE2 /* StrangerStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8FCE1D71C89C00C6CCE2 /* StrangerStories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,58 +230,56 @@
 		E51E62321D7174A300DECAE2 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		E51E62331D7174A300DECAE2 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
 		E51E62361D71829000DECAE2 /* NoticeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeButton.swift; sourceTree = "<group>"; };
+		E5D6B8D61D72A8FA00BB1D94 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerStories.swift; sourceTree = "<group>"; };
+		E5D6B8DB1D72A9A000BB1D94 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
+		E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentScrollView.xib; sourceTree = "<group>"; };
+		E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentHeaderView.xib; sourceTree = "<group>"; };
+		E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentSecondHeaderView.xib; sourceTree = "<group>"; };
+		E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentStoryTitleViewCell.xib; sourceTree = "<group>"; };
+		E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentRespondCell.xib; sourceTree = "<group>"; };
+		E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryVC.xib; sourceTree = "<group>"; };
+		E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPostVC.xib; sourceTree = "<group>"; };
+		E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfterAddPostTrackView.xib; sourceTree = "<group>"; };
+		E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeforeAddPostTrackView.xib; sourceTree = "<group>"; };
+		E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryCell.xib; sourceTree = "<group>"; };
+		E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryHeaderView.xib; sourceTree = "<group>"; };
+		E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedVC.xib; sourceTree = "<group>"; };
+		E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangerDynamicPostWallCell.xib; sourceTree = "<group>"; };
+		E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicPostWallCell.xib; path = ../DynamicPostWallCell.xib; sourceTree = "<group>"; };
+		E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallSaySomethingCell.xib; sourceTree = "<group>"; };
+		E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerDynamicPostWallCell.swift; sourceTree = "<group>"; };
+		E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallCell.swift; sourceTree = "<group>"; };
+		E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallSaySomethingCell.swift; sourceTree = "<group>"; };
+		E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScrollView.swift; sourceTree = "<group>"; };
+		E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentHeaderView.swift; sourceTree = "<group>"; };
+		E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSecondHeaderView.swift; sourceTree = "<group>"; };
+		E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentStoryTitleViewCell.swift; sourceTree = "<group>"; };
+		E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryVC.swift; sourceTree = "<group>"; };
+		E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
+		E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryHeaderView.swift; sourceTree = "<group>"; };
+		E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryCell.swift; sourceTree = "<group>"; };
+		E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterAddPostTrackView.swift; sourceTree = "<group>"; };
+		E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddPostTrackView.swift; sourceTree = "<group>"; };
+		E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextView.swift; sourceTree = "<group>"; };
+		E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLabel.swift; sourceTree = "<group>"; };
+		E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTrackContainerView.swift; sourceTree = "<group>"; };
+		E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialBackgroundView.swift; sourceTree = "<group>"; };
+		E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialProfileImgView.swift; sourceTree = "<group>"; };
+		E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSegmentedControl.swift; sourceTree = "<group>"; };
+		E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSegmentedControll.swift; sourceTree = "<group>"; };
+		E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRespondCell.swift; sourceTree = "<group>"; };
 		E5FE8F561D71AAE400C6CCE2 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		E5FE8F581D71ACE300C6CCE2 /* DynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallCell.swift; sourceTree = "<group>"; };
 		E5FE8F591D71ACE300C6CCE2 /* DynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallCell.xib; sourceTree = "<group>"; };
-		E5FE8F5F1D71C52900C6CCE2 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		E5FE8F621D71C56200C6CCE2 /* Following.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Following.swift; sourceTree = "<group>"; };
-		E5FE8F651D71C59500C6CCE2 /* FeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedVC.xib; sourceTree = "<group>"; };
-		E5FE8F661D71C59500C6CCE2 /* StrangerDynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangerDynamicPostWallCell.xib; sourceTree = "<group>"; };
-		E5FE8F681D71C59500C6CCE2 /* DynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicPostWallCell.xib; path = ../DynamicPostWallCell.xib; sourceTree = "<group>"; };
-		E5FE8F691D71C59500C6CCE2 /* DynamicPostWallSaySomethingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallSaySomethingCell.xib; sourceTree = "<group>"; };
-		E5FE8F701D71C59E00C6CCE2 /* CommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
-		E5FE8F711D71C59E00C6CCE2 /* CommentScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentScrollView.xib; sourceTree = "<group>"; };
-		E5FE8F721D71C59E00C6CCE2 /* MusicPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPostTableViewCell.xib; sourceTree = "<group>"; };
-		E5FE8F741D71C59E00C6CCE2 /* CommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentHeaderView.xib; sourceTree = "<group>"; };
-		E5FE8F751D71C59E00C6CCE2 /* CommentSecondHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentSecondHeaderView.xib; sourceTree = "<group>"; };
-		E5FE8F761D71C59E00C6CCE2 /* CommentStoryTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentStoryTitleViewCell.xib; sourceTree = "<group>"; };
-		E5FE8F771D71C59E00C6CCE2 /* CommentRespondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentRespondCell.xib; sourceTree = "<group>"; };
-		E5FE8F811D71C5AB00C6CCE2 /* AddStoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryVC.xib; sourceTree = "<group>"; };
-		E5FE8F821D71C5AB00C6CCE2 /* AddPostVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPostVC.xib; sourceTree = "<group>"; };
-		E5FE8F831D71C5AB00C6CCE2 /* AfterAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfterAddPostTrackView.xib; sourceTree = "<group>"; };
-		E5FE8F841D71C5AB00C6CCE2 /* BeforeAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeforeAddPostTrackView.xib; sourceTree = "<group>"; };
-		E5FE8F851D71C5AB00C6CCE2 /* AddStoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryCell.xib; sourceTree = "<group>"; };
-		E5FE8F861D71C5AB00C6CCE2 /* AddStoryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryHeaderView.xib; sourceTree = "<group>"; };
-		E5FE8F8E1D71C5ED00C6CCE2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
-		E5FE8F8F1D71C5ED00C6CCE2 /* StrangerDynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerDynamicPostWallCell.swift; sourceTree = "<group>"; };
-		E5FE8F911D71C5ED00C6CCE2 /* DynamicPostWallSaySomethingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallSaySomethingCell.swift; sourceTree = "<group>"; };
-		E5FE8F971D71C60100C6CCE2 /* CommentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
-		E5FE8F981D71C60100C6CCE2 /* CommentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScrollView.swift; sourceTree = "<group>"; };
-		E5FE8F991D71C60100C6CCE2 /* CommentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentHeaderView.swift; sourceTree = "<group>"; };
-		E5FE8F9A1D71C60100C6CCE2 /* CommentSecondHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSecondHeaderView.swift; sourceTree = "<group>"; };
-		E5FE8F9B1D71C60100C6CCE2 /* CommentStoryTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentStoryTitleViewCell.swift; sourceTree = "<group>"; };
-		E5FE8F9C1D71C60100C6CCE2 /* MusicPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPostTableViewCell.swift; sourceTree = "<group>"; };
-		E5FE8F9D1D71C60100C6CCE2 /* CommentRespondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRespondCell.swift; sourceTree = "<group>"; };
-		E5FE8FA61D71C60900C6CCE2 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
-		E5FE8FA71D71C60900C6CCE2 /* AddStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryVC.swift; sourceTree = "<group>"; };
-		E5FE8FA81D71C60900C6CCE2 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
-		E5FE8FA91D71C60900C6CCE2 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
-		E5FE8FAA1D71C60900C6CCE2 /* AddStoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryHeaderView.swift; sourceTree = "<group>"; };
-		E5FE8FAB1D71C60900C6CCE2 /* AddStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryCell.swift; sourceTree = "<group>"; };
-		E5FE8FAC1D71C60900C6CCE2 /* AfterAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterAddPostTrackView.swift; sourceTree = "<group>"; };
-		E5FE8FAD1D71C60900C6CCE2 /* BeforeAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddPostTrackView.swift; sourceTree = "<group>"; };
-		E5FE8FB71D71C72200C6CCE2 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
-		E5FE8FB81D71C72200C6CCE2 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
-		E5FE8FB91D71C72200C6CCE2 /* MaterialTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextView.swift; sourceTree = "<group>"; };
-		E5FE8FBA1D71C72200C6CCE2 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLabel.swift; sourceTree = "<group>"; };
-		E5FE8FBB1D71C72200C6CCE2 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
-		E5FE8FBC1D71C72200C6CCE2 /* MaterialTrackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTrackContainerView.swift; sourceTree = "<group>"; };
-		E5FE8FBD1D71C72200C6CCE2 /* MaterialBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialBackgroundView.swift; sourceTree = "<group>"; };
-		E5FE8FBE1D71C72200C6CCE2 /* MaterialProfileImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialProfileImgView.swift; sourceTree = "<group>"; };
-		E5FE8FBF1D71C72200C6CCE2 /* MaterialSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSegmentedControl.swift; sourceTree = "<group>"; };
-		E5FE8FC01D71C72200C6CCE2 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
-		E5FE8FCD1D71C89C00C6CCE2 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		E5FE8FCE1D71C89C00C6CCE2 /* StrangerStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerStories.swift; sourceTree = "<group>"; };
 		F9DF742A1673CC34503082DA /* Pods-KKBOX_Personal Porfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -405,9 +401,8 @@
 		07F922341D656C3D00D6BE94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8FCF1D71C89C00C6CCE2 /* Story */,
-				E5FE8F601D71C52900C6CCE2 /* Post */,
-				E5FE8F631D71C56200C6CCE2 /* Followings */,
+				E5D6B8D81D72A8FA00BB1D94 /* Story */,
+				E5D6B8DC1D72A9A000BB1D94 /* Post */,
 				07F922641D6AB77200D6BE94 /* Constant.swift */,
 				07F9226D1D6ACF3600D6BE94 /* Playlist.swift */,
 				07F9226F1D6ACF5600D6BE94 /* Song.swift */,
@@ -422,9 +417,9 @@
 		07F922361D656C4F00D6BE94 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F791D71C59E00C6CCE2 /* CommentVC */,
-				E5FE8F871D71C5AB00C6CCE2 /* AddStoryVC */,
-				E5FE8F6B1D71C59500C6CCE2 /* FeedVC */,
+				E5D6B8F21D72AA3300BB1D94 /* AddStoryVC */,
+				E5D6B8E51D72AA1900BB1D94 /* CommentVC */,
+				E5D6B8FF1D72AA4500BB1D94 /* FeedVC */,
 				07F9224E1D65939900D6BE94 /* ProfileViewController.xib */,
 				07F922611D6AB51E00D6BE94 /* MusicViewController.xib */,
 				07F9225D1D6AB50300D6BE94 /* StoryViewController.xib */,
@@ -445,9 +440,9 @@
 		07F922371D656C5900D6BE94 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F921D71C5ED00C6CCE2 /* FeedVC */,
-				E5FE8F9E1D71C60100C6CCE2 /* CommentVC */,
-				E5FE8FAE1D71C60900C6CCE2 /* AddStoryVC */,
+				E5D6B9341D72ABB000BB1D94 /* AddStoryVC */,
+				E5D6B9251D72AB9500BB1D94 /* CommentVC */,
+				E5D6B91A1D72AB8400BB1D94 /* FeedVC */,
 				07F9224C1D65937C00D6BE94 /* ProfileViewController.swift */,
 				07F922601D6AB51E00D6BE94 /* MusicViewController.swift */,
 				07F9225C1D6AB50300D6BE94 /* StoryViewController.swift */,
@@ -541,172 +536,155 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E5FE8F601D71C52900C6CCE2 /* Post */ = {
+		E5D6B8D81D72A8FA00BB1D94 /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F5F1D71C52900C6CCE2 /* Post.swift */,
+				E5D6B8D61D72A8FA00BB1D94 /* Story.swift */,
+				E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */,
+			);
+			name = Story;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
+			sourceTree = "<group>";
+		};
+		E5D6B8DC1D72A9A000BB1D94 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6B8DB1D72A9A000BB1D94 /* Post.swift */,
 			);
 			name = Post;
 			path = ../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8F631D71C56200C6CCE2 /* Followings */ = {
+		E5D6B8E41D72AA1900BB1D94 /* Comment Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F621D71C56200C6CCE2 /* Following.swift */,
-			);
-			name = Followings;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
-			sourceTree = "<group>";
-		};
-		E5FE8F671D71C59500C6CCE2 /* StrangerPostCell */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8F661D71C59500C6CCE2 /* StrangerDynamicPostWallCell.xib */,
-			);
-			name = StrangerPostCell;
-			sourceTree = "<group>";
-		};
-		E5FE8F6A1D71C59500C6CCE2 /* MyPostCell */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8F681D71C59500C6CCE2 /* DynamicPostWallCell.xib */,
-				E5FE8F691D71C59500C6CCE2 /* DynamicPostWallSaySomethingCell.xib */,
-			);
-			name = MyPostCell;
-			sourceTree = "<group>";
-		};
-		E5FE8F6B1D71C59500C6CCE2 /* FeedVC */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8F651D71C59500C6CCE2 /* FeedVC.xib */,
-				E5FE8F671D71C59500C6CCE2 /* StrangerPostCell */,
-				E5FE8F6A1D71C59500C6CCE2 /* MyPostCell */,
-			);
-			name = FeedVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
-			sourceTree = "<group>";
-		};
-		E5FE8F731D71C59E00C6CCE2 /* MusicPostCell */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8F721D71C59E00C6CCE2 /* MusicPostTableViewCell.xib */,
-			);
-			name = MusicPostCell;
-			sourceTree = "<group>";
-		};
-		E5FE8F781D71C59E00C6CCE2 /* Comment Cell */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8F731D71C59E00C6CCE2 /* MusicPostCell */,
-				E5FE8F741D71C59E00C6CCE2 /* CommentHeaderView.xib */,
-				E5FE8F751D71C59E00C6CCE2 /* CommentSecondHeaderView.xib */,
-				E5FE8F761D71C59E00C6CCE2 /* CommentStoryTitleViewCell.xib */,
-				E5FE8F771D71C59E00C6CCE2 /* CommentRespondCell.xib */,
+				E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */,
+				E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */,
+				E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */,
+				E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */,
 			);
 			name = "Comment Cell";
 			sourceTree = "<group>";
 		};
-		E5FE8F791D71C59E00C6CCE2 /* CommentVC */ = {
+		E5D6B8E51D72AA1900BB1D94 /* CommentVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F701D71C59E00C6CCE2 /* CommentVC.xib */,
-				E5FE8F711D71C59E00C6CCE2 /* CommentScrollView.xib */,
-				E5FE8F781D71C59E00C6CCE2 /* Comment Cell */,
+				E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */,
+				E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */,
+				E5D6B8E41D72AA1900BB1D94 /* Comment Cell */,
 			);
 			name = CommentVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8F871D71C5AB00C6CCE2 /* AddStoryVC */ = {
+		E5D6B8F21D72AA3300BB1D94 /* AddStoryVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F811D71C5AB00C6CCE2 /* AddStoryVC.xib */,
-				E5FE8F821D71C5AB00C6CCE2 /* AddPostVC.xib */,
-				E5FE8F831D71C5AB00C6CCE2 /* AfterAddPostTrackView.xib */,
-				E5FE8F841D71C5AB00C6CCE2 /* BeforeAddPostTrackView.xib */,
-				E5FE8F851D71C5AB00C6CCE2 /* AddStoryCell.xib */,
-				E5FE8F861D71C5AB00C6CCE2 /* AddStoryHeaderView.xib */,
+				E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */,
+				E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */,
+				E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */,
+				E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */,
+				E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */,
+				E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */,
 			);
 			name = AddStoryVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8F921D71C5ED00C6CCE2 /* FeedVC */ = {
+		E5D6B8FB1D72AA4500BB1D94 /* StrangerPostCell */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F8E1D71C5ED00C6CCE2 /* FeedVC.swift */,
-				E5FE8F8F1D71C5ED00C6CCE2 /* StrangerDynamicPostWallCell.swift */,
-				E5FE8F911D71C5ED00C6CCE2 /* DynamicPostWallSaySomethingCell.swift */,
+				E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */,
+			);
+			name = StrangerPostCell;
+			sourceTree = "<group>";
+		};
+		E5D6B8FE1D72AA4500BB1D94 /* MyPostCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */,
+				E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */,
+			);
+			name = MyPostCell;
+			sourceTree = "<group>";
+		};
+		E5D6B8FF1D72AA4500BB1D94 /* FeedVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */,
+				E5D6B8FB1D72AA4500BB1D94 /* StrangerPostCell */,
+				E5D6B8FE1D72AA4500BB1D94 /* MyPostCell */,
 			);
 			name = FeedVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8F9E1D71C60100C6CCE2 /* CommentVC */ = {
+		E5D6B91A1D72AB8400BB1D94 /* FeedVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8F971D71C60100C6CCE2 /* CommentVC.swift */,
-				E5FE8F981D71C60100C6CCE2 /* CommentScrollView.swift */,
-				E5FE8F991D71C60100C6CCE2 /* CommentHeaderView.swift */,
-				E5FE8F9A1D71C60100C6CCE2 /* CommentSecondHeaderView.swift */,
-				E5FE8F9B1D71C60100C6CCE2 /* CommentStoryTitleViewCell.swift */,
-				E5FE8F9C1D71C60100C6CCE2 /* MusicPostTableViewCell.swift */,
-				E5FE8F9D1D71C60100C6CCE2 /* CommentRespondCell.swift */,
+				E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */,
+				E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */,
+				E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */,
+				E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */,
+			);
+			name = FeedVC;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
+			sourceTree = "<group>";
+		};
+		E5D6B9251D72AB9500BB1D94 /* CommentVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */,
+				E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */,
+				E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */,
+				E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */,
+				E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */,
+				E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */,
 			);
 			name = CommentVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8FAE1D71C60900C6CCE2 /* AddStoryVC */ = {
+		E5D6B9341D72ABB000BB1D94 /* AddStoryVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8FA61D71C60900C6CCE2 /* AddPostVC.swift */,
-				E5FE8FA71D71C60900C6CCE2 /* AddStoryVC.swift */,
-				E5FE8FA81D71C60900C6CCE2 /* CustomSearchBar.swift */,
-				E5FE8FA91D71C60900C6CCE2 /* CustomSearchController.swift */,
-				E5FE8FAA1D71C60900C6CCE2 /* AddStoryHeaderView.swift */,
-				E5FE8FAB1D71C60900C6CCE2 /* AddStoryCell.swift */,
-				E5FE8FAC1D71C60900C6CCE2 /* AfterAddPostTrackView.swift */,
-				E5FE8FAD1D71C60900C6CCE2 /* BeforeAddPostTrackView.swift */,
+				E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */,
+				E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */,
+				E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */,
+				E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */,
+				E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */,
+				E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */,
+				E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */,
+				E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */,
 			);
 			name = AddStoryVC;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5FE8FC11D71C72200C6CCE2 /* View Material */ = {
+		E5D6B9861D72AC6C00BB1D94 /* View Material */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8FB71D71C72200C6CCE2 /* MaterialButton.swift */,
-				E5FE8FB81D71C72200C6CCE2 /* MaterialTextField.swift */,
-				E5FE8FB91D71C72200C6CCE2 /* MaterialTextView.swift */,
-				E5FE8FBA1D71C72200C6CCE2 /* MaterialLabel.swift */,
-				E5FE8FBB1D71C72200C6CCE2 /* MaterialView.swift */,
-				E5FE8FBC1D71C72200C6CCE2 /* MaterialTrackContainerView.swift */,
-				E5FE8FBD1D71C72200C6CCE2 /* MaterialBackgroundView.swift */,
-				E5FE8FBE1D71C72200C6CCE2 /* MaterialProfileImgView.swift */,
-				E5FE8FBF1D71C72200C6CCE2 /* MaterialSegmentedControl.swift */,
-				E5FE8FC01D71C72200C6CCE2 /* CustomSegmentedControl.swift */,
+				E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */,
+				E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */,
+				E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */,
+				E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */,
+				E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */,
+				E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */,
+				E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */,
+				E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */,
+				E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */,
+				E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */,
 			);
 			name = "View Material";
+			path = ../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
 		E5FE8FC21D71C72200C6CCE2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				E5FE8FC11D71C72200C6CCE2 /* View Material */,
+				E5D6B9861D72AC6C00BB1D94 /* View Material */,
 			);
 			name = Util;
-			path = ../../KKBox_People_Project/KKBox_People_Project;
-			sourceTree = "<group>";
-		};
-		E5FE8FCF1D71C89C00C6CCE2 /* Story */ = {
-			isa = PBXGroup;
-			children = (
-				E5FE8FCD1D71C89C00C6CCE2 /* Story.swift */,
-				E5FE8FCE1D71C89C00C6CCE2 /* StrangerStories.swift */,
-			);
-			name = Story;
 			path = ../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
@@ -819,53 +797,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D6B9031D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib in Resources */,
 				0743BC601D6D847C00936FF9 /* FollowerTableViewCell.xib in Resources */,
-				E5FE8F8B1D71C5AB00C6CCE2 /* BeforeAddPostTrackView.xib in Resources */,
+				E5D6B9011D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib in Resources */,
 				E5FE8F5B1D71ACE300C6CCE2 /* DynamicPostWallCell.xib in Resources */,
 				07F9223F1D656CCC00D6BE94 /* ExploreViewController.xib in Resources */,
 				0743BC501D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib in Resources */,
 				0743BC641D6D928300936FF9 /* FollowingTableViewCell.xib in Resources */,
 				E51E62311D71733300DECAE2 /* PlaylistViewController.xib in Resources */,
-				E5FE8F6F1D71C59500C6CCE2 /* DynamicPostWallSaySomethingCell.xib in Resources */,
-				E5FE8F7F1D71C59E00C6CCE2 /* CommentStoryTitleViewCell.xib in Resources */,
-				E5FE8F881D71C5AB00C6CCE2 /* AddStoryVC.xib in Resources */,
+				E5D6B8E71D72AA1900BB1D94 /* CommentScrollView.xib in Resources */,
+				E5D6B8EB1D72AA1900BB1D94 /* CommentRespondCell.xib in Resources */,
+				E5D6B8E61D72AA1900BB1D94 /* CommentVC.xib in Resources */,
 				0743BCB91D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib in Resources */,
 				0743BC6C1D6E88C100936FF9 /* MusicRatingTableViewCell.xib in Resources */,
-				E5FE8F801D71C59E00C6CCE2 /* CommentRespondCell.xib in Resources */,
-				E5FE8F7D1D71C59E00C6CCE2 /* CommentHeaderView.xib in Resources */,
 				0743BCB21D6EE18E00936FF9 /* PlayHeaderView.xib in Resources */,
 				0743BC5C1D6D715200936FF9 /* FollowingViewController.xib in Resources */,
 				07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */,
 				0743BC681D6DA28D00936FF9 /* MusicRatingViewController.xib in Resources */,
 				0743BCBF1D70064C00936FF9 /* MusicStyleViewController.xib in Resources */,
-				E5FE8F8C1D71C5AB00C6CCE2 /* AddStoryCell.xib in Resources */,
+				E5D6B8E91D72AA1900BB1D94 /* CommentSecondHeaderView.xib in Resources */,
+				E5D6B8F71D72AA3300BB1D94 /* AddStoryCell.xib in Resources */,
+				E5D6B8EA1D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib in Resources */,
 				07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */,
 				0743BC481D6C396700936FF9 /* FollowingArtistCollectionViewCell.xib in Resources */,
 				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
 				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
-				E5FE8F7A1D71C59E00C6CCE2 /* CommentVC.xib in Resources */,
-				E5FE8F6D1D71C59500C6CCE2 /* StrangerDynamicPostWallCell.xib in Resources */,
+				E5D6B8F51D72AA3300BB1D94 /* AfterAddPostTrackView.xib in Resources */,
 				07F9226C1D6AC75800D6BE94 /* Podfile in Resources */,
 				0743BC581D6D6C8D00936FF9 /* FollowerViewController.xib in Resources */,
 				E51E622D1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib in Resources */,
-				E5FE8F891D71C5AB00C6CCE2 /* AddPostVC.xib in Resources */,
-				E5FE8F7E1D71C59E00C6CCE2 /* CommentSecondHeaderView.xib in Resources */,
 				0743BC711D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib in Resources */,
+				E5D6B9001D72AA4500BB1D94 /* FeedVC.xib in Resources */,
 				E51E62351D7174A300DECAE2 /* PlaylistTableViewCell.xib in Resources */,
-				E5FE8F7C1D71C59E00C6CCE2 /* MusicPostTableViewCell.xib in Resources */,
-				E5FE8F6C1D71C59500C6CCE2 /* FeedVC.xib in Resources */,
 				0743BC4C1D6C397B00936FF9 /* PlaylistCollectionViewCell.xib in Resources */,
 				07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */,
-				E5FE8F8A1D71C5AB00C6CCE2 /* AfterAddPostTrackView.xib in Resources */,
 				07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */,
+				E5D6B8F41D72AA3300BB1D94 /* AddPostVC.xib in Resources */,
+				E5D6B9021D72AA4500BB1D94 /* DynamicPostWallCell.xib in Resources */,
+				E5D6B8F81D72AA3300BB1D94 /* AddStoryHeaderView.xib in Resources */,
 				07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */,
-				E5FE8F6E1D71C59500C6CCE2 /* DynamicPostWallCell.xib in Resources */,
-				E5FE8F8D1D71C5AB00C6CCE2 /* AddStoryHeaderView.xib in Resources */,
+				E5D6B8F61D72AA3300BB1D94 /* BeforeAddPostTrackView.xib in Resources */,
+				E5D6B8F31D72AA3300BB1D94 /* AddStoryVC.xib in Resources */,
 				0743BC541D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.xib in Resources */,
 				0743BC441D6C393200936FF9 /* MusicRatingCollectionViewCell.xib in Resources */,
 				07F922631D6AB51E00D6BE94 /* MusicViewController.xib in Resources */,
 				07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */,
-				E5FE8F7B1D71C59E00C6CCE2 /* CommentScrollView.xib in Resources */,
+				E5D6B8E81D72AA1900BB1D94 /* CommentHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,81 +930,80 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5FE8FB01D71C60900C6CCE2 /* AddStoryVC.swift in Sources */,
+				E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */,
 				0743BC631D6D928300936FF9 /* FollowingTableViewCell.swift in Sources */,
-				E5FE8FB11D71C60900C6CCE2 /* CustomSearchBar.swift in Sources */,
 				07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */,
-				E5FE8FB41D71C60900C6CCE2 /* AddStoryCell.swift in Sources */,
 				07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */,
+				E5D6B9351D72ABB000BB1D94 /* AddPostVC.swift in Sources */,
 				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
 				07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */,
 				0743BCB51D6EE40300936FF9 /* PlayHeaderView.swift in Sources */,
 				07F9223E1D656CCC00D6BE94 /* ExploreViewController.swift in Sources */,
-				E5FE8F941D71C5ED00C6CCE2 /* StrangerDynamicPostWallCell.swift in Sources */,
 				07F922721D6ACF6C00D6BE94 /* Album.swift in Sources */,
-				E5FE8F9F1D71C60100C6CCE2 /* CommentVC.swift in Sources */,
-				E5FE8FCA1D71C72200C6CCE2 /* MaterialProfileImgView.swift in Sources */,
 				07F9223A1D656CAB00D6BE94 /* MyLibraryViewController.swift in Sources */,
 				0743BCB81D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift in Sources */,
 				0743BC471D6C396700936FF9 /* FollowingArtistCollectionViewCell.swift in Sources */,
 				07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */,
-				E5FE8FD11D71C89C00C6CCE2 /* StrangerStories.swift in Sources */,
-				E5FE8FCB1D71C72200C6CCE2 /* MaterialSegmentedControl.swift in Sources */,
-				E5FE8FA11D71C60100C6CCE2 /* CommentHeaderView.swift in Sources */,
+				E5D6B9381D72ABB000BB1D94 /* CustomSearchController.swift in Sources */,
+				E5D6B93C1D72ABB000BB1D94 /* BeforeAddPostTrackView.swift in Sources */,
+				E5D6B8DA1D72A8FA00BB1D94 /* StrangerStories.swift in Sources */,
 				07F922581D6AA91300D6BE94 /* ProfileSegmentedControl.swift in Sources */,
-				E5FE8FA31D71C60100C6CCE2 /* CommentStoryTitleViewCell.swift in Sources */,
-				E5FE8FCC1D71C72200C6CCE2 /* CustomSegmentedControl.swift in Sources */,
 				0743BC5B1D6D715200936FF9 /* FollowingViewController.swift in Sources */,
 				0743BC5F1D6D847C00936FF9 /* FollowerTableViewCell.swift in Sources */,
-				E5FE8FB61D71C60900C6CCE2 /* BeforeAddPostTrackView.swift in Sources */,
+				E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */,
+				E5D6B92A1D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift in Sources */,
+				E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */,
+				E5D6B91D1D72AB8400BB1D94 /* DynamicPostWallCell.swift in Sources */,
+				E5D6B9881D72AC6C00BB1D94 /* MaterialTextField.swift in Sources */,
+				E5D6B98A1D72AC6C00BB1D94 /* MaterialLabel.swift in Sources */,
+				E5D6B9891D72AC6C00BB1D94 /* MaterialTextView.swift in Sources */,
+				E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */,
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				E51E62301D71733300DECAE2 /* PlaylistViewController.swift in Sources */,
 				0743BC4F1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift in Sources */,
 				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
-				E5FE8FAF1D71C60900C6CCE2 /* AddPostVC.swift in Sources */,
-				E5FE8F641D71C56200C6CCE2 /* Following.swift in Sources */,
+				E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */,
 				0743BCBE1D70064C00936FF9 /* MusicStyleViewController.swift in Sources */,
 				E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */,
+				E5D6B8DD1D72A9A000BB1D94 /* Post.swift in Sources */,
 				E51E62341D7174A300DECAE2 /* PlaylistTableViewCell.swift in Sources */,
+				E5D6B98B1D72AC6C00BB1D94 /* MaterialView.swift in Sources */,
+				E5D6B9901D72AC6C00BB1D94 /* MaterialSegmentedControll.swift in Sources */,
 				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
 				0743BC4B1D6C397B00936FF9 /* PlaylistCollectionViewCell.swift in Sources */,
-				E5FE8FB31D71C60900C6CCE2 /* AddStoryHeaderView.swift in Sources */,
-				E5FE8F611D71C52900C6CCE2 /* Post.swift in Sources */,
-				E5FE8F961D71C5ED00C6CCE2 /* DynamicPostWallSaySomethingCell.swift in Sources */,
-				E5FE8FC31D71C72200C6CCE2 /* MaterialButton.swift in Sources */,
-				E5FE8FA21D71C60100C6CCE2 /* CommentSecondHeaderView.swift in Sources */,
+				E5D6B9371D72ABB000BB1D94 /* CustomSearchBar.swift in Sources */,
+				E5D6B9281D72AB9500BB1D94 /* CommentHeaderView.swift in Sources */,
 				0743BC531D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift in Sources */,
-				E5FE8FB51D71C60900C6CCE2 /* AfterAddPostTrackView.swift in Sources */,
+				E5D6B9871D72AC6C00BB1D94 /* MaterialButton.swift in Sources */,
 				07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */,
 				07F922681D6AB93100D6BE94 /* Router.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
 				0743BCBB1D6EE60800936FF9 /* BackgroundImageView.swift in Sources */,
-				E5FE8FC81D71C72200C6CCE2 /* MaterialTrackContainerView.swift in Sources */,
 				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
-				E5FE8FC71D71C72200C6CCE2 /* MaterialView.swift in Sources */,
+				E5D6B9391D72ABB000BB1D94 /* AddStoryHeaderView.swift in Sources */,
+				E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */,
+				E5D6B98D1D72AC6C00BB1D94 /* MaterialBackgroundView.swift in Sources */,
+				E5D6B98C1D72AC6C00BB1D94 /* MaterialTrackContainerView.swift in Sources */,
 				E5FE8F571D71AAE400C6CCE2 /* Comment.swift in Sources */,
-				E5FE8FC51D71C72200C6CCE2 /* MaterialTextView.swift in Sources */,
 				0743BC6B1D6E88C100936FF9 /* MusicRatingTableViewCell.swift in Sources */,
 				E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */,
-				E5FE8FC61D71C72200C6CCE2 /* MaterialLabel.swift in Sources */,
+				E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */,
 				0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */,
-				E5FE8FB21D71C60900C6CCE2 /* CustomSearchController.swift in Sources */,
-				E5FE8FD01D71C89C00C6CCE2 /* Story.swift in Sources */,
+				E5D6B98F1D72AC6C00BB1D94 /* MaterialSegmentedControl.swift in Sources */,
+				E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */,
+				E5D6B98E1D72AC6C00BB1D94 /* MaterialProfileImgView.swift in Sources */,
+				E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */,
 				0743BC701D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift in Sources */,
-				E5FE8FC91D71C72200C6CCE2 /* MaterialBackgroundView.swift in Sources */,
 				E5FE8F5A1D71ACE300C6CCE2 /* DynamicPostWallCell.swift in Sources */,
 				0743BC3C1D6C16C600936FF9 /* MusicStyleButton.swift in Sources */,
-				E5FE8FA51D71C60100C6CCE2 /* CommentRespondCell.swift in Sources */,
+				E5D6B9361D72ABB000BB1D94 /* AddStoryVC.swift in Sources */,
 				0743BC3E1D6C24F200936FF9 /* BackButton.swift in Sources */,
 				0743BC431D6C393200936FF9 /* MusicRatingCollectionViewCell.swift in Sources */,
-				E5FE8FC41D71C72200C6CCE2 /* MaterialTextField.swift in Sources */,
 				07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */,
-				E5FE8FA41D71C60100C6CCE2 /* MusicPostTableViewCell.swift in Sources */,
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
-				E5FE8F931D71C5ED00C6CCE2 /* FeedVC.swift in Sources */,
 				07F922781D6ACFE400D6BE94 /* User.swift in Sources */,
+				E5D6B9291D72AB9500BB1D94 /* CommentSecondHeaderView.swift in Sources */,
 				0743BC671D6DA28D00936FF9 /* MusicRatingViewController.swift in Sources */,
-				E5FE8FA01D71C60100C6CCE2 /* CommentScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
