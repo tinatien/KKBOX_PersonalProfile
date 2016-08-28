@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '79FC15FC41F6E82D63B748D4'
+               BlueprintIdentifier = '05291107CE17741818327743'
                BlueprintName = 'Pods-KKBOX_Personal Porfile'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_KKBOX_Personal_Porfile.framework'>

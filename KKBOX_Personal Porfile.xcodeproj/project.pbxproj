@@ -82,7 +82,6 @@
 		E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E62361D71829000DECAE2 /* NoticeButton.swift */; };
 		E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D61D72A8FA00BB1D94 /* Story.swift */; };
 		E5D6B8DA1D72A8FA00BB1D94 /* StrangerStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */; };
-		E5D6B8DD1D72A9A000BB1D94 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8DB1D72A9A000BB1D94 /* Post.swift */; };
 		E5D6B8E61D72AA1900BB1D94 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */; };
 		E5D6B8E71D72AA1900BB1D94 /* CommentScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */; };
 		E5D6B8E81D72AA1900BB1D94 /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */; };
@@ -101,7 +100,6 @@
 		E5D6B9031D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */; };
 		E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */; };
 		E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */; };
-		E5D6B91D1D72AB8400BB1D94 /* DynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */; };
 		E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */; };
 		E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */; };
 		E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */; };
@@ -116,17 +114,18 @@
 		E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */; };
 		E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */; };
 		E5D6B93C1D72ABB000BB1D94 /* BeforeAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */; };
-		E5D6B9871D72AC6C00BB1D94 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */; };
-		E5D6B9881D72AC6C00BB1D94 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */; };
-		E5D6B9891D72AC6C00BB1D94 /* MaterialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */; };
-		E5D6B98A1D72AC6C00BB1D94 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */; };
-		E5D6B98B1D72AC6C00BB1D94 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */; };
-		E5D6B98C1D72AC6C00BB1D94 /* MaterialTrackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */; };
-		E5D6B98D1D72AC6C00BB1D94 /* MaterialBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */; };
-		E5D6B98E1D72AC6C00BB1D94 /* MaterialProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */; };
-		E5D6B98F1D72AC6C00BB1D94 /* MaterialSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */; };
-		E5D6B9901D72AC6C00BB1D94 /* MaterialSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */; };
 		E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */; };
+		E5D6B9A21D72BFF500BB1D94 /* MaterialBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9981D72BFF500BB1D94 /* MaterialBackgroundView.swift */; };
+		E5D6B9A31D72BFF500BB1D94 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9991D72BFF500BB1D94 /* MaterialButton.swift */; };
+		E5D6B9A41D72BFF500BB1D94 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99A1D72BFF500BB1D94 /* MaterialLabel.swift */; };
+		E5D6B9A51D72BFF500BB1D94 /* MaterialProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99B1D72BFF500BB1D94 /* MaterialProfileImgView.swift */; };
+		E5D6B9A61D72BFF500BB1D94 /* MaterialSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99C1D72BFF500BB1D94 /* MaterialSegmentedControl.swift */; };
+		E5D6B9A71D72BFF500BB1D94 /* MaterialSegmentedControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99D1D72BFF500BB1D94 /* MaterialSegmentedControll.swift */; };
+		E5D6B9A81D72BFF500BB1D94 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99E1D72BFF500BB1D94 /* MaterialTextField.swift */; };
+		E5D6B9A91D72BFF500BB1D94 /* MaterialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99F1D72BFF500BB1D94 /* MaterialTextView.swift */; };
+		E5D6B9AA1D72BFF500BB1D94 /* MaterialTrackContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9A01D72BFF500BB1D94 /* MaterialTrackContainerView.swift */; };
+		E5D6B9AB1D72BFF500BB1D94 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9A11D72BFF500BB1D94 /* MaterialView.swift */; };
+		E5D6B9AD1D72C05800BB1D94 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9AC1D72C05800BB1D94 /* Post.swift */; };
 		E5FE8F571D71AAE400C6CCE2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F561D71AAE400C6CCE2 /* Comment.swift */; };
 		E5FE8F5A1D71ACE300C6CCE2 /* DynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FE8F581D71ACE300C6CCE2 /* DynamicPostWallCell.swift */; };
 		E5FE8F5B1D71ACE300C6CCE2 /* DynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5FE8F591D71ACE300C6CCE2 /* DynamicPostWallCell.xib */; };
@@ -232,7 +231,6 @@
 		E51E62361D71829000DECAE2 /* NoticeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeButton.swift; sourceTree = "<group>"; };
 		E5D6B8D61D72A8FA00BB1D94 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerStories.swift; sourceTree = "<group>"; };
-		E5D6B8DB1D72A9A000BB1D94 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
 		E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentScrollView.xib; sourceTree = "<group>"; };
 		E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentHeaderView.xib; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 		E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallSaySomethingCell.xib; sourceTree = "<group>"; };
 		E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerDynamicPostWallCell.swift; sourceTree = "<group>"; };
-		E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallCell.swift; sourceTree = "<group>"; };
 		E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallSaySomethingCell.swift; sourceTree = "<group>"; };
 		E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
 		E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScrollView.swift; sourceTree = "<group>"; };
@@ -266,17 +263,18 @@
 		E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryCell.swift; sourceTree = "<group>"; };
 		E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterAddPostTrackView.swift; sourceTree = "<group>"; };
 		E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddPostTrackView.swift; sourceTree = "<group>"; };
-		E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
-		E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
-		E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextView.swift; sourceTree = "<group>"; };
-		E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialLabel.swift; sourceTree = "<group>"; };
-		E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
-		E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTrackContainerView.swift; sourceTree = "<group>"; };
-		E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialBackgroundView.swift; sourceTree = "<group>"; };
-		E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialProfileImgView.swift; sourceTree = "<group>"; };
-		E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSegmentedControl.swift; sourceTree = "<group>"; };
-		E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialSegmentedControll.swift; sourceTree = "<group>"; };
 		E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRespondCell.swift; sourceTree = "<group>"; };
+		E5D6B9981D72BFF500BB1D94 /* MaterialBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialBackgroundView.swift; path = "KKBOX_Personal Porfile/MaterialBackgroundView.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B9991D72BFF500BB1D94 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = "KKBOX_Personal Porfile/MaterialButton.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99A1D72BFF500BB1D94 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialLabel.swift; path = "KKBOX_Personal Porfile/MaterialLabel.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99B1D72BFF500BB1D94 /* MaterialProfileImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialProfileImgView.swift; path = "KKBOX_Personal Porfile/MaterialProfileImgView.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99C1D72BFF500BB1D94 /* MaterialSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialSegmentedControl.swift; path = "KKBOX_Personal Porfile/MaterialSegmentedControl.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99D1D72BFF500BB1D94 /* MaterialSegmentedControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialSegmentedControll.swift; path = "KKBOX_Personal Porfile/MaterialSegmentedControll.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99E1D72BFF500BB1D94 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialTextField.swift; path = "KKBOX_Personal Porfile/MaterialTextField.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B99F1D72BFF500BB1D94 /* MaterialTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialTextView.swift; path = "KKBOX_Personal Porfile/MaterialTextView.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B9A01D72BFF500BB1D94 /* MaterialTrackContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialTrackContainerView.swift; path = "KKBOX_Personal Porfile/MaterialTrackContainerView.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B9A11D72BFF500BB1D94 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialView.swift; path = "KKBOX_Personal Porfile/MaterialView.swift"; sourceTree = SOURCE_ROOT; };
+		E5D6B9AC1D72C05800BB1D94 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "KKBOX_Personal Porfile/Post.swift"; sourceTree = SOURCE_ROOT; };
 		E5FE8F561D71AAE400C6CCE2 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		E5FE8F581D71ACE300C6CCE2 /* DynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallCell.swift; sourceTree = "<group>"; };
 		E5FE8F591D71ACE300C6CCE2 /* DynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallCell.xib; sourceTree = "<group>"; };
@@ -549,7 +547,7 @@
 		E5D6B8DC1D72A9A000BB1D94 /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8DB1D72A9A000BB1D94 /* Post.swift */,
+				E5D6B9AC1D72C05800BB1D94 /* Post.swift */,
 			);
 			name = Post;
 			path = ../../KKBox_People_Project/KKBox_People_Project;
@@ -624,7 +622,6 @@
 			children = (
 				E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */,
 				E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */,
-				E5D6B9181D72AB8400BB1D94 /* DynamicPostWallCell.swift */,
 				E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */,
 			);
 			name = FeedVC;
@@ -661,28 +658,27 @@
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
 			sourceTree = "<group>";
 		};
-		E5D6B9861D72AC6C00BB1D94 /* View Material */ = {
+		E5D6B9971D72BFD500BB1D94 /* Material */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B97C1D72AC6C00BB1D94 /* MaterialButton.swift */,
-				E5D6B97D1D72AC6C00BB1D94 /* MaterialTextField.swift */,
-				E5D6B97E1D72AC6C00BB1D94 /* MaterialTextView.swift */,
-				E5D6B97F1D72AC6C00BB1D94 /* MaterialLabel.swift */,
-				E5D6B9801D72AC6C00BB1D94 /* MaterialView.swift */,
-				E5D6B9811D72AC6C00BB1D94 /* MaterialTrackContainerView.swift */,
-				E5D6B9821D72AC6C00BB1D94 /* MaterialBackgroundView.swift */,
-				E5D6B9831D72AC6C00BB1D94 /* MaterialProfileImgView.swift */,
-				E5D6B9841D72AC6C00BB1D94 /* MaterialSegmentedControl.swift */,
-				E5D6B9851D72AC6C00BB1D94 /* MaterialSegmentedControll.swift */,
+				E5D6B9981D72BFF500BB1D94 /* MaterialBackgroundView.swift */,
+				E5D6B9991D72BFF500BB1D94 /* MaterialButton.swift */,
+				E5D6B99A1D72BFF500BB1D94 /* MaterialLabel.swift */,
+				E5D6B99B1D72BFF500BB1D94 /* MaterialProfileImgView.swift */,
+				E5D6B99C1D72BFF500BB1D94 /* MaterialSegmentedControl.swift */,
+				E5D6B99D1D72BFF500BB1D94 /* MaterialSegmentedControll.swift */,
+				E5D6B99E1D72BFF500BB1D94 /* MaterialTextField.swift */,
+				E5D6B99F1D72BFF500BB1D94 /* MaterialTextView.swift */,
+				E5D6B9A01D72BFF500BB1D94 /* MaterialTrackContainerView.swift */,
+				E5D6B9A11D72BFF500BB1D94 /* MaterialView.swift */,
 			);
-			name = "View Material";
-			path = ../../KKBox_People_Project/KKBox_People_Project;
+			name = Material;
 			sourceTree = "<group>";
 		};
 		E5FE8FC21D71C72200C6CCE2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B9861D72AC6C00BB1D94 /* View Material */,
+				E5D6B9971D72BFD500BB1D94 /* Material */,
 			);
 			name = Util;
 			path = ../../KKBox_People_Project/KKBox_People_Project;
@@ -930,13 +926,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D6B9A71D72BFF500BB1D94 /* MaterialSegmentedControll.swift in Sources */,
 				E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */,
 				0743BC631D6D928300936FF9 /* FollowingTableViewCell.swift in Sources */,
 				07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */,
 				07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */,
 				E5D6B9351D72ABB000BB1D94 /* AddPostVC.swift in Sources */,
+				E5D6B9AB1D72BFF500BB1D94 /* MaterialView.swift in Sources */,
 				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
 				07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */,
+				E5D6B9AD1D72C05800BB1D94 /* Post.swift in Sources */,
 				0743BCB51D6EE40300936FF9 /* PlayHeaderView.swift in Sources */,
 				07F9223E1D656CCC00D6BE94 /* ExploreViewController.swift in Sources */,
 				07F922721D6ACF6C00D6BE94 /* Album.swift in Sources */,
@@ -953,10 +952,6 @@
 				E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */,
 				E5D6B92A1D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift in Sources */,
 				E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */,
-				E5D6B91D1D72AB8400BB1D94 /* DynamicPostWallCell.swift in Sources */,
-				E5D6B9881D72AC6C00BB1D94 /* MaterialTextField.swift in Sources */,
-				E5D6B98A1D72AC6C00BB1D94 /* MaterialLabel.swift in Sources */,
-				E5D6B9891D72AC6C00BB1D94 /* MaterialTextView.swift in Sources */,
 				E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */,
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				E51E62301D71733300DECAE2 /* PlaylistViewController.swift in Sources */,
@@ -965,16 +960,14 @@
 				E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */,
 				0743BCBE1D70064C00936FF9 /* MusicStyleViewController.swift in Sources */,
 				E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */,
-				E5D6B8DD1D72A9A000BB1D94 /* Post.swift in Sources */,
 				E51E62341D7174A300DECAE2 /* PlaylistTableViewCell.swift in Sources */,
-				E5D6B98B1D72AC6C00BB1D94 /* MaterialView.swift in Sources */,
-				E5D6B9901D72AC6C00BB1D94 /* MaterialSegmentedControll.swift in Sources */,
 				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
 				0743BC4B1D6C397B00936FF9 /* PlaylistCollectionViewCell.swift in Sources */,
 				E5D6B9371D72ABB000BB1D94 /* CustomSearchBar.swift in Sources */,
+				E5D6B9A81D72BFF500BB1D94 /* MaterialTextField.swift in Sources */,
 				E5D6B9281D72AB9500BB1D94 /* CommentHeaderView.swift in Sources */,
 				0743BC531D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift in Sources */,
-				E5D6B9871D72AC6C00BB1D94 /* MaterialButton.swift in Sources */,
+				E5D6B9A31D72BFF500BB1D94 /* MaterialButton.swift in Sources */,
 				07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */,
 				07F922681D6AB93100D6BE94 /* Router.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
@@ -982,24 +975,26 @@
 				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
 				E5D6B9391D72ABB000BB1D94 /* AddStoryHeaderView.swift in Sources */,
 				E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */,
-				E5D6B98D1D72AC6C00BB1D94 /* MaterialBackgroundView.swift in Sources */,
-				E5D6B98C1D72AC6C00BB1D94 /* MaterialTrackContainerView.swift in Sources */,
+				E5D6B9AA1D72BFF500BB1D94 /* MaterialTrackContainerView.swift in Sources */,
+				E5D6B9A51D72BFF500BB1D94 /* MaterialProfileImgView.swift in Sources */,
+				E5D6B9A61D72BFF500BB1D94 /* MaterialSegmentedControl.swift in Sources */,
 				E5FE8F571D71AAE400C6CCE2 /* Comment.swift in Sources */,
 				0743BC6B1D6E88C100936FF9 /* MusicRatingTableViewCell.swift in Sources */,
 				E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */,
 				E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */,
 				0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */,
-				E5D6B98F1D72AC6C00BB1D94 /* MaterialSegmentedControl.swift in Sources */,
 				E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */,
-				E5D6B98E1D72AC6C00BB1D94 /* MaterialProfileImgView.swift in Sources */,
 				E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */,
 				0743BC701D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift in Sources */,
 				E5FE8F5A1D71ACE300C6CCE2 /* DynamicPostWallCell.swift in Sources */,
 				0743BC3C1D6C16C600936FF9 /* MusicStyleButton.swift in Sources */,
 				E5D6B9361D72ABB000BB1D94 /* AddStoryVC.swift in Sources */,
 				0743BC3E1D6C24F200936FF9 /* BackButton.swift in Sources */,
+				E5D6B9A91D72BFF500BB1D94 /* MaterialTextView.swift in Sources */,
 				0743BC431D6C393200936FF9 /* MusicRatingCollectionViewCell.swift in Sources */,
+				E5D6B9A41D72BFF500BB1D94 /* MaterialLabel.swift in Sources */,
 				07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */,
+				E5D6B9A21D72BFF500BB1D94 /* MaterialBackgroundView.swift in Sources */,
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
 				07F922781D6ACFE400D6BE94 /* User.swift in Sources */,
 				E5D6B9291D72AB9500BB1D94 /* CommentSecondHeaderView.swift in Sources */,
