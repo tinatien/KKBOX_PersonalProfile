@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-ZY-nLz" customClass="MaterialButton" customModule="KKBox_People_Project" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXf-ZY-nLz" customClass="MaterialButton" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                     <rect key="frame" x="145" y="472" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="NK8-ad-Lb3"/>
@@ -39,7 +39,7 @@
                         <tabBarItem systemItem="more" id="e1X-Oy-5dq"/>
                     </items>
                 </tabBar>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-nh-2hm" customClass="CustomSegmentedControl" customModule="KKBox_People_Project" customModuleProvider="target">
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-nh-2hm" customClass="ProfileSegmentedControl" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="64" width="320" height="45"/>
                     <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -62,7 +62,7 @@
                     </constraints>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
-                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-k6-YUU" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-k6-YUU" customClass="MaterialView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                     <rect key="frame" x="15" y="429" width="285" height="34"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Woohoo! You've read all feeds. We are working on something new, come back later" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4fh-Ir-iLN">

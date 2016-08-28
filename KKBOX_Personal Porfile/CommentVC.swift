@@ -13,19 +13,19 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     
-    @IBOutlet weak var profileImgNameContainerView: UIView!
+    
     var profileImgNameContainerViewHeight: Float!
-
+    
     @IBOutlet weak var favoriteCommentPlayContainerView: UIView!
     
     @IBOutlet weak var trackContainerView: UIView!
-    
     
     @IBOutlet weak var likeNumLabel: UILabel!
     
     @IBOutlet weak var commentsNumLabel: UILabel!
     
     @IBOutlet weak var likeImg: UIImageView!
+    
     
     
     var scrollViewContainerViewPoint: CGRect!
@@ -38,10 +38,12 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var commentHeaderView = CommentHeaderView.instanceFromNib()
     var postComment: Comment!
     var commentSecondHeaderView = CommentSecondHeaderView.instanceFromNib()
-
+    var commentStroryTitleViewCell = CommentStoryTitleViewCell()
+    
     
     let fullScreenSize = UIScreen.mainScreen().bounds.size
-
+    let time = "20160827"
+    
     
     convenience init(comments: [Comment], story: Story ){
         self.init(nibName: "CommentVC", bundle: nil)
@@ -67,21 +69,20 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         self.trackContainerViewPoint = trackContainerView.frame
-       
+        
         
         
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.estimatedRowHeight = 420
-        tableView.rowHeight = UITableViewAutomaticDimension
+        
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.tableView.separatorColor = UIColor.clearColor()
-
+        
         let headerview = UIView(frame: CGRectMake(0,0, 320, 182 + 50))
         self.tableView.backgroundView = UIView(frame: CGRectMake(0,0, 320, 232))
         headerview.backgroundColor = UIColor.clearColor()
@@ -90,11 +91,11 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         var frame = commentHeaderView.frame
         frame.origin.y = CGRectGetHeight(headerview.bounds) - 50
         commentHeaderView.frame = frame
-
+        
         headerview.addSubview(commentHeaderView)
         
         let trackView = UIImageView(frame: CGRect(x: 88, y: 18, width: 145, height: 145))
-    
+        
         self.likeNumLabel.text = "\(self.story.storyLikeNum)" + " 人共鳴"
         self.commentsNumLabel.text = "\(self.story.storyComments.count)" + " 則留言"
         
@@ -107,9 +108,9 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
         
-
-    
-    
+        
+        
+        
         self.tableView.backgroundView?.addSubview(trackView)
         self.tableView.backgroundView?.backgroundColor = UIColor.whiteColor()
         self.tableView.tableHeaderView = headerview
@@ -119,9 +120,6 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let nib2 = UINib(nibName: "CommentRespondCell", bundle: nil)
         tableView.registerNib(nib2, forCellReuseIdentifier: "CommentRespondCell")
-        
-        let nib3 = UINib(nibName: "MusicPostTableViewCell", bundle: nil)
-        tableView.registerNib(nib3, forCellReuseIdentifier: "MusicPostTableViewCell")
         
         
         
@@ -148,7 +146,7 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             style:.Plain ,
             target:self ,
             action: nil)
- 
+        
         self.navigationItem.rightBarButtonItems = [rightItem1, rightItem2]
         
         // Get the first button's image
@@ -174,27 +172,25 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Set -7px of fixed space before the two UIBarButtonItems so that they are aligned to the edge
         let negativeSpace:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FixedSpace, target: nil, action: nil)
         negativeSpace.width = -7.0
-
+        
         self.navigationItem.rightBarButtonItems = [negativeSpace, rightItem1, fixedSpace, rightItem2]
-
+        
     }
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 4
+        return 3
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 1
-        case 1:
             return 0
-        case 2:
+        case 1:
             return 1
-        case 3:
+        case 2:
             if self.comments.count > 0{
-              return 2
+                return 2
             }
             return 0
         default:
@@ -208,24 +204,20 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier("MusicPostTableViewCell", forIndexPath: indexPath) as! MusicPostTableViewCell
-            return cell
-        case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
             cell.selectionStyle = .None
             return cell
-        case 2:
+        case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("CommentStoryTitleViewCell") as! CommentStoryTitleViewCell
-            if let text = cell.txt as? String{
-                print(text)
-                self.postComment.commentContent = text
-            }
+            self.commentStroryTitleViewCell = cell
+            
+            
             
             if story != nil{
                 cell.configureCell(story)
             }
             return cell
-        case 3:
+        case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("CommentRespondCell") as! CommentRespondCell
             if self.comments.count > 0{
                 for comment in comments {
@@ -242,7 +234,7 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         commentHeaderView.configureView(story)
-            if section == 3 {
+        if section == 2 {
             //commentSecondHeaderView = CommentSecondHeaderView.instanceFromNib()
             return commentSecondHeaderView
         }
@@ -252,12 +244,10 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 226
-        case 1:
             return 0
-        case 2:
+        case 1:
             return 420
-        case 3:
+        case 2:
             return 154
         default:
             return 0
@@ -265,9 +255,9 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 1 {
+        if section == 0 {
             return 50
-        }else if section == 3{
+        }else if section == 2{
             return 50
         }
         return 0
@@ -290,37 +280,38 @@ class CommentVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
-    
-    //MARK: To make scrollViewContainer move to the top
-    
+        
+        
+        //MARK: To make scrollViewContainer move to the top
+        
     }
-        
-        
+    
+    
     @IBAction func postBtn(sender: UIButton) {
-       // self.postComment.commentContent = self.commentTextField.text!
-        print(self.postComment.commentContent)
-        
+        self.postComment.commentContent = commentStroryTitleViewCell.postCommentTextField.text!
+        print("content: \(postComment.commentContent)")
         self.postCommentToServer(self.postComment)
         
-        print("")
     }
     
-    func configurePostComment(){
-       // self.postComment.commentContent = self.postCommentTextField.text!
-        
-    }
+    
     
     
     
     //MARK: -http Request
     func postCommentToServer(comment: Comment){
-        ServerManager.addComment(commentContent: comment.commentContent, storyId: story.storyId, completion: {
+        
+        ServerManager.addComment(commentContent: comment.commentContent, storyId: story.storyId, postTime: self.time, completion: {
+            print(comment.commentContent)
+            print(self.story.storyId)
+            print(self.story.storyComments.count)
             print("post Success")
         }) { (error) in
-                
+            
         }
         
+        
+        
     }
-
+    
 }

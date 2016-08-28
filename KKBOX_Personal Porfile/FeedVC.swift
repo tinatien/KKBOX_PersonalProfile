@@ -10,7 +10,7 @@ import UIKit
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var segmentedSelectedIndex = 0
-    @IBOutlet weak var segmentedControlOutlet: CustomSegmentedControl!
+    @IBOutlet weak var segmentedControlOutlet: ProfileSegmentedControl!
     @IBOutlet weak var tableView: UITableView!
 
     var myPostCell = [DynamicPostWallCell]()
@@ -94,8 +94,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         ServerManager.login(userInfo: "kkbox:kkbox", completion: {
             ServerManager.getFullInfo(username: "kkbox", completion: { (user) in
                 for following in user.followings{
-                    print(following.name)
-                    ServerManager.getFullInfo(username: following.name, completion: { (user) in
+                    ServerManager.getFullInfo(username: following["name"]!, completion: { (user) in
                         
                         
                         for postedStory in user.userPostedStrory{

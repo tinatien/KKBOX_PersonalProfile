@@ -72,6 +72,40 @@
 		07F922721D6ACF6C00D6BE94 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922711D6ACF6C00D6BE94 /* Album.swift */; };
 		07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922731D6ACF7F00D6BE94 /* Artist.swift */; };
 		07F922781D6ACFE400D6BE94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F922771D6ACFE400D6BE94 /* User.swift */; };
+		6EED36D51D72C9C30034222E /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36D41D72C9C30034222E /* Story.swift */; };
+		6EED36D71D72C9EE0034222E /* StrangerStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36D61D72C9EE0034222E /* StrangerStories.swift */; };
+		6EED36D91D72CA240034222E /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36D81D72CA240034222E /* AddPostVC.swift */; };
+		6EED36DB1D72CA500034222E /* AddStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36DA1D72CA500034222E /* AddStoryVC.swift */; };
+		6EED36DD1D72CA770034222E /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36DC1D72CA770034222E /* CustomSearchBar.swift */; };
+		6EED36DF1D72CAA40034222E /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36DE1D72CAA40034222E /* CustomSearchController.swift */; };
+		6EED36E11D72CAC70034222E /* AddStoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36E01D72CAC70034222E /* AddStoryHeaderView.swift */; };
+		6EED36E31D72CAE40034222E /* AddStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36E21D72CAE40034222E /* AddStoryCell.swift */; };
+		6EED36E51D72CB030034222E /* AfterAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36E41D72CB030034222E /* AfterAddPostTrackView.swift */; };
+		6EED36E71D72CB1D0034222E /* BeforeAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36E61D72CB1D0034222E /* BeforeAddPostTrackView.swift */; };
+		6EED36E91D72CB620034222E /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36E81D72CB620034222E /* CommentVC.swift */; };
+		6EED36EB1D72CB6E0034222E /* CommentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36EA1D72CB6E0034222E /* CommentScrollView.swift */; };
+		6EED36ED1D72CB780034222E /* CommentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36EC1D72CB780034222E /* CommentHeaderView.swift */; };
+		6EED36EF1D72CB900034222E /* CommentSecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36EE1D72CB900034222E /* CommentSecondHeaderView.swift */; };
+		6EED36F11D72CB980034222E /* CommentStoryTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36F01D72CB980034222E /* CommentStoryTitleViewCell.swift */; };
+		6EED36F31D72CBA20034222E /* CommentRespondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED36F21D72CBA20034222E /* CommentRespondCell.swift */; };
+		6EED36F51D72CBBD0034222E /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36F41D72CBBD0034222E /* CommentVC.xib */; };
+		6EED36F71D72CBD50034222E /* CommentScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36F61D72CBD50034222E /* CommentScrollView.xib */; };
+		6EED36F91D72CBE30034222E /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36F81D72CBE30034222E /* CommentHeaderView.xib */; };
+		6EED36FB1D72CBEB0034222E /* CommentSecondHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36FA1D72CBEB0034222E /* CommentSecondHeaderView.xib */; };
+		6EED36FD1D72CC080034222E /* CommentRespondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36FC1D72CC080034222E /* CommentRespondCell.xib */; };
+		6EED36FF1D72CC190034222E /* CommentStoryTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED36FE1D72CC190034222E /* CommentStoryTitleViewCell.xib */; };
+		6EED37011D72CC410034222E /* AddPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37001D72CC410034222E /* AddPostVC.xib */; };
+		6EED37031D72CC460034222E /* AddStoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37021D72CC460034222E /* AddStoryCell.xib */; };
+		6EED37051D72CC4D0034222E /* AddStoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37041D72CC4D0034222E /* AddStoryHeaderView.xib */; };
+		6EED37071D72CC540034222E /* AddStoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37061D72CC540034222E /* AddStoryVC.xib */; };
+		6EED37091D72CC5B0034222E /* AfterAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37081D72CC5B0034222E /* AfterAddPostTrackView.xib */; };
+		6EED370B1D72CC5F0034222E /* BeforeAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED370A1D72CC5F0034222E /* BeforeAddPostTrackView.xib */; };
+		6EED370D1D72CC850034222E /* FeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED370C1D72CC850034222E /* FeedVC.xib */; };
+		6EED370F1D72CC9E0034222E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED370E1D72CC9E0034222E /* FeedVC.swift */; };
+		6EED37111D72CCAF0034222E /* StrangerDynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED37101D72CCAF0034222E /* StrangerDynamicPostWallCell.swift */; };
+		6EED37131D72CCB90034222E /* StrangerDynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37121D72CCB90034222E /* StrangerDynamicPostWallCell.xib */; };
+		6EED37151D72CCE20034222E /* DynamicPostWallSaySomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EED37141D72CCE20034222E /* DynamicPostWallSaySomethingCell.xib */; };
+		6EED37171D72CCEF0034222E /* DynamicPostWallSaySomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EED37161D72CCEF0034222E /* DynamicPostWallSaySomethingCell.swift */; };
 		8707D1402E623627481ED8FE /* Pods_KKBOX_Personal_Porfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */; };
 		E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E622A1D6F337600DECAE2 /* OriginalPlayHeaderView.swift */; };
 		E51E622D1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51E622C1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib */; };
@@ -80,41 +114,6 @@
 		E51E62341D7174A300DECAE2 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E62321D7174A300DECAE2 /* PlaylistTableViewCell.swift */; };
 		E51E62351D7174A300DECAE2 /* PlaylistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51E62331D7174A300DECAE2 /* PlaylistTableViewCell.xib */; };
 		E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51E62361D71829000DECAE2 /* NoticeButton.swift */; };
-		E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D61D72A8FA00BB1D94 /* Story.swift */; };
-		E5D6B8DA1D72A8FA00BB1D94 /* StrangerStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */; };
-		E5D6B8E61D72AA1900BB1D94 /* CommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */; };
-		E5D6B8E71D72AA1900BB1D94 /* CommentScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */; };
-		E5D6B8E81D72AA1900BB1D94 /* CommentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */; };
-		E5D6B8E91D72AA1900BB1D94 /* CommentSecondHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */; };
-		E5D6B8EA1D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */; };
-		E5D6B8EB1D72AA1900BB1D94 /* CommentRespondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */; };
-		E5D6B8F31D72AA3300BB1D94 /* AddStoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */; };
-		E5D6B8F41D72AA3300BB1D94 /* AddPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */; };
-		E5D6B8F51D72AA3300BB1D94 /* AfterAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */; };
-		E5D6B8F61D72AA3300BB1D94 /* BeforeAddPostTrackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */; };
-		E5D6B8F71D72AA3300BB1D94 /* AddStoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */; };
-		E5D6B8F81D72AA3300BB1D94 /* AddStoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */; };
-		E5D6B9001D72AA4500BB1D94 /* FeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */; };
-		E5D6B9011D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */; };
-		E5D6B9021D72AA4500BB1D94 /* DynamicPostWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */; };
-		E5D6B9031D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */; };
-		E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */; };
-		E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */; };
-		E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */; };
-		E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */; };
-		E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */; };
-		E5D6B9281D72AB9500BB1D94 /* CommentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */; };
-		E5D6B9291D72AB9500BB1D94 /* CommentSecondHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */; };
-		E5D6B92A1D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */; };
-		E5D6B9351D72ABB000BB1D94 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */; };
-		E5D6B9361D72ABB000BB1D94 /* AddStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */; };
-		E5D6B9371D72ABB000BB1D94 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */; };
-		E5D6B9381D72ABB000BB1D94 /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */; };
-		E5D6B9391D72ABB000BB1D94 /* AddStoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */; };
-		E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */; };
-		E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */; };
-		E5D6B93C1D72ABB000BB1D94 /* BeforeAddPostTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */; };
-		E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */; };
 		E5D6B9A21D72BFF500BB1D94 /* MaterialBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9981D72BFF500BB1D94 /* MaterialBackgroundView.swift */; };
 		E5D6B9A31D72BFF500BB1D94 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B9991D72BFF500BB1D94 /* MaterialButton.swift */; };
 		E5D6B9A41D72BFF500BB1D94 /* MaterialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D6B99A1D72BFF500BB1D94 /* MaterialLabel.swift */; };
@@ -221,6 +220,40 @@
 		07F922731D6ACF7F00D6BE94 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		07F922771D6ACFE400D6BE94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F93F7B45FB89300616BCE7A /* Pods_KKBOX_Personal_Porfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKBOX_Personal_Porfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EED36D41D72C9C30034222E /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../../TaiwanPower/TaiwanPower/Story.swift; sourceTree = "<group>"; };
+		6EED36D61D72C9EE0034222E /* StrangerStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrangerStories.swift; path = ../../TaiwanPower/TaiwanPower/StrangerStories.swift; sourceTree = "<group>"; };
+		6EED36D81D72CA240034222E /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPostVC.swift; path = ../../TaiwanPower/TaiwanPower/AddPostVC.swift; sourceTree = "<group>"; };
+		6EED36DA1D72CA500034222E /* AddStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddStoryVC.swift; path = ../../TaiwanPower/TaiwanPower/AddStoryVC.swift; sourceTree = "<group>"; };
+		6EED36DC1D72CA770034222E /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSearchBar.swift; path = ../../TaiwanPower/TaiwanPower/CustomSearchBar.swift; sourceTree = "<group>"; };
+		6EED36DE1D72CAA40034222E /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSearchController.swift; path = ../../TaiwanPower/TaiwanPower/CustomSearchController.swift; sourceTree = "<group>"; };
+		6EED36E01D72CAC70034222E /* AddStoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddStoryHeaderView.swift; path = ../../TaiwanPower/TaiwanPower/AddStoryHeaderView.swift; sourceTree = "<group>"; };
+		6EED36E21D72CAE40034222E /* AddStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddStoryCell.swift; path = ../../TaiwanPower/TaiwanPower/AddStoryCell.swift; sourceTree = "<group>"; };
+		6EED36E41D72CB030034222E /* AfterAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AfterAddPostTrackView.swift; path = ../../TaiwanPower/TaiwanPower/AfterAddPostTrackView.swift; sourceTree = "<group>"; };
+		6EED36E61D72CB1D0034222E /* BeforeAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeforeAddPostTrackView.swift; path = ../../TaiwanPower/TaiwanPower/BeforeAddPostTrackView.swift; sourceTree = "<group>"; };
+		6EED36E81D72CB620034222E /* CommentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentVC.swift; path = "KKBOX_Personal Porfile/CommentVC.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36EA1D72CB6E0034222E /* CommentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentScrollView.swift; path = "KKBOX_Personal Porfile/CommentScrollView.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36EC1D72CB780034222E /* CommentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentHeaderView.swift; path = "KKBOX_Personal Porfile/CommentHeaderView.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36EE1D72CB900034222E /* CommentSecondHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentSecondHeaderView.swift; path = "KKBOX_Personal Porfile/CommentSecondHeaderView.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36F01D72CB980034222E /* CommentStoryTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentStoryTitleViewCell.swift; path = "KKBOX_Personal Porfile/CommentStoryTitleViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36F21D72CBA20034222E /* CommentRespondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentRespondCell.swift; path = "KKBOX_Personal Porfile/CommentRespondCell.swift"; sourceTree = SOURCE_ROOT; };
+		6EED36F41D72CBBD0034222E /* CommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentVC.xib; path = "KKBOX_Personal Porfile/CommentVC.xib"; sourceTree = SOURCE_ROOT; };
+		6EED36F61D72CBD50034222E /* CommentScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentScrollView.xib; path = "KKBOX_Personal Porfile/CommentScrollView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED36F81D72CBE30034222E /* CommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentHeaderView.xib; path = "KKBOX_Personal Porfile/CommentHeaderView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED36FA1D72CBEB0034222E /* CommentSecondHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentSecondHeaderView.xib; path = "KKBOX_Personal Porfile/CommentSecondHeaderView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED36FC1D72CC080034222E /* CommentRespondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentRespondCell.xib; path = "KKBOX_Personal Porfile/CommentRespondCell.xib"; sourceTree = SOURCE_ROOT; };
+		6EED36FE1D72CC190034222E /* CommentStoryTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentStoryTitleViewCell.xib; path = "KKBOX_Personal Porfile/CommentStoryTitleViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37001D72CC410034222E /* AddPostVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddPostVC.xib; path = "KKBOX_Personal Porfile/AddPostVC.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37021D72CC460034222E /* AddStoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddStoryCell.xib; path = "KKBOX_Personal Porfile/AddStoryCell.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37041D72CC4D0034222E /* AddStoryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddStoryHeaderView.xib; path = "KKBOX_Personal Porfile/AddStoryHeaderView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37061D72CC540034222E /* AddStoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddStoryVC.xib; path = "KKBOX_Personal Porfile/AddStoryVC.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37081D72CC5B0034222E /* AfterAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AfterAddPostTrackView.xib; path = "KKBOX_Personal Porfile/AfterAddPostTrackView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED370A1D72CC5F0034222E /* BeforeAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeforeAddPostTrackView.xib; path = "KKBOX_Personal Porfile/BeforeAddPostTrackView.xib"; sourceTree = SOURCE_ROOT; };
+		6EED370C1D72CC850034222E /* FeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedVC.xib; path = "KKBOX_Personal Porfile/FeedVC.xib"; sourceTree = SOURCE_ROOT; };
+		6EED370E1D72CC9E0034222E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedVC.swift; path = "KKBOX_Personal Porfile/FeedVC.swift"; sourceTree = SOURCE_ROOT; };
+		6EED37101D72CCAF0034222E /* StrangerDynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StrangerDynamicPostWallCell.swift; path = "KKBOX_Personal Porfile/StrangerDynamicPostWallCell.swift"; sourceTree = SOURCE_ROOT; };
+		6EED37121D72CCB90034222E /* StrangerDynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StrangerDynamicPostWallCell.xib; path = "KKBOX_Personal Porfile/StrangerDynamicPostWallCell.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37141D72CCE20034222E /* DynamicPostWallSaySomethingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicPostWallSaySomethingCell.xib; path = "KKBOX_Personal Porfile/DynamicPostWallSaySomethingCell.xib"; sourceTree = SOURCE_ROOT; };
+		6EED37161D72CCEF0034222E /* DynamicPostWallSaySomethingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicPostWallSaySomethingCell.swift; path = "KKBOX_Personal Porfile/DynamicPostWallSaySomethingCell.swift"; sourceTree = SOURCE_ROOT; };
 		718C820CD7E3275C5B577981 /* Pods-KKBOX_Personal Porfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKBOX_Personal Porfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKBOX_Personal Porfile/Pods-KKBOX_Personal Porfile.release.xcconfig"; sourceTree = "<group>"; };
 		E51E622A1D6F337600DECAE2 /* OriginalPlayHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalPlayHeaderView.swift; sourceTree = "<group>"; };
 		E51E622C1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OriginalPlayHeaderView.xib; sourceTree = "<group>"; };
@@ -229,41 +262,6 @@
 		E51E62321D7174A300DECAE2 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
 		E51E62331D7174A300DECAE2 /* PlaylistTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistTableViewCell.xib; sourceTree = "<group>"; };
 		E51E62361D71829000DECAE2 /* NoticeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeButton.swift; sourceTree = "<group>"; };
-		E5D6B8D61D72A8FA00BB1D94 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerStories.swift; sourceTree = "<group>"; };
-		E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentVC.xib; sourceTree = "<group>"; };
-		E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentScrollView.xib; sourceTree = "<group>"; };
-		E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentHeaderView.xib; sourceTree = "<group>"; };
-		E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentSecondHeaderView.xib; sourceTree = "<group>"; };
-		E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentStoryTitleViewCell.xib; sourceTree = "<group>"; };
-		E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentRespondCell.xib; sourceTree = "<group>"; };
-		E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryVC.xib; sourceTree = "<group>"; };
-		E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPostVC.xib; sourceTree = "<group>"; };
-		E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfterAddPostTrackView.xib; sourceTree = "<group>"; };
-		E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeforeAddPostTrackView.xib; sourceTree = "<group>"; };
-		E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryCell.xib; sourceTree = "<group>"; };
-		E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStoryHeaderView.xib; sourceTree = "<group>"; };
-		E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedVC.xib; sourceTree = "<group>"; };
-		E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrangerDynamicPostWallCell.xib; sourceTree = "<group>"; };
-		E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DynamicPostWallCell.xib; path = ../DynamicPostWallCell.xib; sourceTree = "<group>"; };
-		E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPostWallSaySomethingCell.xib; sourceTree = "<group>"; };
-		E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
-		E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrangerDynamicPostWallCell.swift; sourceTree = "<group>"; };
-		E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPostWallSaySomethingCell.swift; sourceTree = "<group>"; };
-		E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
-		E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentScrollView.swift; sourceTree = "<group>"; };
-		E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentHeaderView.swift; sourceTree = "<group>"; };
-		E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSecondHeaderView.swift; sourceTree = "<group>"; };
-		E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentStoryTitleViewCell.swift; sourceTree = "<group>"; };
-		E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
-		E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryVC.swift; sourceTree = "<group>"; };
-		E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
-		E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
-		E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryHeaderView.swift; sourceTree = "<group>"; };
-		E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStoryCell.swift; sourceTree = "<group>"; };
-		E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterAddPostTrackView.swift; sourceTree = "<group>"; };
-		E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeforeAddPostTrackView.swift; sourceTree = "<group>"; };
-		E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRespondCell.swift; sourceTree = "<group>"; };
 		E5D6B9981D72BFF500BB1D94 /* MaterialBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialBackgroundView.swift; path = "KKBOX_Personal Porfile/MaterialBackgroundView.swift"; sourceTree = SOURCE_ROOT; };
 		E5D6B9991D72BFF500BB1D94 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialButton.swift; path = "KKBOX_Personal Porfile/MaterialButton.swift"; sourceTree = SOURCE_ROOT; };
 		E5D6B99A1D72BFF500BB1D94 /* MaterialLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaterialLabel.swift; path = "KKBOX_Personal Porfile/MaterialLabel.swift"; sourceTree = SOURCE_ROOT; };
@@ -537,8 +535,8 @@
 		E5D6B8D81D72A8FA00BB1D94 /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8D61D72A8FA00BB1D94 /* Story.swift */,
-				E5D6B8D71D72A8FA00BB1D94 /* StrangerStories.swift */,
+				6EED36D41D72C9C30034222E /* Story.swift */,
+				6EED36D61D72C9EE0034222E /* StrangerStories.swift */,
 			);
 			name = Story;
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
@@ -556,10 +554,10 @@
 		E5D6B8E41D72AA1900BB1D94 /* Comment Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8E01D72AA1900BB1D94 /* CommentHeaderView.xib */,
-				E5D6B8E11D72AA1900BB1D94 /* CommentSecondHeaderView.xib */,
-				E5D6B8E21D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib */,
-				E5D6B8E31D72AA1900BB1D94 /* CommentRespondCell.xib */,
+				6EED36F81D72CBE30034222E /* CommentHeaderView.xib */,
+				6EED36FA1D72CBEB0034222E /* CommentSecondHeaderView.xib */,
+				6EED36FE1D72CC190034222E /* CommentStoryTitleViewCell.xib */,
+				6EED36FC1D72CC080034222E /* CommentRespondCell.xib */,
 			);
 			name = "Comment Cell";
 			sourceTree = "<group>";
@@ -567,8 +565,8 @@
 		E5D6B8E51D72AA1900BB1D94 /* CommentVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8DE1D72AA1900BB1D94 /* CommentVC.xib */,
-				E5D6B8DF1D72AA1900BB1D94 /* CommentScrollView.xib */,
+				6EED36F41D72CBBD0034222E /* CommentVC.xib */,
+				6EED36F61D72CBD50034222E /* CommentScrollView.xib */,
 				E5D6B8E41D72AA1900BB1D94 /* Comment Cell */,
 			);
 			name = CommentVC;
@@ -578,12 +576,12 @@
 		E5D6B8F21D72AA3300BB1D94 /* AddStoryVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8EC1D72AA3300BB1D94 /* AddStoryVC.xib */,
-				E5D6B8ED1D72AA3300BB1D94 /* AddPostVC.xib */,
-				E5D6B8EE1D72AA3300BB1D94 /* AfterAddPostTrackView.xib */,
-				E5D6B8EF1D72AA3300BB1D94 /* BeforeAddPostTrackView.xib */,
-				E5D6B8F01D72AA3300BB1D94 /* AddStoryCell.xib */,
-				E5D6B8F11D72AA3300BB1D94 /* AddStoryHeaderView.xib */,
+				6EED37061D72CC540034222E /* AddStoryVC.xib */,
+				6EED37001D72CC410034222E /* AddPostVC.xib */,
+				6EED37081D72CC5B0034222E /* AfterAddPostTrackView.xib */,
+				6EED370A1D72CC5F0034222E /* BeforeAddPostTrackView.xib */,
+				6EED37021D72CC460034222E /* AddStoryCell.xib */,
+				6EED37041D72CC4D0034222E /* AddStoryHeaderView.xib */,
 			);
 			name = AddStoryVC;
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
@@ -592,7 +590,7 @@
 		E5D6B8FB1D72AA4500BB1D94 /* StrangerPostCell */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8FA1D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib */,
+				6EED37121D72CCB90034222E /* StrangerDynamicPostWallCell.xib */,
 			);
 			name = StrangerPostCell;
 			sourceTree = "<group>";
@@ -600,8 +598,7 @@
 		E5D6B8FE1D72AA4500BB1D94 /* MyPostCell */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8FC1D72AA4500BB1D94 /* DynamicPostWallCell.xib */,
-				E5D6B8FD1D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib */,
+				6EED37141D72CCE20034222E /* DynamicPostWallSaySomethingCell.xib */,
 			);
 			name = MyPostCell;
 			sourceTree = "<group>";
@@ -609,7 +606,7 @@
 		E5D6B8FF1D72AA4500BB1D94 /* FeedVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B8F91D72AA4500BB1D94 /* FeedVC.xib */,
+				6EED370C1D72CC850034222E /* FeedVC.xib */,
 				E5D6B8FB1D72AA4500BB1D94 /* StrangerPostCell */,
 				E5D6B8FE1D72AA4500BB1D94 /* MyPostCell */,
 			);
@@ -620,9 +617,9 @@
 		E5D6B91A1D72AB8400BB1D94 /* FeedVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B9161D72AB8400BB1D94 /* FeedVC.swift */,
-				E5D6B9171D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift */,
-				E5D6B9191D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift */,
+				6EED370E1D72CC9E0034222E /* FeedVC.swift */,
+				6EED37101D72CCAF0034222E /* StrangerDynamicPostWallCell.swift */,
+				6EED37161D72CCEF0034222E /* DynamicPostWallSaySomethingCell.swift */,
 			);
 			name = FeedVC;
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
@@ -631,12 +628,12 @@
 		E5D6B9251D72AB9500BB1D94 /* CommentVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B91F1D72AB9500BB1D94 /* CommentVC.swift */,
-				E5D6B9201D72AB9500BB1D94 /* CommentScrollView.swift */,
-				E5D6B9211D72AB9500BB1D94 /* CommentHeaderView.swift */,
-				E5D6B9221D72AB9500BB1D94 /* CommentSecondHeaderView.swift */,
-				E5D6B9231D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift */,
-				E5D6B9951D72B88A00BB1D94 /* CommentRespondCell.swift */,
+				6EED36E81D72CB620034222E /* CommentVC.swift */,
+				6EED36EA1D72CB6E0034222E /* CommentScrollView.swift */,
+				6EED36EC1D72CB780034222E /* CommentHeaderView.swift */,
+				6EED36EE1D72CB900034222E /* CommentSecondHeaderView.swift */,
+				6EED36F01D72CB980034222E /* CommentStoryTitleViewCell.swift */,
+				6EED36F21D72CBA20034222E /* CommentRespondCell.swift */,
 			);
 			name = CommentVC;
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
@@ -645,14 +642,14 @@
 		E5D6B9341D72ABB000BB1D94 /* AddStoryVC */ = {
 			isa = PBXGroup;
 			children = (
-				E5D6B92C1D72ABB000BB1D94 /* AddPostVC.swift */,
-				E5D6B92D1D72ABB000BB1D94 /* AddStoryVC.swift */,
-				E5D6B92E1D72ABB000BB1D94 /* CustomSearchBar.swift */,
-				E5D6B92F1D72ABB000BB1D94 /* CustomSearchController.swift */,
-				E5D6B9301D72ABB000BB1D94 /* AddStoryHeaderView.swift */,
-				E5D6B9311D72ABB000BB1D94 /* AddStoryCell.swift */,
-				E5D6B9321D72ABB000BB1D94 /* AfterAddPostTrackView.swift */,
-				E5D6B9331D72ABB000BB1D94 /* BeforeAddPostTrackView.swift */,
+				6EED36D81D72CA240034222E /* AddPostVC.swift */,
+				6EED36DA1D72CA500034222E /* AddStoryVC.swift */,
+				6EED36DC1D72CA770034222E /* CustomSearchBar.swift */,
+				6EED36DE1D72CAA40034222E /* CustomSearchController.swift */,
+				6EED36E01D72CAC70034222E /* AddStoryHeaderView.swift */,
+				6EED36E21D72CAE40034222E /* AddStoryCell.swift */,
+				6EED36E41D72CB030034222E /* AfterAddPostTrackView.swift */,
+				6EED36E61D72CB1D0034222E /* BeforeAddPostTrackView.swift */,
 			);
 			name = AddStoryVC;
 			path = ../../../KKBox_People_Project/KKBox_People_Project;
@@ -793,52 +790,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D6B9031D72AA4500BB1D94 /* DynamicPostWallSaySomethingCell.xib in Resources */,
 				0743BC601D6D847C00936FF9 /* FollowerTableViewCell.xib in Resources */,
-				E5D6B9011D72AA4500BB1D94 /* StrangerDynamicPostWallCell.xib in Resources */,
 				E5FE8F5B1D71ACE300C6CCE2 /* DynamicPostWallCell.xib in Resources */,
 				07F9223F1D656CCC00D6BE94 /* ExploreViewController.xib in Resources */,
 				0743BC501D6C399200936FF9 /* RecentlyListenCollectionViewCell.xib in Resources */,
+				6EED36F51D72CBBD0034222E /* CommentVC.xib in Resources */,
 				0743BC641D6D928300936FF9 /* FollowingTableViewCell.xib in Resources */,
 				E51E62311D71733300DECAE2 /* PlaylistViewController.xib in Resources */,
-				E5D6B8E71D72AA1900BB1D94 /* CommentScrollView.xib in Resources */,
-				E5D6B8EB1D72AA1900BB1D94 /* CommentRespondCell.xib in Resources */,
-				E5D6B8E61D72AA1900BB1D94 /* CommentVC.xib in Resources */,
 				0743BCB91D6EE4ED00936FF9 /* MusicRatingV2ViewController.xib in Resources */,
 				0743BC6C1D6E88C100936FF9 /* MusicRatingTableViewCell.xib in Resources */,
+				6EED37031D72CC460034222E /* AddStoryCell.xib in Resources */,
 				0743BCB21D6EE18E00936FF9 /* PlayHeaderView.xib in Resources */,
 				0743BC5C1D6D715200936FF9 /* FollowingViewController.xib in Resources */,
 				07F922431D656CDD00D6BE94 /* FeedViewController.xib in Resources */,
+				6EED36FB1D72CBEB0034222E /* CommentSecondHeaderView.xib in Resources */,
 				0743BC681D6DA28D00936FF9 /* MusicRatingViewController.xib in Resources */,
 				0743BCBF1D70064C00936FF9 /* MusicStyleViewController.xib in Resources */,
-				E5D6B8E91D72AA1900BB1D94 /* CommentSecondHeaderView.xib in Resources */,
-				E5D6B8F71D72AA3300BB1D94 /* AddStoryCell.xib in Resources */,
-				E5D6B8EA1D72AA1900BB1D94 /* CommentStoryTitleViewCell.xib in Resources */,
 				07F9224F1D65939900D6BE94 /* ProfileViewController.xib in Resources */,
 				0743BC481D6C396700936FF9 /* FollowingArtistCollectionViewCell.xib in Resources */,
+				6EED37151D72CCE20034222E /* DynamicPostWallSaySomethingCell.xib in Resources */,
 				07F922471D656CF200D6BE94 /* SearchViewController.xib in Resources */,
 				07F9223B1D656CAB00D6BE94 /* MyLibraryViewController.xib in Resources */,
-				E5D6B8F51D72AA3300BB1D94 /* AfterAddPostTrackView.xib in Resources */,
+				6EED37071D72CC540034222E /* AddStoryVC.xib in Resources */,
 				07F9226C1D6AC75800D6BE94 /* Podfile in Resources */,
+				6EED37011D72CC410034222E /* AddPostVC.xib in Resources */,
 				0743BC581D6D6C8D00936FF9 /* FollowerViewController.xib in Resources */,
+				6EED37091D72CC5B0034222E /* AfterAddPostTrackView.xib in Resources */,
 				E51E622D1D6F341F00DECAE2 /* OriginalPlayHeaderView.xib in Resources */,
+				6EED36FD1D72CC080034222E /* CommentRespondCell.xib in Resources */,
 				0743BC711D6EA27200936FF9 /* FirstMusicRatingTableViewCell.xib in Resources */,
-				E5D6B9001D72AA4500BB1D94 /* FeedVC.xib in Resources */,
+				6EED370D1D72CC850034222E /* FeedVC.xib in Resources */,
+				6EED36F91D72CBE30034222E /* CommentHeaderView.xib in Resources */,
 				E51E62351D7174A300DECAE2 /* PlaylistTableViewCell.xib in Resources */,
+				6EED37051D72CC4D0034222E /* AddStoryHeaderView.xib in Resources */,
 				0743BC4C1D6C397B00936FF9 /* PlaylistCollectionViewCell.xib in Resources */,
 				07F9225F1D6AB50300D6BE94 /* StoryViewController.xib in Resources */,
+				6EED36F71D72CBD50034222E /* CommentScrollView.xib in Resources */,
 				07F9224B1D656D1C00D6BE94 /* ListenWithViewController.xib in Resources */,
-				E5D6B8F41D72AA3300BB1D94 /* AddPostVC.xib in Resources */,
-				E5D6B9021D72AA4500BB1D94 /* DynamicPostWallCell.xib in Resources */,
-				E5D6B8F81D72AA3300BB1D94 /* AddStoryHeaderView.xib in Resources */,
+				6EED370B1D72CC5F0034222E /* BeforeAddPostTrackView.xib in Resources */,
 				07F922111D65652200D6BE94 /* LaunchScreen.storyboard in Resources */,
-				E5D6B8F61D72AA3300BB1D94 /* BeforeAddPostTrackView.xib in Resources */,
-				E5D6B8F31D72AA3300BB1D94 /* AddStoryVC.xib in Resources */,
 				0743BC541D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.xib in Resources */,
 				0743BC441D6C393200936FF9 /* MusicRatingCollectionViewCell.xib in Resources */,
 				07F922631D6AB51E00D6BE94 /* MusicViewController.xib in Resources */,
+				6EED36FF1D72CC190034222E /* CommentStoryTitleViewCell.xib in Resources */,
+				6EED37131D72CCB90034222E /* StrangerDynamicPostWallCell.xib in Resources */,
 				07F9220E1D65652200D6BE94 /* Assets.xcassets in Resources */,
-				E5D6B8E81D72AA1900BB1D94 /* CommentHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,12 +922,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EED36D91D72CA240034222E /* AddPostVC.swift in Sources */,
 				E5D6B9A71D72BFF500BB1D94 /* MaterialSegmentedControll.swift in Sources */,
-				E5D6B91E1D72AB8400BB1D94 /* DynamicPostWallSaySomethingCell.swift in Sources */,
+				6EED36EB1D72CB6E0034222E /* CommentScrollView.swift in Sources */,
 				0743BC631D6D928300936FF9 /* FollowingTableViewCell.swift in Sources */,
+				6EED36ED1D72CB780034222E /* CommentHeaderView.swift in Sources */,
 				07F922621D6AB51E00D6BE94 /* MusicViewController.swift in Sources */,
 				07F9225E1D6AB50300D6BE94 /* StoryViewController.swift in Sources */,
-				E5D6B9351D72ABB000BB1D94 /* AddPostVC.swift in Sources */,
 				E5D6B9AB1D72BFF500BB1D94 /* MaterialView.swift in Sources */,
 				07F922461D656CF200D6BE94 /* SearchViewController.swift in Sources */,
 				07F9224A1D656D1C00D6BE94 /* ListenWithViewController.swift in Sources */,
@@ -943,52 +940,51 @@
 				0743BCB81D6EE4ED00936FF9 /* MusicRatingV2ViewController.swift in Sources */,
 				0743BC471D6C396700936FF9 /* FollowingArtistCollectionViewCell.swift in Sources */,
 				07F922421D656CDD00D6BE94 /* FeedViewController.swift in Sources */,
-				E5D6B9381D72ABB000BB1D94 /* CustomSearchController.swift in Sources */,
-				E5D6B93C1D72ABB000BB1D94 /* BeforeAddPostTrackView.swift in Sources */,
-				E5D6B8DA1D72A8FA00BB1D94 /* StrangerStories.swift in Sources */,
 				07F922581D6AA91300D6BE94 /* ProfileSegmentedControl.swift in Sources */,
+				6EED36DB1D72CA500034222E /* AddStoryVC.swift in Sources */,
 				0743BC5B1D6D715200936FF9 /* FollowingViewController.swift in Sources */,
 				0743BC5F1D6D847C00936FF9 /* FollowerTableViewCell.swift in Sources */,
-				E5D6B9261D72AB9500BB1D94 /* CommentVC.swift in Sources */,
-				E5D6B92A1D72AB9500BB1D94 /* CommentStoryTitleViewCell.swift in Sources */,
-				E5D6B93B1D72ABB000BB1D94 /* AfterAddPostTrackView.swift in Sources */,
-				E5D6B91C1D72AB8400BB1D94 /* StrangerDynamicPostWallCell.swift in Sources */,
+				6EED36E11D72CAC70034222E /* AddStoryHeaderView.swift in Sources */,
+				6EED370F1D72CC9E0034222E /* FeedVC.swift in Sources */,
+				6EED36EF1D72CB900034222E /* CommentSecondHeaderView.swift in Sources */,
 				07F922651D6AB77200D6BE94 /* Constant.swift in Sources */,
 				E51E62301D71733300DECAE2 /* PlaylistViewController.swift in Sources */,
 				0743BC4F1D6C399200936FF9 /* RecentlyListenCollectionViewCell.swift in Sources */,
 				07F9226A1D6AB94000D6BE94 /* ServerManager.swift in Sources */,
-				E5D6B9271D72AB9500BB1D94 /* CommentScrollView.swift in Sources */,
 				0743BCBE1D70064C00936FF9 /* MusicStyleViewController.swift in Sources */,
 				E51E622B1D6F337600DECAE2 /* OriginalPlayHeaderView.swift in Sources */,
+				6EED37171D72CCEF0034222E /* DynamicPostWallSaySomethingCell.swift in Sources */,
+				6EED36E91D72CB620034222E /* CommentVC.swift in Sources */,
 				E51E62341D7174A300DECAE2 /* PlaylistTableViewCell.swift in Sources */,
 				07F9226E1D6ACF3600D6BE94 /* Playlist.swift in Sources */,
+				6EED36F31D72CBA20034222E /* CommentRespondCell.swift in Sources */,
+				6EED36D71D72C9EE0034222E /* StrangerStories.swift in Sources */,
 				0743BC4B1D6C397B00936FF9 /* PlaylistCollectionViewCell.swift in Sources */,
-				E5D6B9371D72ABB000BB1D94 /* CustomSearchBar.swift in Sources */,
 				E5D6B9A81D72BFF500BB1D94 /* MaterialTextField.swift in Sources */,
-				E5D6B9281D72AB9500BB1D94 /* CommentHeaderView.swift in Sources */,
 				0743BC531D6C4D4500936FF9 /* CollectedAlbumCollectionViewCell.swift in Sources */,
 				E5D6B9A31D72BFF500BB1D94 /* MaterialButton.swift in Sources */,
 				07F922741D6ACF7F00D6BE94 /* Artist.swift in Sources */,
 				07F922681D6AB93100D6BE94 /* Router.swift in Sources */,
 				07F922041D65652200D6BE94 /* AppDelegate.swift in Sources */,
 				0743BCBB1D6EE60800936FF9 /* BackgroundImageView.swift in Sources */,
+				6EED36D51D72C9C30034222E /* Story.swift in Sources */,
 				07F922701D6ACF5600D6BE94 /* Song.swift in Sources */,
-				E5D6B9391D72ABB000BB1D94 /* AddStoryHeaderView.swift in Sources */,
-				E5D6B93A1D72ABB000BB1D94 /* AddStoryCell.swift in Sources */,
+				6EED36E31D72CAE40034222E /* AddStoryCell.swift in Sources */,
 				E5D6B9AA1D72BFF500BB1D94 /* MaterialTrackContainerView.swift in Sources */,
 				E5D6B9A51D72BFF500BB1D94 /* MaterialProfileImgView.swift in Sources */,
 				E5D6B9A61D72BFF500BB1D94 /* MaterialSegmentedControl.swift in Sources */,
 				E5FE8F571D71AAE400C6CCE2 /* Comment.swift in Sources */,
 				0743BC6B1D6E88C100936FF9 /* MusicRatingTableViewCell.swift in Sources */,
+				6EED36E71D72CB1D0034222E /* BeforeAddPostTrackView.swift in Sources */,
 				E51E62371D71829000DECAE2 /* NoticeButton.swift in Sources */,
-				E5D6B9961D72B88A00BB1D94 /* CommentRespondCell.swift in Sources */,
 				0743BC571D6D6C8D00936FF9 /* FollowerViewController.swift in Sources */,
-				E5D6B91B1D72AB8400BB1D94 /* FeedVC.swift in Sources */,
-				E5D6B8D91D72A8FA00BB1D94 /* Story.swift in Sources */,
 				0743BC701D6EA27200936FF9 /* FirstMusicRatingTableViewCell.swift in Sources */,
+				6EED36DD1D72CA770034222E /* CustomSearchBar.swift in Sources */,
+				6EED37111D72CCAF0034222E /* StrangerDynamicPostWallCell.swift in Sources */,
+				6EED36F11D72CB980034222E /* CommentStoryTitleViewCell.swift in Sources */,
 				E5FE8F5A1D71ACE300C6CCE2 /* DynamicPostWallCell.swift in Sources */,
+				6EED36E51D72CB030034222E /* AfterAddPostTrackView.swift in Sources */,
 				0743BC3C1D6C16C600936FF9 /* MusicStyleButton.swift in Sources */,
-				E5D6B9361D72ABB000BB1D94 /* AddStoryVC.swift in Sources */,
 				0743BC3E1D6C24F200936FF9 /* BackButton.swift in Sources */,
 				E5D6B9A91D72BFF500BB1D94 /* MaterialTextView.swift in Sources */,
 				0743BC431D6C393200936FF9 /* MusicRatingCollectionViewCell.swift in Sources */,
@@ -996,8 +992,8 @@
 				07F9224D1D65937C00D6BE94 /* ProfileViewController.swift in Sources */,
 				E5D6B9A21D72BFF500BB1D94 /* MaterialBackgroundView.swift in Sources */,
 				07F9220C1D65652200D6BE94 /* KKBOX_Personal_Porfile.xcdatamodeld in Sources */,
+				6EED36DF1D72CAA40034222E /* CustomSearchController.swift in Sources */,
 				07F922781D6ACFE400D6BE94 /* User.swift in Sources */,
-				E5D6B9291D72AB9500BB1D94 /* CommentSecondHeaderView.swift in Sources */,
 				0743BC671D6DA28D00936FF9 /* MusicRatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPostVC" customModule="KKBox_People_Project" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPostVC" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
             <connections>
                 <outlet property="searchTrackView" destination="KCz-h0-ZiX" id="dIn-VF-1uh"/>
                 <outlet property="textFieldView" destination="3ky-gT-DCQ" id="Xtj-Ew-iZL"/>
@@ -88,7 +88,7 @@
                                 <constraint firstAttribute="height" constant="75" id="jyJ-ZZ-Y6e"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-ov-0Va" userLabel="CD Container View" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-ov-0Va" userLabel="CD Container View" customClass="MaterialView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                             <rect key="frame" x="22" y="72" width="276" height="56"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CDPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-wd-YkK">
@@ -106,14 +106,14 @@
                                     </constraints>
                                     <state key="normal" image="btn_play_black"/>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="王力宏/專輯名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3g-fL-0Ni" customClass="MaterialLabel" customModule="KKBox_People_Project" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="王力宏/專輯名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3g-fL-0Ni" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                                     <rect key="frame" x="56" y="28" width="231" height="28"/>
                                     <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
                                     <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="14"/>
                                     <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="歌曲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-tj-ItS" customClass="MaterialLabel" customModule="KKBox_People_Project" customModuleProvider="target">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="歌曲" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-tj-ItS" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                                     <rect key="frame" x="56" y="0.0" width="231" height="28"/>
                                     <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
                                     <constraints>

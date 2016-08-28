@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,27 +7,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentRespondCell" rowHeight="139" id="FK2-9v-i3t" customClass="CommentRespondCell" customModule="KKBox_People_Project" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentRespondCell" rowHeight="139" id="FK2-9v-i3t" customClass="CommentRespondCell" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="300" height="154"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FK2-9v-i3t" id="WWa-I0-ThI">
-                <rect key="frame" x="0.0" y="0.0" width="300" height="153.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="153"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-Yb-pxs" customClass="MaterialView" customModule="KKBox_People_Project" customModuleProvider="target">
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQO-Yb-pxs" customClass="MaterialView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="154"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YNi-Sy-pX5">
                                 <rect key="frame" x="21" y="11" width="144" height="32"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="afn-BP-Loa" customClass="MaterialProfileImgView" customModule="KKBox_People_Project" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="afn-BP-Loa" customClass="MaterialProfileImgView" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="nM0-kV-azq"/>
                                             <constraint firstAttribute="width" constant="32" id="r3L-u1-bs3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王力宏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6r-Ko-xLl" customClass="MaterialLabel" customModule="KKBox_People_Project" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王力宏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6r-Ko-xLl" customClass="MaterialLabel" customModule="KKBOX_Personal_Porfile" customModuleProvider="target">
                                         <rect key="frame" x="44" y="0.0" width="100" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="x9G-Cd-Qiw"/>
