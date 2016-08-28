@@ -617,8 +617,8 @@ class ServerManager: NSObject {
         }
     }
     
-    class func addComment(commentContent comment: String, storyId id: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
-        let api = Router.Story(StoryAPI.AddComment(comment, id))
+    class func addComment(commentContent comment: String, storyId id: String, postTime time: String, completion:() -> Void, failure:(error: NSError?) -> Void) {
+        let api = Router.Story(StoryAPI.AddComment(comment, id, time))
         
         Alamofire.request(api).responseJSON { (response) in
             switch response.result {

@@ -103,7 +103,7 @@ enum Router: URLRequestConvertible {
                 return .POST
             case .AddStory(_, _, _, _):
                 return .POST
-            case .AddComment(_, _):
+            case .AddComment(_, _, _):
                 return .POST
             case .GetStoriesTopTwo:
                 return .POST
@@ -214,7 +214,7 @@ enum Router: URLRequestConvertible {
                 return "/user/collectStory"
             case .AddStory(_, _, _, _):
                 return "/user/addStory"
-            case .AddComment(_, _):
+            case .AddComment(_, _, _):
                 return "/user/addComment"
             case .GetStoriesTopTwo:
                 return URL_STORY_GETSTORIESTOPTWO
@@ -371,8 +371,8 @@ enum Router: URLRequestConvertible {
                 let params = ["title":title, "content":content, "time":time, "track_id":trackId]
                 let request = Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
                 return request
-            case .AddComment(let content, let storyId):
-                let params = ["content":content, "story_id":storyId]
+            case .AddComment(let content, let storyId, let time):
+                let params = ["content":content, "story_id":storyId, "time":time]
                 let request = Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: params).0
                 return request
             default:
@@ -482,7 +482,7 @@ enum StoryAPI {
     //收藏故事
     case CollectStory(String)
     //在故事底下新增留言
-    case AddComment(String, String)
+    case AddComment(String, String, String)
     
     //探索頁面會用到的3種情況
     case GetStoriesByFollowings
